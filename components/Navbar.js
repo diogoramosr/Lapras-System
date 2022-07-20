@@ -7,7 +7,7 @@ export default function Home() {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="w-screen h-[80px] z-10 bg-black fixed drop-shadow-xl">
+    <div className="w-screen h-[80px] z-10 bg-black fixed">
       <Head></Head>
       <div className="px-2 flex justify-between m-auto max-w-6xl items-center text-white h-full">
         <div className="flex items-center">
