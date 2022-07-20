@@ -23,3 +23,52 @@ ul, li, a, p, span, button{
         hover:text-sky-700 duration-300
     }
 }
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-400px * 7))}
+}
+
+
+.slider {
+  background: white;
+  height: 150px;
+  margin: auto;
+  overflow:hidden;
+  position: relative;
+  max-width: 900px;
+}
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  content: "";
+  height: 150px;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slide-track {
+    animation: scroll 25s linear infinite;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: calc(200px * 14);
+}
+  
+.slide {
+    height: 100px;
+    justify-content: space-evenly;
+    display: flex;
+    width: 100%;
+}

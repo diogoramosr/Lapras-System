@@ -6,35 +6,33 @@ export default function Home() {
     <>
       <Head></Head>
       <Navbar />
-      <div className="h-screen flex items-center justify-center ">
-        <div className="grid md:grid-cols-2 max-w-[1240px] items-center m-auto">
-          <div className="px-2 py-8 h-full text-black">
-            <h1 className="py-3 text-5xl mt-10 mb-2 md:text-7xl font-bold">
-              Lapras System
-            </h1>
-            <p className="text-2xl">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum,
-              necessitatibus labore! Aliquam ducimus fugit sit inventore nobis
-              architecto magni minus.
-            </p>
-            <div className="flex items-center gap-6 mt-5 text-white">
-              <a href="/projeto"> 
-                <button className="py-3 px-6 sm-w-[40%] my-4 rounded-md hover:scale-105 transition-all 500ms  bg-sky-700 hover:scale-105">
-                  Saber mais
-                </button>
-              </a>
-              <a href="/contato">
-                <button className="py-3 px-6 sm-w-[40%] my-4 rounded-md hover:scale-105 transition-all 500ms  bg-sky-700 hover:scale-105">
-                  Adquira agora
-                </button>
-              </a>
-            </div>
-          </div>
-          <div>
-            <img className="w-full" src="images/arduino.jpg" alt="Arduino" />
-          </div>
+      <section className="mt-24 mx-auto max-w-screen-xl pb-4 px-4 sm:px-8">
+        <div className="text-center space-y-4">
+          <h1 className="text-gray-800 font-bold text-4xl md:text-5xl">
+            Optimize your website for
+            <span className="text-indigo-600"> Lapras System</span>
+          </h1>
+          <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum
+          </p>
         </div>
-      </div>
+        <div className="mt-12 justify-center items-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex">
+          <a
+            href="javascript:void(0)"
+            className="px-10 py-3.5 w-full bg-sky-700 text-white text-center rounded-md shadow-md block sm:w-auto hover:scale-105 transition-all 500ms"
+          >
+            Adquira agora
+          </a>
+          <a
+            href="javascript:void(0)"
+            className="px-10 py-3.5 w-full text-gray-500 text-center border rounded-md duration-300 hover:text-sky-700 hover:shadow block sm:w-auto hover:scale-105"
+          >
+            Saber mais
+          </a>
+        </div>
+      </section>
     </>
   );
 }

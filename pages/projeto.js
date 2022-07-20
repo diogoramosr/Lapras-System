@@ -5,9 +5,11 @@ import Footer from "../components/Footer";
 export default function Projeto() {
   return (
     <>
-      <Head></Head>
+      <Head>
+        <link href="../styles/sliderTech.css" type="text" rel="stylesheet" />
+      </Head>
       <Navbar />
-      <div className="h-full drop-shadow-xl">
+      <div className="h-full">
         <div className="bg-sky-700">
           <div className="flex h-[400px] justify-between items-center max-w-[1240px] m-auto text-white">
             <div className=" mt-20">
@@ -36,7 +38,6 @@ export default function Projeto() {
             </div>
           </div>
         </div>
-
         <div class="py-12 mt-10 bg-white">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:text-center">
@@ -177,6 +178,122 @@ export default function Projeto() {
             </div>
           </div>
         </div>
+        <hr class="border-gray-200 mt-5 dark:border-gray-700 max-w-[1000px] m-auto"></hr>
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img src="/images/js.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="/images/nextjs.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="/images/mongodb.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="/images/node-js.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="/images/c++.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="/images/vscode.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="/images/Tailwind.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="/images/arduino.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <section class="text-gray-700">
+          <div class="container px-5 py-24 mx-auto">
+            <div class="text-center mb-20">
+              <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
+                Frequently Asked Question
+              </h1>
+              <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+                The most common questions about how our business works and what
+                can do for you.
+              </p>
+            </div>
+            <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+              <div class="w-full lg:w-1/2 px-4 py-2">
+                <details class="mb-4">
+                  <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                    How Long is this site live?
+                  </summary>
+
+                  <span>
+                    Laboris qui labore cillum culpa in sunt quis sint veniam.
+                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+                    minim velit nostrud pariatur culpa magna in aute.
+                  </span>
+                </details>
+                <details class="mb-4">
+                  <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
+                    Can I install/upload anything I want on there?
+                  </summary>
+
+                  <span>
+                    Laboris qui labore cillum culpa in sunt quis sint veniam.
+                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+                    minim velit nostrud pariatur culpa magna in aute.
+                  </span>
+                </details>
+                <details class="mb-4">
+                  <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                    How can I migrate to another site?
+                  </summary>
+
+                  <span>
+                    Laboris qui labore cillum culpa in sunt quis sint veniam.
+                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+                    minim velit nostrud pariatur culpa magna in aute.
+                  </span>
+                </details>
+              </div>
+              <div class="w-full lg:w-1/2 px-4 py-2">
+                <details class="mb-4">
+                  <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                    Can I change the domain you give me?
+                  </summary>
+
+                  <span class="px-4 py-2">
+                    Laboris qui labore cillum culpa in sunt quis sint veniam.
+                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+                    minim velit nostrud pariatur culpa magna in aute.
+                  </span>
+                </details>
+                <details class="mb-4">
+                  <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                    How many sites I can create at once?
+                  </summary>
+
+                  <span class="px-4 py-2">
+                    Laboris qui labore cillum culpa in sunt quis sint veniam.
+                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+                    minim velit nostrud pariatur culpa magna in aute.
+                  </span>
+                </details>
+                <details class="mb-4">
+                  <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                    How can I communicate with you?
+                  </summary>
+
+                  <span class="px-4 py-2">
+                    Laboris qui labore cillum culpa in sunt quis sint veniam.
+                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+                    minim velit nostrud pariatur culpa magna in aute.
+                  </span>
+                </details>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <div class="bg-zinc-100">
           <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
             <h2 class="text-3xl font-extrabold tracking-tight text-zinc-900 sm:text-4xl">
