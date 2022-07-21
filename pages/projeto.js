@@ -5,9 +5,7 @@ import Footer from "../components/Footer";
 export default function Projeto() {
   return (
     <>
-      <Head>
-        <link href="../styles/sliderTech.css" type="text" rel="stylesheet" />
-      </Head>
+      <Head></Head>
       <Navbar />
       <div className="h-full">
         <section class="relative pt-36 lg:pb-14 overflow-hidden bg-black w-full">

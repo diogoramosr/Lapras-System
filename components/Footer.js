@@ -9,7 +9,7 @@ import {
 const Footer = () => {
   return (
     <>
-      <section class="relative py-24 overflow-hidden">
+      <section class="relative py-24 overflow-hidden bg-zinc-50">
         <div class="relative z-10 container mx-auto px-4">
           <div class="flex flex-wrap -m-6">
             <div class="w-full md:w-1/2 lg:w-5/12 p-6">
