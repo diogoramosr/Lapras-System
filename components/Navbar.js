@@ -25,6 +25,7 @@ export default function Home() {
 
   return (
     <>
+    <Head></Head>
       <nav ref={navRef} className="bg-black w-full top-0 z-20 transition-all">
         <div className="items-center px-4 max-w-screen-xl mx-auto h-full lg:flex lg:px-8">
           <div className="flex items-center justify-between py-3 lg:py-4 lg:block">

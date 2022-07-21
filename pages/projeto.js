@@ -10,34 +10,101 @@ export default function Projeto() {
       </Head>
       <Navbar />
       <div className="h-full">
-        <div className="bg-sky-700">
-          <div className="flex h-[400px] justify-between items-center max-w-[1240px] m-auto text-white">
-            <div className=" mt-20">
-              <h1 className="text-4xl font-bold mb-9">
-                Curta o Premium grátis por 2 meses
-              </h1>
-              <p className="text-2xl">
-                Depois, pague somente R$ 19,90/mês. Cancele quando quiser.
-              </p>
-              <div className="flex items-center gap-6">
-                <a href="/projeto">
-                  <button className="py-3 px-6 sm-w-[40%] my-4 rounded-md hover:scale-105 transition-all 500ms bg-black">
-                    Saiba mais
+        <section class="relative pt-36 lg:pb-14 overflow-hidden bg-black">
+          <img
+            class="absolute top-0 left-1/2 transform -translate-x-1/2"
+            src="/images/fundo_projeto.jpg"
+            alt=""
+            width="100%"
+          />
+          <div class="relative z-10 container mx-auto px-4 mb-12">
+            <div class="flex flex-wrap -m-6">
+              <div class="w-full lg:w-1/2 p-6">
+                <div class="lg:max-w-xl">
+                  <h2 class="mb-6 font-heading font-bold text-6xl sm:text-7xl text-white">
+                    Get maximum results from all your projects.
+                  </h2>
+                  <p class="mb-20 text-base text-white">
+                    Amet minim mollit non deserunt ullamco est sit aliqua.
+                  </p>
+                  <button class="mb-11 font-heading font-semibold w-full lg:w-auto p-5 text-xs text-white bg-blue-600 hover:bg-blue-700 uppercase rounded-md tracking-px">
+                    Connect Now
                   </button>
-                </a>
-                <a href="/contato">
-                  <button className="py-3 px-6 sm-w-[40%] my-4 rounded-md hover:scale-105 transition-all 500ms bg-transparent border border-black">
-                    Compre agora !
-                  </button>
-                </a>
+                  <ul class="flex flex-wrap w-full -m-3.5">
+                    <li class="p-3.5 flex items-center font-heading font-semibold text-lg text-white">
+                      <svg
+                        class="mr-3"
+                        width="22"
+                        height="22"
+                        viewbox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="11" cy="11" r="11" fill="#3F3F46"></circle>
+                        <path
+                          d="M6.7959 11.6006L9.1982 14.0029L15.2039 7.99713"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                      <p>No hidden feels</p>
+                    </li>
+                    <li class="p-3.5 flex items-center font-heading font-semibold text-lg text-white">
+                      <svg
+                        class="mr-3"
+                        width="22"
+                        height="22"
+                        viewbox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="11" cy="11" r="11" fill="#3F3F46"></circle>
+                        <path
+                          d="M6.7959 11.6006L9.1982 14.0029L15.2039 7.99713"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                      <p>Start with a free account</p>
+                    </li>
+                    <li class="p-3.5 flex items-center font-heading font-semibold text-lg text-white">
+                      <svg
+                        class="mr-3"
+                        width="22"
+                        height="22"
+                        viewbox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="11" cy="11" r="11" fill="#3F3F46"></circle>
+                        <path
+                          d="M6.7959 11.6006L9.1982 14.0029L15.2039 7.99713"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                      <p>Edit online, no software needed</p>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <p className="">
-                Sujeito a Termos e Condições. Os 2 meses grátis não estão
-                disponíveis para usuários que já experimentaram o Premium.
-              </p>
             </div>
           </div>
-        </div>
+          <div class="pl-4 lg:w-1/2 lg:absolute lg:bottom-0 lg:right-0">
+            <img
+              class="relative z-10 ml-auto transform hover:-translate-x-28 transition ease-in-out duration-500"
+              src="/images/dashboard.png"
+              alt=""
+              width="100%"
+            />
+          </div>
+        </section>
         <div class="py-12 mt-10 bg-white">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:text-center">
@@ -179,31 +246,36 @@ export default function Projeto() {
           </div>
         </div>
         <hr class="border-gray-200 mt-5 dark:border-gray-700 max-w-[1000px] m-auto"></hr>
-        <div class="slider">
-          <div class="slide-track">
-            <div class="slide">
-              <img src="/images/js.png" alt="" />
+        <div class="max-w-[1200px] m-auto mt-10">
+          <div class="grid grid-cols-2 gap-20 md:grid-cols-6 lg:grid-cols-8 items-center justify-items-center">
+            <div class="">
+              <img src="images/node-js.png" width="90px" />
             </div>
-            <div class="slide">
-              <img src="/images/nextjs.png" alt="" />
+
+            <div class="">
+              <img src="images/arduino.png" width="100px" />
             </div>
-            <div class="slide">
-              <img src="/images/mongodb.png" alt="" />
+
+            <div class="">
+              <img src="images/c++.png" width="90px" />
             </div>
-            <div class="slide">
-              <img src="/images/node-js.png" alt="" />
+
+            <div class="">
+              <img src="images/nextjs.png" width="100px" />
             </div>
-            <div class="slide">
-              <img src="/images/c++.png" alt="" />
+
+            <div class="">
+              <img src="images/js.png" width="90px" />
             </div>
-            <div class="slide">
-              <img src="/images/vscode.png" alt="" />
+
+            <div class="">
+              <img src="images/mongodb.png" width="200px" />
             </div>
-            <div class="slide">
-              <img src="/images/Tailwind.png" alt="" />
+            <div class="">
+              <img src="images/Tailwind.png" width="100px" />
             </div>
-            <div class="slide">
-              <img src="/images/arduino.png" alt="" />
+            <div class="">
+              <img src="images/vscode.png" width="90px" />
             </div>
           </div>
         </div>
