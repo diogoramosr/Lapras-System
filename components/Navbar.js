@@ -4,29 +4,13 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 export default function Home() {
   const [state, setState] = useState(false);
-  const navRef = useRef();
 
-  useEffect(() => {
-    const body = document.body;
 
-    // Disable scrolling
-    const customBodyStyle = ["overflow-hidden", "lg:overflow-visible"];
-    if (state) body.classList.add(...customBodyStyle);
-    // Enable scrolling
-    else body.classList.remove(...customBodyStyle);
-
-    // Sticky strick
-    const customStyle = ["fixed"];
-    window.onscroll = () => {
-      if (window.scrollY > 80) navRef.current.classList.add(...customStyle);
-      else navRef.current.classList.remove(...customStyle);
-    };
-  }, [state]);
-
+  
   return (
     <>
     <Head></Head>
-      <nav ref={navRef} className="bg-black w-full top-0 z-20 transition-all">
+      <nav className="bg-black w-full top-0 z-20">
         <div className="items-center px-4 max-w-screen-xl mx-auto h-full lg:flex lg:px-8">
           <div className="flex items-center justify-between py-3 lg:py-4 lg:block">
             <a href="/">

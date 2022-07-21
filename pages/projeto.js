@@ -10,7 +10,7 @@ export default function Projeto() {
       </Head>
       <Navbar />
       <div className="h-full">
-        <section class="relative pt-36 lg:pb-14 overflow-hidden bg-black">
+        <section class="relative pt-36 lg:pb-14 overflow-hidden bg-black w-full">
           <img
             class="absolute top-0 left-1/2 transform -translate-x-1/2"
             src="/images/fundo_projeto.jpg"
@@ -21,9 +21,9 @@ export default function Projeto() {
             <div class="flex flex-wrap -m-6">
               <div class="w-full lg:w-1/2 p-6">
                 <div class="lg:max-w-xl">
-                  <h2 class="mb-6 font-heading font-bold text-6xl sm:text-7xl text-white">
+                  <h1 class="mb-6 font-heading font-bold text-6xl sm:text-7xl text-white">
                     Get maximum results from all your projects.
-                  </h2>
+                  </h1>
                   <p class="mb-20 text-base text-white">
                     Amet minim mollit non deserunt ullamco est sit aliqua.
                   </p>
@@ -246,8 +246,14 @@ export default function Projeto() {
           </div>
         </div>
         <hr class="border-gray-200 mt-5 dark:border-gray-700 max-w-[1000px] m-auto"></hr>
-        <div class="max-w-[1200px] m-auto mt-10">
-          <div class="grid grid-cols-2 gap-20 md:grid-cols-6 lg:grid-cols-8 items-center justify-items-center">
+        <div class="max-w-[1200px] m-auto mt-14 mb-20">
+          <h2 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
+            Tecnlogias
+          </h2>
+          <p class="text-center leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto mb-10">
+            The most common questions about how our business works and
+          </p>
+          <div class="grid grid-cols-2 gap-20 md:grid-cols-4 lg:grid-cols-8 items-center justify-items-center">
             <div class="">
               <img src="images/node-js.png" width="90px" />
             </div>
@@ -268,7 +274,7 @@ export default function Projeto() {
               <img src="images/js.png" width="90px" />
             </div>
 
-            <div class="">
+            <div class="pr-3">
               <img src="images/mongodb.png" width="200px" />
             </div>
             <div class="">
@@ -279,13 +285,13 @@ export default function Projeto() {
             </div>
           </div>
         </div>
-
+        <hr class="border-gray-200 mt-5 dark:border-gray-700 max-w-[1000px] m-auto"></hr>
         <section class="text-gray-700">
-          <div class="container px-5 py-24 mx-auto">
+          <div class="container px-5 py-16 mx-auto">
             <div class="text-center mb-20">
-              <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
+              <h2 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
                 Frequently Asked Question
-              </h1>
+              </h2>
               <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
                 The most common questions about how our business works and what
                 can do for you.
