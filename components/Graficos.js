@@ -13,8 +13,18 @@ const data = [
 ]
 
 const options = {
-    width: 700,
+    width: 300,
     height: 120,
+    redFrom: 90,
+    redTo: 110,
+    yellowFrom: 60,
+    yellowTo: 90,
+    minorTicks: 5,
+};
+
+const options2 = {
+    width: 300,
+    height: 220,
     redFrom: 90,
     redTo: 110,
     yellowFrom: 60,
@@ -53,7 +63,6 @@ function getData() {
         ["Label", "Value"],
         ["Campinas", getRandomNumber()],
         ["Hortolândia", getRandomNumber()],
-        ["Acre", getRandomNumber()],
     ];
 }
 
@@ -81,6 +90,7 @@ function Grafico() {
         <>
             <Chart chartType="Gauge" data={datas} options={options} />
             {/*<Chart chartType='PieChart' data={chartData} width={"100%"} height={"400px"} />*/}
+            {/*<Chart chartType='PieChart' data={chartData} options={options2} />*/}
         </>
     )
 }
