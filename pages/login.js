@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import Head from "next/head";
+//import Cookies from "js-cookie";
+import { useRouter } from "next/router"
 
 export default function Login() {
+
+  const [username,setUsername] = useState("")
+  const [senha,setSenha] = useState("")
+
+  const rotas = useRouter()
+
+  function handleSubmit(e){
+    e.preventDefault()
+/*
+    const options = {
+      expires: 10/24*60
+    }
+
+    Cookies.set("username",username, options)
+    Cookies.set("senha",senha, options)*/
+
+    rotas.push("/PageGraficos")
+  }
+
   return (
     <>
       <Head></Head>
@@ -23,9 +44,10 @@ export default function Login() {
               <div class="relative mt-1">
                 <input
                   type="email"
-                  id="email"
+                  name="username"
                   class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
                   placeholder="Enter email"
+                  onInput={(e)=>setUsername(e.target.value)}
                 />
 
                 <span class="absolute inset-y-0 inline-flex items-center right-4">
@@ -55,9 +77,10 @@ export default function Login() {
               <div class="relative mt-1">
                 <input
                   type="password"
-                  id="password"
+                  name="senha"
                   class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
                   placeholder="Enter password"
+                  onInput={(e)=>setSenha(e.target.value)}
                 />
 
                 <span class="absolute inset-y-0 inline-flex items-center right-4">
@@ -93,6 +116,7 @@ export default function Login() {
             <button
               type="submit"
               class="block w-full px-5 py-3 text-sm font-medium text-white bg-indigo-600 rounded-lg"
+              onClick={handleSubmit}
             >
               Sign in
             </button>
@@ -123,6 +147,10 @@ export default function Login() {
               .
             </p>
           </form>
+          <div>
+            <p>{username}</p>
+            <p>{senha}</p>
+          </div>
         </div>
       </div>
     </>
