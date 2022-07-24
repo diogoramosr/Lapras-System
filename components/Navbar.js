@@ -22,7 +22,7 @@ export default function Home() {
             </a>
             <div className="lg:hidden">
               <button
-                className="text-gray-700 outline-none p-2 rounded-md focus:border-white focus:border"
+                className="text-white outline-none p-2 rounded-md focus:border-white focus:border"
                 onClick={() => setState(!state)}
               >
                 {state ? (

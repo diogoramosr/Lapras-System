@@ -88,7 +88,7 @@ export default function Projeto() {
                           stroke-linejoin="round"
                         ></path>
                       </svg>
-                      <p></p>
+                      <p>Confiança</p>
                     </li>
                   </ul>
                 </div>
@@ -107,10 +107,10 @@ export default function Projeto() {
         <div class="py-12 mt-10 bg-white">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:text-center">
-              <h2 class="text-base text-black font-semibold tracking-wide uppercase">
+              <h2 class="text-center text-black font-semibold tracking-wide uppercase">
                 Características
               </h2>
-              <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-black sm:text-4xl">
+              <p class="mt-2 text-3xl leading-8 text-center font-extrabold tracking-tight text-black sm:text-4xl">
                 Por que o Lapras System?
               </p>
             </div>
@@ -293,8 +293,8 @@ export default function Projeto() {
             </div>
             <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
               <div class="w-full lg:w-1/2 px-4 py-2">
-                <details class="mb-4">
-                  <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                <details class="mb-7">
+                  <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4 text-black">
                     How Long is this site live?
                   </summary>
 
@@ -304,8 +304,8 @@ export default function Projeto() {
                     minim velit nostrud pariatur culpa magna in aute.
                   </span>
                 </details>
-                <details class="mb-4">
-                  <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
+                <details class="mb-7">
+                  <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4 text-black">
                     Can I install/upload anything I want on there?
                   </summary>
 
@@ -315,8 +315,8 @@ export default function Projeto() {
                     minim velit nostrud pariatur culpa magna in aute.
                   </span>
                 </details>
-                <details class="mb-4">
-                  <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                <details class="mb-7">
+                  <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4 text-black">
                     How can I migrate to another site?
                   </summary>
 
@@ -328,8 +328,8 @@ export default function Projeto() {
                 </details>
               </div>
               <div class="w-full lg:w-1/2 px-4 py-2">
-                <details class="mb-4">
-                  <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                <details class="mb-7">
+                  <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4 text-black">
                     Can I change the domain you give me?
                   </summary>
 
@@ -339,8 +339,8 @@ export default function Projeto() {
                     minim velit nostrud pariatur culpa magna in aute.
                   </span>
                 </details>
-                <details class="mb-4">
-                  <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                <details class="mb-7">
+                  <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4 text-black">
                     How many sites I can create at once?
                   </summary>
 
@@ -350,8 +350,8 @@ export default function Projeto() {
                     minim velit nostrud pariatur culpa magna in aute.
                   </span>
                 </details>
-                <details class="mb-4">
-                  <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                <details class="mb-7">
+                  <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4 text-black">
                     How can I communicate with you?
                   </summary>
 
@@ -366,9 +366,9 @@ export default function Projeto() {
           </div>
         </section>
 
-        <div class="bg-zinc-100">
+        <div class="bg-zinc-200">
           <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-            <h2 class="text-3xl font-extrabold tracking-tight text-zinc-900 sm:text-4xl">
+            <h2 class="text-3xl font-extrabold tracking-tight text-black sm:text-4xl">
               <span class="block">Pronto para adquirir?</span>
               <span class="block text-sky-700">
                 Obtenha o System Lapras hoje.
@@ -377,17 +377,16 @@ export default function Projeto() {
             <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
               <div class="inline-flex rounded-md shadow">
                 <a
-                  href="#"
-                  class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sky-700 hover:bg-sky-800"
+                  href="/contato"
+                  class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md shadow-md  text-white bg-sky-700 hover:bg-sky-800 "
                 >
-                  {" "}
-                  Iniciar{" "}
+                  Obter
                 </a>
               </div>
               <div class="ml-3 inline-flex rounded-md shadow">
                 <a
-                  href="#"
-                  class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-sky-700 bg-white hover:bg-gray-100"
+                  href="/sobre"
+                  class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md shadow-md text-sky-700 bg-white hover:bg-gray-100"
                 >
                   {" "}
                   Saber mais{" "}
