@@ -5,7 +5,14 @@ import Footer from "../components/Footer";
 export default function Projeto() {
   return (
     <>
-      <Head></Head>
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="robots" content="index, follow" />
+        <meta name="description" content="Site do sistema Lapras System" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Lapras System" />
+        <title>Lapras System - Projeto</title>
+      </Head>
       <Navbar />
       <div className="h-full">
         <section class="relative pt-36 lg:pb-14 overflow-hidden bg-black w-full">
@@ -19,15 +26,9 @@ export default function Projeto() {
             <div class="flex flex-wrap -m-6">
               <div class="w-full lg:w-1/2 p-6">
                 <div class="lg:max-w-xl">
-                  <h1 class="mb-6 font-heading font-bold text-6xl sm:text-7xl text-white">
-                    Get maximum results from all your projects.
+                  <h1 class="mb-10 font-heading font-bold text-6xl sm:text-7xl text-white">
+                    Obtenha a segurança que o ambiente precisa.
                   </h1>
-                  <p class="mb-20 text-base text-white">
-                    Amet minim mollit non deserunt ullamco est sit aliqua.
-                  </p>
-                  <button class="mb-11 font-heading font-semibold w-full lg:w-auto p-5 text-xs text-white bg-blue-600 hover:bg-blue-700 uppercase rounded-md tracking-px">
-                    Connect Now
-                  </button>
                   <ul class="flex flex-wrap w-full -m-3.5">
                     <li class="p-3.5 flex items-center font-heading font-semibold text-lg text-white">
                       <svg
@@ -47,7 +48,7 @@ export default function Projeto() {
                           stroke-linejoin="round"
                         ></path>
                       </svg>
-                      <p>No hidden feels</p>
+                      <p>Segurança</p>
                     </li>
                     <li class="p-3.5 flex items-center font-heading font-semibold text-lg text-white">
                       <svg
@@ -67,7 +68,7 @@ export default function Projeto() {
                           stroke-linejoin="round"
                         ></path>
                       </svg>
-                      <p>Start with a free account</p>
+                      <p>Privacidade</p>
                     </li>
                     <li class="p-3.5 flex items-center font-heading font-semibold text-lg text-white">
                       <svg
@@ -87,7 +88,7 @@ export default function Projeto() {
                           stroke-linejoin="round"
                         ></path>
                       </svg>
-                      <p>Edit online, no software needed</p>
+                      <p></p>
                     </li>
                   </ul>
                 </div>
@@ -107,18 +108,14 @@ export default function Projeto() {
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:text-center">
               <h2 class="text-base text-black font-semibold tracking-wide uppercase">
-                Especificações
+                Características
               </h2>
-              <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-zinc-900 sm:text-4xl">
-                Por que o System Lapras?
-              </p>
-              <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-                Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
-                magnam voluptatum cupiditate veritatis in accusamus quisquam.
+              <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-black sm:text-4xl">
+                Por que o Lapras System?
               </p>
             </div>
 
-            <div class="mt-10">
+            <div class="mt-20">
               <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
                 <div class="relative">
                   <dt>
@@ -245,13 +242,13 @@ export default function Projeto() {
         </div>
         <hr class="border-gray-200 mt-5 dark:border-gray-700 max-w-[1000px] m-auto"></hr>
         <div class="max-w-[1200px] m-auto mt-14 mb-20">
-          <h2 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
-            Tecnlogias
+          <h2 class="text-center text-black font-semibold tracking-wide uppercase">
+            Sistemas
           </h2>
-          <p class="text-center leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto mb-10">
-            The most common questions about how our business works and
+          <p class="mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight text-black sm:text-4xl">
+            Tecnologias
           </p>
-          <div class="grid grid-cols-2 gap-20 md:grid-cols-4 lg:grid-cols-8 items-center justify-items-center">
+          <div class="grid grid-cols-2 gap-20 mt-14 md:grid-cols-4 lg:grid-cols-8 items-center justify-items-center">
             <div class="">
               <img src="images/node-js.png" width="90px" />
             </div>
@@ -287,12 +284,11 @@ export default function Projeto() {
         <section class="text-gray-700">
           <div class="container px-5 py-16 mx-auto">
             <div class="text-center mb-20">
-              <h2 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
-                Frequently Asked Question
+              <h2 class="text-center text-black font-semibold tracking-wide uppercase">
+                Questões
               </h2>
-              <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-                The most common questions about how our business works and what
-                can do for you.
+              <p class="mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight text-black sm:text-4xl">
+                Perguntas Frequentes
               </p>
             </div>
             <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">

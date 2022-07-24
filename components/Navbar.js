@@ -62,8 +62,8 @@ export default function Home() {
               state ? "h-screen pb-20 overflow-auto pr-4" : "hidden"
             }`}
           >
-            <div className="">
-              <ul className="flex flex-col text-center space-x-0 lg:space-x-6 lg:flex-row">
+            <div>
+              <ul className="flex flex-col text-center font-bold space-x-0 lg:space-x-6 lg:flex-row">
                 <li className="lg:mt-0 lg:mb-0 ">
                   <a href="/" className="text-white hover:text-sky-700">
                     Home

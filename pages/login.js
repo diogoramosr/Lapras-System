@@ -20,7 +20,7 @@ export default function Login() {
     Cookies.set("username",username, options)
     Cookies.set("senha",senha, options)*/
 
-    rotas.push("/PageGraficos")
+    rotas.push("/dashboard")
   }
 
   return (

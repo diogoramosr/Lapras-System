@@ -9,7 +9,7 @@ const style = {
   main: `h-screen overflow-auto pb-36 pt-4 px-2 md:pb-8 md:pt-4 lg:pt-0 lg:px-4`,
 };
 
-export default function DashboardLayout({ children }) {
+export default function DashboardLayout() {
   return (
     <DashboardProvider>
       <div className={style.container}>
@@ -18,7 +18,6 @@ export default function DashboardLayout({ children }) {
           <SideNavigation mobilePosition="right" />
           <div className={style.mainContainer}>
             <TopNavigation />
-            
           </div>
         </div>
       </div>

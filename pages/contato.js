@@ -67,21 +67,21 @@ const Contato = () => {
             <div class="p-8 bg-white rounded-lg shadow-lg lg:p-12 lg:col-span-3">
               <form
                 action="https://formsubmit.co/0023eb5449ab2048b38648a356ebf3b4"
-                class="space-y-4"
                 method="POST"
+                class="space-y-4"
               >
+                <input type="hidden" name="_template" value="box" />
                 <div>
                   <label class="sr-only" for="name">
-                    Name
+                    Nome
                   </label>
                   <input
                     class="w-full p-3 text-sm border border-gray-200 rounded-lg"
-                    placeholder="Name"
+                    placeholder="Nome"
                     type="text"
-                    id="name"
                     name="name"
+                    id="name"
                     required
-
                   />
                 </div>
 
@@ -98,18 +98,30 @@ const Contato = () => {
                       name="email"
                       required
                     />
+
+                    {/*ENVIA UMA RESPOSTA PARA O EMAIL || CRIAR UMA PAGINA DE REPOSTA QUANDO ENVIAR UM EMAIL*/}
+                    <input
+                      type="hidden"
+                      name="_autoresponse"
+                      value="Acabos de Receber seu Email, Logo entraremos em contato novamnete!"
+                    ></input>
+                    <input
+                      type="hidden"
+                      name="_next"
+                      value="http://localhost:3000/"
+                    ></input>
                   </div>
 
                   <div>
                     <label class="sr-only" for="phone">
-                      Phone
+                      Telefone
                     </label>
                     <input
                       class="w-full p-3 text-sm border border-gray-200 rounded-lg"
                       placeholder="Phone Number"
                       type="tel"
-                      id="phone"
                       name="phone"
+                      id="phone"
                     />
                   </div>
                 </div>
@@ -124,18 +136,19 @@ const Contato = () => {
                       placeholder="Assunto"
                       type="text"
                       id="assunto"
-                      name="message"
+                      name="assunto"
+                      required
                     />
                   </div>
                 </div>
 
                 <div>
                   <label class="sr-only" for="message">
-                    Message
+                    Mensagem
                   </label>
                   <textarea
                     class="w-full p-3 text-sm border border-gray-200 rounded-lg"
-                    placeholder="Message"
+                    placeholder="Mensagem"
                     rows="8"
                     id="message"
                     name="message"

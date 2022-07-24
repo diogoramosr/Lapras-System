@@ -1,7 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 
-// create new context
+// Cria um novo contexto
 const Context = React.createContext({});
 
 export default function DashboardProvider({ children }) {
@@ -13,12 +13,11 @@ export default function DashboardProvider({ children }) {
     setOpen((prevState) => !prevState);
   }, []);
 
-  // set the html tag style overflow to hidden
   React.useEffect(() => {
     document.documentElement.style.overflow = "hidden";
   }, []);
 
-  // close side navigation when route changes
+  // Fecha a navegação lateral quando a rota mudar
   React.useEffect(() => {
     if (open) {
       router.events.on("routeChangeStart", () => setOpen(false));
@@ -31,14 +30,12 @@ export default function DashboardProvider({ children }) {
     };
   }, [open, router]);
 
-  // close side navigation on click outside
+  // Fecha a navegação lateral ao clicar fora
   React.useEffect(() => {
     const handleOutsideClick = (event) => {
       if (!ref.current?.contains(event.target)) {
-        if (open) return true;
-       
-        if (!open) return false;
-       
+        if (!open) return;
+        setOpen(false);
       }
     };
     window.addEventListener("click", handleOutsideClick);
@@ -52,7 +49,7 @@ export default function DashboardProvider({ children }) {
   );
 }
 
-// custom hook to consume all context values { open, ref, toggle }
+// Gancho personalizado para consumir todos os valores de contexto { open, ref, toggle }
 export function useToggle() {
   return React.useContext(Context);
 }
