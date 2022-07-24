@@ -14,10 +14,7 @@ ul, li, a, p, span, button{
     font-family: 'Roboto', sans-serif;
 }
 
-@layer base{
-    li{
-        @apply 
-        font-bold
-        hover:text-sky-700 duration-300
-    }
-}
+
+
+
+    

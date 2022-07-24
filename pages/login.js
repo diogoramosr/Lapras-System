@@ -48,6 +48,7 @@ export default function Login() {
                   class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
                   placeholder="Enter email"
                   onInput={(e)=>setUsername(e.target.value)}
+                  required
                 />
 
                 <span class="absolute inset-y-0 inline-flex items-center right-4">
@@ -81,6 +82,7 @@ export default function Login() {
                   class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
                   placeholder="Enter password"
                   onInput={(e)=>setSenha(e.target.value)}
+                  required
                 />
 
                 <span class="absolute inset-y-0 inline-flex items-center right-4">

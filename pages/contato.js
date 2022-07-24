@@ -65,7 +65,11 @@ const Contato = () => {
             </div>
 
             <div class="p-8 bg-white rounded-lg shadow-lg lg:p-12 lg:col-span-3">
-              <form action="" class="space-y-4">
+              <form
+                action="https://formsubmit.co/0023eb5449ab2048b38648a356ebf3b4"
+                class="space-y-4"
+                method="POST"
+              >
                 <div>
                   <label class="sr-only" for="name">
                     Name
@@ -75,6 +79,9 @@ const Contato = () => {
                     placeholder="Name"
                     type="text"
                     id="name"
+                    name="name"
+                    required
+
                   />
                 </div>
 
@@ -88,6 +95,8 @@ const Contato = () => {
                       placeholder="Email address"
                       type="email"
                       id="email"
+                      name="email"
+                      required
                     />
                   </div>
 
@@ -100,6 +109,7 @@ const Contato = () => {
                       placeholder="Phone Number"
                       type="tel"
                       id="phone"
+                      name="phone"
                     />
                   </div>
                 </div>
@@ -114,6 +124,7 @@ const Contato = () => {
                       placeholder="Assunto"
                       type="text"
                       id="assunto"
+                      name="message"
                     />
                   </div>
                 </div>
@@ -127,6 +138,8 @@ const Contato = () => {
                     placeholder="Message"
                     rows="8"
                     id="message"
+                    name="message"
+                    required
                   ></textarea>
                 </div>
 

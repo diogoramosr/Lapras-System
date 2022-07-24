@@ -1,6 +1,5 @@
 import Head from "next/head";
 import React, { useState, useEffect, useRef } from "react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 export default function Home() {
   const [state, setState] = useState(false);
