@@ -19,18 +19,9 @@ const Contato = () => {
           <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
             <div class="lg:py-12 lg:col-span-2 flex flex-col">
               <h1 className="font-bold text-5xl mb-4">Contate-nos</h1>
-              <p class="max-w-xl text-lg">
-                At the same time, the fact that we are wholly owned and totally
-                independent from manufacturer and other group control gives you
-                confidence that we will only recommend what is right for you.
-              </p>
+              <p class="max-w-xl text-lg pl-1">Envie-nos um mensagem.</p>
 
               <div class="mt-8">
-                <a href="" class="text-2xl font-bold text-pink-600">
-                  {" "}
-                  0151 475 4450{" "}
-                </a>
-
                 <address class="mt-2 not-italic inline-flex space-x-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +35,7 @@ const Contato = () => {
                       clipRule="evenodd"
                     />
                   </svg>{" "}
-                  <span>282 Kevin Brook, Imogeneborough, CA 58517</span>
+                  <span>Campinas - SP</span>
                 </address>
               </div>
 
@@ -59,7 +50,7 @@ const Contato = () => {
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>{" "}
-                  <span>laprasSystem@gmail.com</span>
+                  <span>lapras.system@gmail.com</span>
                 </address>
               </div>
             </div>
@@ -92,19 +83,21 @@ const Contato = () => {
                     </label>
                     <input
                       class="w-full p-3 text-sm border border-gray-200 rounded-lg"
-                      placeholder="Email address"
+                      placeholder="Email"
                       type="email"
                       id="email"
                       name="email"
                       required
                     />
 
-                    {/*ENVIA UMA RESPOSTA PARA O EMAIL || CRIAR UMA PAGINA DE REPOSTA QUANDO ENVIAR UM EMAIL*/}
+                    {/*ENVIA UMA RESPOSTA PARA O EMAIL || CRIA UMA PAGINA DE REPOSTA QUANDO ENVIAR UM EMAIL*/}
                     <input
                       type="hidden"
                       name="_autoresponse"
-                      value="Acabos de Receber seu Email, Logo entraremos em contato novamnete!"
-                    ></input>
+                      value="Recebemos seu Email, Logo entraremos em contato!"
+                    >
+
+                    </input>
                     <input
                       type="hidden"
                       name="_next"
@@ -118,7 +111,7 @@ const Contato = () => {
                     </label>
                     <input
                       class="w-full p-3 text-sm border border-gray-200 rounded-lg"
-                      placeholder="Phone Number"
+                      placeholder="Telefone"
                       type="tel"
                       name="phone"
                       id="phone"

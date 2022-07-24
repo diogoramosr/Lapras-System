@@ -1,18 +1,17 @@
 import React, { useState } from "react";
 import Head from "next/head";
 //import Cookies from "js-cookie";
-import { useRouter } from "next/router"
+import { useRouter } from "next/router";
 
 export default function Login() {
+  const [username, setUsername] = useState("");
+  const [senha, setSenha] = useState("");
 
-  const [username,setUsername] = useState("")
-  const [senha,setSenha] = useState("")
+  const rotas = useRouter();
 
-  const rotas = useRouter()
-
-  function handleSubmit(e){
-    e.preventDefault()
-/*
+  function handleSubmit(e) {
+    e.preventDefault();
+    /*
     const options = {
       expires: 10/24*60
     }
@@ -20,7 +19,7 @@ export default function Login() {
     Cookies.set("username",username, options)
     Cookies.set("senha",senha, options)*/
 
-    rotas.push("/dashboard")
+    rotas.push("/dashboard");
   }
 
   return (
@@ -34,7 +33,7 @@ export default function Login() {
           </div>
 
           <form action="" class="p-8 mt-3 mb-0 space-y-4 rounded-lg shadow-2xl">
-            <p class="text-lg font-medium">Sign in to your account</p>
+            <p class="text-lg font-medium">Inicie sessão na sua conta</p>
 
             <div>
               <label for="email" class="text-sm font-medium">
@@ -46,8 +45,8 @@ export default function Login() {
                   type="email"
                   name="username"
                   class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
-                  placeholder="Enter email"
-                  onInput={(e)=>setUsername(e.target.value)}
+                  placeholder="Email"
+                  onInput={(e) => setUsername(e.target.value)}
                   required
                 />
 
@@ -72,7 +71,7 @@ export default function Login() {
 
             <div>
               <label for="password" class="text-sm font-medium">
-                Password
+                Senha
               </label>
 
               <div class="relative mt-1">
@@ -80,8 +79,8 @@ export default function Login() {
                   type="password"
                   name="senha"
                   class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
-                  placeholder="Enter password"
-                  onInput={(e)=>setSenha(e.target.value)}
+                  placeholder="Senha"
+                  onInput={(e) => setSenha(e.target.value)}
                   required
                 />
 
@@ -109,45 +108,34 @@ export default function Login() {
                 </span>
               </div>
             </div>
-            <div class="text-right">
-              <a href="#" class="text-blue-400">
-                Forgot your password?
+            <div>
+              <a href="#" class="text-sky-600">
+                Esqueceu a senha ?
               </a>
-            </div>
-
-            <button
-              type="submit"
-              class="block w-full px-5 py-3 text-sm font-medium text-white bg-indigo-600 rounded-lg"
-              onClick={handleSubmit}
-            >
-              Sign in
-            </button>
-            <div class="mt-6 ">
-              <div class="my-2">
-                <div class="w-full flex items-center">
-                  <input
-                    type="checkbox"
-                    name="rememberMe"
-                    class="appearance-none w-6 h-6 border border-gray-300 rounded-sm outline-none cursor-pointer  checked:bg-sky-700"
-                    checked=""
-                  />
-                  <label class="ml-2 text-sm" for="rememberMe">
-                    Remember this device
-                  </label>
-                </div>
+              <div className="flex items-center mt-3">
+                <input
+                  type="checkbox"
+                  name="rememberMe"
+                  class="appearance-none w-6 h-6 border border-gray-300 rounded-sm outline-none cursor-pointer  checked:bg-sky-700"
+                  checked=""
+                />
+                <label class="ml-2 text-sm" for="rememberMe">
+                  Lembrar de mim
+                </label>
               </div>
             </div>
-            <p class="text-sm mt-3 text-left">
-              By continuing you accept our
-              <a href="#" class="text-blue-400 ml-1">
-                Terms of Use
-              </a>{" "}
-              and
-              <a href="#" class="text-blue-400 ml-1">
-                Privacy Policy
-              </a>
-              .
-            </p>
+            <div className="flex justify-end">
+              <button
+                type="submit"
+                class="block w-32 px-5 py-3 text-sm font-medium  text-white bg-sky-700 rounded-lg"
+                onClick={handleSubmit}
+              >
+                Login
+              </button>
+            </div>
+            <div class="mt-6 ">
+              <div class="my-2"></div>
+            </div>
           </form>
           <div>
             <p>{username}</p>

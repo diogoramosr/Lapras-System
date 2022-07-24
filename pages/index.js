@@ -13,15 +13,16 @@ export default function Home() {
         <title>Lapras System - Home</title>
       </Head>
       <Navbar />
-      <section className="mt-24 mx-auto max-w-screen-xl pb-4 px-4 sm:px-8">
+      <section className="mt-20 mx-auto max-w-screen-xl pb-4 px-4 sm:px-8">
         <div className="text-center space-y-4">
-          <h1 className="text-black font-bold text-4xl md:text-5xl">
-            Evolução é se preocupar com o meio ambiente.
-          </h1>
-          <p className="text-gray-500 max-w-xl mx-auto text-2xl leading-relaxed">
+          <p className="text-gray-500 max-w-xl mx-auto text-2xl leading-relaxed font-semibold">
             Para conscientização e vida.
-            <br /> 
-            <span className="text-sky-700"> Lapras System</span>
+          </p>
+          <h1 className="font-bold text-5xl md:text-7xl text-sky-700">
+            Lapras Sytem
+          </h1>
+          <p className="text-black max-w-3xl mx-auto text-4xl leading-relaxed font-semibold">
+            Evolução é se preocupar com o meio ambiente.
           </p>
         </div>
         <div className="mt-12 justify-center items-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex">
