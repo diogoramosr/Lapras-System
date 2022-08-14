@@ -1,27 +1,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
-//import Cookies from "js-cookie";
-import { useRouter } from "next/router";
 
 export default function Login() {
-  const [username, setUsername] = useState("");
-  const [senha, setSenha] = useState("");
-
-  const rotas = useRouter();
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    /*
-    const options = {
-      expires: 10/24*60
-    }
-
-    Cookies.set("username",username, options)
-    Cookies.set("senha",senha, options)*/
-
-    rotas.push("/dashboard");
-  }
-
   return (
     <>
       <Head></Head>
@@ -32,7 +12,7 @@ export default function Login() {
             <img src="images/logo.png" className="" width={240} />
           </div>
 
-          <form action="" class="p-8 mt-3 mb-0 space-y-4 rounded-lg shadow-2xl">
+          <form action="/api/login" method="post" class="p-8 mt-3 mb-0 space-y-4 rounded-lg shadow-2xl">
             <p class="text-lg font-medium">Inicie sessão na sua conta</p>
 
             <div>
@@ -43,10 +23,9 @@ export default function Login() {
               <div class="relative mt-1">
                 <input
                   type="email"
-                  name="username"
+                  name="email"
                   class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
                   placeholder="Email"
-                  onInput={(e) => setUsername(e.target.value)}
                   required
                 />
 
@@ -77,10 +56,9 @@ export default function Login() {
               <div class="relative mt-1">
                 <input
                   type="password"
-                  name="senha"
+                  name="password"
                   class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
                   placeholder="Senha"
-                  onInput={(e) => setSenha(e.target.value)}
                   required
                 />
 
@@ -128,7 +106,7 @@ export default function Login() {
               <button
                 type="submit"
                 class="block w-32 px-5 py-3 text-sm font-medium  text-white bg-sky-700 rounded-lg"
-                onClick={handleSubmit}
+                value='Login'
               >
                 Login
               </button>
@@ -137,10 +115,6 @@ export default function Login() {
               <div class="my-2"></div>
             </div>
           </form>
-          <div>
-            <p>{username}</p>
-            <p>{senha}</p>
-          </div>
         </div>
       </div>
     </>

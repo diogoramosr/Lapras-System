@@ -1,13 +1,16 @@
-import login from "../../utils/userDAO"
+import connect from "../../utils/mongodb";
+import User from '../../model/schema'
 
-export default async function handler(req, res){
+connect()
 
-    const user = {
-        username: req.body.username,
-        senha: req.body.senha
+export default async function handler(req,res){
+
+    const {email,password}=req.body
+    const user = await User.findOne({email,password})
+    if(!user){
+        res.redirect('/login')
     }
-
-    const response = await login(user.username, user.senha)
-
-    res.status(200).json(response)
+    else{
+        res.redirect('/dashboard')
+    }
 }
