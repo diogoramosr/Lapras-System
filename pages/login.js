@@ -9,7 +9,9 @@ export default function Login() {
       <div class="max-w-screen-xl px-4 py-6 mx-auto sm:px-6 lg:px-8">
         <div class="max-w-lg mx-auto">
           <div className="flex justify-center items-center">
-            <img src="images/logo.png" className="" width={240} />
+            <a href="/">
+            <img src="images/logo.png" className="" width={240}/>
+            </a>
           </div>
 
           <form action="/api/login" method="post" class="p-8 mt-3 mb-0 space-y-4 rounded-lg shadow-2xl">
