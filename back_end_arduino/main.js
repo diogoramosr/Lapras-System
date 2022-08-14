@@ -1,9 +1,10 @@
 //Responsavel por conectar ao arduino
 const { SerialPort } = require("serialport");
-const { ReadParser } = require("@serialport/parser-readline");
+const { ReadlineParser } = require("@serialport/parser-readline");
+const { ReadyParser } = require('@serialport/parser-ready')
 const arduino = new SerialPort({path:"COM4", baudRate: 9600 });
-//const parser = port.pipe(new ReadlineParser({ delimiter: '\r\n' }))
-//const parser = arduino.pipe(new ReadParser({ delimiter: "READY" }));
+const parserLine = arduino.pipe(new ReadlineParser({ delimiter: '\r\n' }))
+const parserRead = arduino.pipe(new ReadyParser({ delimiter: "READY" }));
 
 //Funções para teste
 
@@ -44,13 +45,13 @@ void loop() {
 */
 
 //Testes de comunicação de dados
-parser.on("ready", () => {
+parserRead.on("ready", () => {
     console.log('Sequence received');
 });
 
-parser.on("data", data => {
+parserLine.on("data", data => {
     console.log(data);
 });
 
-//parser.on('data', console.log());
+parserRead.on('data', console.log);
 
