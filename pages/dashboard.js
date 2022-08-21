@@ -1,12 +1,12 @@
 import React from "react";
 import Head from "next/head";
-import Sidebar from "../components/dashboard/Sidebar";
+import Admin from "../components/Admin";
 
-export default function Dashboard() {
+export default function dashboard() {
   return (
     <>
       <Head></Head>
-      <Sidebar />
+      <Admin />
     </>
   );
 }
