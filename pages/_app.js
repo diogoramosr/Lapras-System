@@ -1,7 +1,32 @@
-import '../styles/globals.css'
+// import { useRouter } from "next/router";
+// import { useEffect } from "react";
+// import NProgress from "nprogress";
+
+import "../styles/globals.css";
+
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  /* 
+  const router = useRouter();
+
+  NProgress.configure({
+    easing: "facility ",
+    speed: 400,
+    trickleSpeed: 4,
+    showSpinner: false,
+    trickleRate: 0.02,
+  });
+
+  useEffect(() => {
+    router.events.on("routeChangeStart", NProgress.start());
+    router.events.on("routeChangeComplete", () => {
+      NProgress.done();
+    });
+    router.events.on("routeChangeError", () => NProgress.done());
+  }, []);
+  */
+
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default MyApp;
