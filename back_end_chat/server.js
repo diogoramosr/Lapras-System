@@ -8,21 +8,21 @@ const porta = 3001;
 
 const io = new Server(server, {
     cors: {
-        origin: 'https://localhost:3000',
+        origin: "http://localhost:3000",
     }
 });
 
 io.on('connection', (socket) => {
-    console.log(`Usuário Conectado: ${socket.id}`);
+    console.log(`Usuario Conectado: ${socket.id}`);
 
     socket.on('entrou_na_sala', ({ sala, nome }) => {
         socket.join(sala);
     });
 
     socket.on('enviou_mensagem', ({ sala, nome, mensagem }) => {
-        socket.to(sala).emit('recebeu_mensagem', { nome, mensagem });
-        /*const data = { nome: nome, mensagem: mensagem };
-        socket.to(sala).emit('recebeu_mensagem', data);*/
+        //socket.to(sala).emit('recebeu_mensagem', { nome, mensagem });
+        const data = { nome: nome, mensagem: mensagem };
+        socket.to(sala).emit('recebeu_mensagem', data);
     });
 });
 
