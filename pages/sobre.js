@@ -1,13 +1,13 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ChatTawk from "../components/ChatTawk";
 
 export default function Sobre() {
   return (
     <>
       <Head></Head>
       <Navbar />
-
       <section class="bg-gray-50">
         <div class="max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex">
           <div class="max-w-2xl mx-auto text-center">
@@ -525,8 +525,8 @@ export default function Sobre() {
           </div>
         </div>
       </section>
-
       <Footer />
+      <ChatTawk />
     </>
   );
 }

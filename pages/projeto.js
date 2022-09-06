@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ChatTawk from "../components/ChatTawk";
 
 export default function Projeto() {
   return (
@@ -397,6 +398,7 @@ export default function Projeto() {
         </div>
       </div>
       <Footer />
+      <ChatTawk />
     </>
   );
 }
