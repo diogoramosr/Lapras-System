@@ -19,16 +19,16 @@ const ActiveLink = ({
   const [className, setClassName] = useState(childClassName)
 
   useEffect(() => {
-    // Check if the router fields are updated client-side
+    // Verifica se os campos do roteador estão atualizados do lado do cliente
     if (isReady) {
-      // Dynamic route will be matched via props.as
-      // Static route will be matched via props.href
+      // A rota dinâmica será correspondida via props.as
+      // A rota estática será correspondida via props.href
       const linkPathname = new URL(
         (props.as || props.href) as string,
         location.href
       ).pathname
 
-      // Using URL().pathname to get rid of query and hash
+      // Usando URL().pathname para se livrar de query e hash
       const activePathname = new URL(asPath, location.href).pathname
 
       const newClassName =

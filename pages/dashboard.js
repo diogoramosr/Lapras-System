@@ -4,9 +4,9 @@ import Admin from "../components/Admin";
 
 export default function dashboard() {
   return (
-    <>
+    <div>
       <Head></Head>
       <Admin />
-    </>
+    </div>
   );
 }

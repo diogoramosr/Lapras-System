@@ -2,18 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+@layer base{
+    body{
+        @apply dark:bg-red-300 dark:text-blue-100
+    }
+}
+
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Poppins', sans-serif;
 }
-ul, li, a, p, span, button{
+
+ul,
+li,
+a,
+p,
+span,
+button {
     font-family: 'Roboto', sans-serif;
 }
 
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
 
+    100% {
+        opacity: 1;
+    }
+}
 
-    
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation: fadeIn 1s ease-in-out;
+    -moz-animation: fadeIn 1s ease-in-out;
+    -o-animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+
