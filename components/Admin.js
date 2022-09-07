@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "../public/images/logo.png";
+import Link from "next/link";
+import ActiveLink from "../components/ActiveLink.tsx";
 import Arduino from "../public/images/arduino.png";
 
 import Head from "next/head";
@@ -20,24 +22,24 @@ import {
 export default function Admin() {
   const [open, setOpen] = useState(true);
   const [submenuOpen, setSubmenuOpen] = useState(false);
-  const Menus = [
-    {
-      title: "Dashboard",
-      submenu: true,
-      submenuItems: [{ title: "Home", icon: <RiHome2Fill /> }, {}],
-    },
-    {
-      title: "Ao vivo",
-      icon: <RiLiveFill />,
-      submenu: true,
-      submenuItems: [
-        { title: "COTUCA", icon: <BsFillCameraVideoFill /> },
-        { title: "Amazonia", icon: <BsFillCameraVideoFill /> },
-      ],
-    },
-    { title: "Histórico", icon: <RiHistoryLine /> },
-    { title: "Calendário", icon: <RiCalendarFill />, Link: "/calendar" },
-  ];
+  // const Menus = [
+  //   {
+  //     title: "Dashboard",
+  //     submenu: true,
+  //     submenuItems: [{ title: "Home", icon: <RiHome2Fill /> }],
+  //   },
+  //   {
+  //     title: "Ao vivo",
+  //     icon: <RiLiveFill />,
+  //     submenu: true,
+  //     submenuItems: [
+  //       { title: "COTUCA", icon: <BsFillCameraVideoFill /> },
+  //       { title: "Amazonia", icon: <BsFillCameraVideoFill /> },
+  //     ],
+  //   },
+  //   { title: "Histórico", icon: <RiHistoryLine /> },
+  //   { title: "Calendário", icon: <RiCalendarFill />, ActiveLink: href="/calendar" },
+  // ];
 
   const [profile, setProfile] = useState(false);
   const [notification, setNotification] = useState(false);
@@ -60,35 +62,32 @@ export default function Admin() {
               <hr></hr>
               <div class="mt-2 -mx-4 relative overflow-y-auto overflow-x-hidden h-[85vh]">
                 <ul class="space-y-2 mb-9 px-4 mt-4">
-                  {Menus.map((menu, index) => (
-                    <>
-                      <li
-                        key={index}
-                        className={`text-black text-sm flex items-center gap-x-4 cursor-pointer p-2.5 hover:bg-white hover:shadow-md rounded-md ${
-                          menu.spacing ? "mt-9" : "mt-2"
-                        } mt-2`}
-                      >
-                        <span className="text-xl bg-white shadow-md rounded-md p-1.5 block float-left">
-                          {menu.icon ? menu.icon : <RiDashboardFill />}
-                        </span>
-                        <span
-                          className={`text-md font-semibold flex-1 duration-200 ${
-                            !open && "hidden"
-                          }`}
+                  <li className="hover:shadow-md hover:bg-white active:bg-white active:shadow-md rounded-md">
+                    <ActiveLink activeClassName="active" href="/">
+                      <div className="text-black text-sm flex items-center gap-x-4 cursor-pointer p-2.5">
+                        <RiDashboardFill />
+                        <a
+                          className="nav-link"
+                          class="text-md font-semibold flex-1 duration-200"
                         >
-                          {menu.title}
-                        </span>
-                        {menu.submenu && open && (
-                          <BsChevronDown
-                            className={`${
-                              submenuOpen && "rotate-180"
-                            } duration-200`}
-                            onClick={() => setSubmenuOpen(!submenuOpen)}
-                          />
-                        )}
-                      </li>
-                    </>
-                  ))}
+                          Home
+                        </a>
+                      </div>
+                    </ActiveLink>
+                  </li>
+                  <li className="hover:shadow-md hover:bg-white rounded-md">
+                    <ActiveLink href="/calendar">
+                      <div className="text-black text-sm flex items-center gap-x-4 cursor-pointer p-2.5">
+                        <RiDashboardFill />
+                        <a
+                          className="nav-link"
+                          class="text-md font-semibold flex-1 duration-200"
+                        >
+                          Home
+                        </a>
+                      </div>
+                    </ActiveLink>
+                  </li>
                 </ul>
               </div>
             </nav>
@@ -261,7 +260,6 @@ export default function Admin() {
                       </div>
                     </div>
                   </div>
-
                   <div class="w-full max-w-full px-3 lg:w-5/12 lg:flex-none relative">
                     <div class="border-black/12.5 shadow-md relative flex h-full min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white bg-clip-border p-4">
                       <div class="relative h-full overflow-hidden bg-cover rounded-xl">
