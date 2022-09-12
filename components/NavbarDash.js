@@ -11,9 +11,9 @@ export default function NavbarDash(props) {
     const currentTheme = theme === "system" ? systemTheme : theme;
     if (currentTheme === "dark") {
       return (
-        <Button
-          className="bg-gray-200 dark:bg-gray-600"
+        <Button className="bg-gray-200 dark:bg-gray-600"
           onClick={() => setTheme("light")}
+          
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,8 @@ export default function NavbarDash(props) {
       );
     } else {
       return (
-        <Button className="bg-gray-200" onClick={() => setTheme("dark")}>
+        <Button className="bg-gray-200"
+        onClick={() => setTheme("dark")}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -46,7 +47,7 @@ export default function NavbarDash(props) {
   };
   return (
     <>
-      <div class="sticky top-5 h-16 lg:py-2.5">
+      <div class="top-5 h-16 lg:py-2.5">
         <div class="px-6 flex items-center justify-between space-x-4 2xl:container">
           <h5 hidden class="text-2xl font-medium lg:block fadeIn">
             {props.title}

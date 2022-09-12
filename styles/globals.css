@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    body{
-        @apply dark:bg-red-300 dark:text-blue-100
-    }
-}
+
 
 
 * {

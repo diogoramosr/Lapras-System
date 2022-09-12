@@ -37,23 +37,25 @@ export default function Sidebar() {
 
   return (
     <>
-      <aside class="ml-[-100%] fixed z-10 top-0 pb-3 px-6 w-full flex flex-col  justify-between h-screen transition duration-300 md:w-4/12 lg:ml-0 lg:w-[25%] xl:w-[20%] 2xl:w-[15%] bg-red-600">
+      <aside class="ml-[-100%] fixed z-10 top-0 pb-3 px-6 w-full flex flex-col  justify-between h-screen transition duration-300 md:w-4/12 lg:ml-0 lg:w-[25%] xl:w-[20%] 2xl:w-[15%] bg-zinc-50 dark:bg-[#121212]">
         <div class="z-20 fixed top-0 -left-96 lg:left-0 h-screen w-9/12 lg:w-72 peer-focus:left-0 peer:transition ease-out delay-150 duration-200">
           <nav role="navigation" class="p-6">
             <div class="flex items-center gap-4 pb-4">
+              <a href="/">
               <Image
                 alt="Lapras System logo"
                 src={Logo}
                 width={200}
                 height={80}
               />
+              </a>
             </div>
             <hr></hr>
             <div class="mt-2 -mx-4 relative overflow-y-auto overflow-x-hidden h-[85vh]">
               <ul class="space-y-2 mb-9 px-4 mt-4">
                 {Menus.map((nav) => (
                   <>
-                    <li className="hover:shadow-md hover:bg-white active:bg-white active:shadow-md rounded-md">
+                    <li className="hover:shadow-md hover:bg-white dark:hover:bg-indigo-600 active:bg-white active:shadow-md rounded-md">
                       <span className="text-2xl block float-left">
                         {nav.icon ? nav.icon : <RiDashboardFill />}
                       </span>
