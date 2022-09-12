@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
-    <>
+    <div className="dark:bg-[#121212] bg-white h-full">
       <Head>
         <meta charSet="UTF-8" />
         <meta name="robots" content="index, follow" />
@@ -40,6 +40,6 @@ export default function Home() {
           </a>
         </div>
       </section>
-    </>
-  );
+    </div>
+  )
 }

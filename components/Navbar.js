@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <>
     <Head></Head>
-      <nav className="bg-[#121212] w-full top-0 z-20">
+      <nav className="bg-black w-full top-0 z-20">
         <div className="items-center px-4 max-w-screen-xl mx-auto h-full lg:flex lg:px-8">
           <div className="flex items-center justify-between py-3 lg:py-4 lg:block">
             <a href="/">
@@ -102,21 +102,21 @@ export default function Home() {
             }`}
           >
             <div>
-              <ul className="flex flex-col text-center font-bold space-x-0 lg:space-x-6 lg:flex-row">
+              <ul className="text-white flex flex-col text-center font-bold space-x-0 lg:space-x-6 lg:flex-row">
                 <li className="lg:mt-0 lg:mb-0 ">
-                  <a href="/" className="text-white hover:text-sky-700">
+                  <a href="/" className=" hover:text-sky-700">
                     Home
                   </a>
                 </li>
                 <li className="mt-8 lg:mt-0 lg:mb-0">
-                  <a href="/projeto" className="text-white hover:text-sky-700">
+                  <a href="/projeto" className=" hover:text-sky-700">
                     Projeto
                   </a>
                 </li>
                 <li className="mt-8 lg:mt-0 lg:mb-0">
                   <a
                     href="/sobre"
-                    className="text-white hover:text-sky-700"
+                    className=" hover:text-sky-700"
                   >
                     Sobre
                   </a>
@@ -124,7 +124,7 @@ export default function Home() {
                 <li className="mt-8 lg:mt-0 lg:mb-0">
                   <a
                     href="/contato"
-                    className="text-white hover:text-sky-700"
+                    className=" hover:text-sky-700"
                   >
                     Contato
                   </a>
@@ -132,7 +132,7 @@ export default function Home() {
                 <li className="mt-8 lg:mt-0">
                   <a
                     href="/login"
-                    className="py-3 px-4 text-center text-white bg-sky-700 hover:bg-gradient-to-r from-sky-700 to-blue-500 rounded-md shadow block lg:inline"
+                    className="py-3 px-4 text-center bg-sky-700 hover:bg-gradient-to-r from-sky-700 to-blue-500 rounded-md shadow block lg:inline"
                   >
                     Login
                   </a>

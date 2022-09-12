@@ -14,7 +14,9 @@ export default function Projeto() {
         <meta name="author" content="Lapras System" />
         <title>Lapras System - Projeto</title>
       </Head>
-      <Navbar />
+      <div className="bg-black text-white">
+      <Navbar className="bg-black"/>
+      </div>
       <div className="h-full">
         <section class="relative pt-36 lg:pb-14 overflow-hidden bg-black w-full">
           <img

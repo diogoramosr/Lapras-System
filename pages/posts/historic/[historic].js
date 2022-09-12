@@ -6,9 +6,9 @@ const HistoricPage = () => {
   const { asPath } = useRouter();
   return (
     <>
-      <div class="m-0 font-sans antialiased font-normal text-base leading-default bg-zinc-50 dark:bg-[#121212] h-screen">
+      <div class="m-0 font-sans antialiased font-normal text-base leading-default bg-zinc-50 dark:bg-gray-600 h-screen">
         <Sidebar />
-        <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] bg-red-800 dark:bg-[#121212]">
+        <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] bg-red-800 dark:bg-gray-600">
           <NavbarDash title="Histórico" />
         </div>
       </div>
