@@ -1,3 +1,4 @@
+/*
 //Responsavel por conectar ao arduino
 const { SerialPort } = require("serialport");
 const { ReadlineParser } = require("@serialport/parser-readline");
@@ -42,7 +43,7 @@ void loop() {
         }
     }
 }
-*/
+
 
 //Testes de comunicação de dados
 parserRead.on("ready", () => {
@@ -54,4 +55,56 @@ parserLine.on("data", data => {
 });
 
 parserRead.on('data', console.log);
+*/
 
+const {SerialPort} = require('serialport');
+
+let express = require('express');
+let app = express()
+let server = require('http').Server(app)
+let porta = 3001;
+let dadosArduino;
+
+let BoundRate = 9600;
+
+const Serial = new SerialPort({ path: '/dev/cu.usbserial-2210', baudRate: 9600 })
+
+Serial.on('error', function(err){
+    console.error('Erro : '+ err.message);
+});
+
+Serial.on('open', function(){
+    console.log('Porta serial Disponivel');
+});
+
+Serial.on('data', function(data){
+    console.log(data.toString('utf-8'));
+    dadosArduino = data
+});
+
+//server.listen(porta, () => console.log('escutando na porta :'+ porta));
+
+app.get('/', function(req,res){
+    res.send('Hello World');
+});
+
+/*
+app.get('/temperatura', function(req,res){
+    //Serial.write('T');
+    //res.writeHead(200,{'Content-Type':"text/json; charset=utf-8"});
+    Serial.on('data', function(data){
+        //res.json(data.toString());
+        console.log(data.toString('utf-8'));
+        res.json(data.toString())
+    })
+})*/
+
+app.get('/temperatura', function(req,res){
+    /*Serial.on('data', function(data){
+        //Serial.emit('data', {data: data.toString('utf-8')})
+        return res.end(data.toString("utf-8"))
+    })*/
+    res.end(dadosArduino)
+})
+
+server.listen(porta, () => console.log('escutando na porta: '+ porta));
