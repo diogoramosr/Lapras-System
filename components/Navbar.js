@@ -102,7 +102,7 @@ export default function Home() {
             }`}
           >
             <div>
-              <ul className="text-white flex flex-col text-center font-bold space-x-0 lg:space-x-6 lg:flex-row">
+              <ul className="text-white flex flex-col text-center font-bold space-x-0 lg:space-x-6 lg:flex-row items-center">
                 <li className="lg:mt-0 lg:mb-0 ">
                   <a href="/" className=" hover:text-sky-700">
                     Home

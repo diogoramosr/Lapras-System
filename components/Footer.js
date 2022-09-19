@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <section class="relative py-24 overflow-hidden bg-zinc-50">
+      <section class="relative py-24 overflow-hidden dark:bg-[#303030] bg-white">
         <div class="relative z-10 container mx-auto px-4">
           <div class="flex flex-wrap -m-6">
             <div class="w-full md:w-1/2 lg:w-5/12 p-6">
@@ -13,17 +13,17 @@ const Footer = () => {
                     class="mb-10"
                     src="images/logo.png"
                     alt="Logo Lapras System"
-                    width={200}
+                    width={220}
                     height={130}
                   />
                 </div>
                 <div>
-                  <p class="text-gray-600 text-sm">
+                  <p class="dark:text-gray-300 text-gray-600 text-sm">
                     &copy; Copyright 2022. All Rights Reserved Lapras System.
                   </p>
                 </div>
 
-                <div class="flex mt-6 space-x-6 text-black">
+                <div class="flex mt-6 space-x-6 dark:text-white text-black">
                   <a
                     class="hover:opacity-75"
                     href=""
@@ -93,13 +93,13 @@ const Footer = () => {
             </div>
             <div class="w-full md:w-1/2 lg:w-2/12 p-6">
               <div class="h-full">
-                <h3 class="mb-9 font-heading font-semibold text-xs text-black uppercase tracking-px">
+                <h3 class="mb-9 font-heading font-semibold text-xs dark:text-white text-black uppercase tracking-px">
                   Company
                 </h3>
-                <ul>
+                <ul class="dark:text-gray-300 text-gray-600">
                   <li class="mb-4">
                     <a
-                      class="font-heading font-medium text-base text-gray-600 hover:opacity-75"
+                      class="font-heading font-medium text-base hover:opacity-75"
                       href="#"
                     >
                       Features
@@ -107,7 +107,7 @@ const Footer = () => {
                   </li>
                   <li class="mb-4">
                     <a
-                      class="font-heading font-medium text-base text-gray-600 hover:opacity-75"
+                      class="font-heading font-medium text-base hover:opacity-75"
                       href="#"
                     >
                       Pricing
@@ -115,7 +115,7 @@ const Footer = () => {
                   </li>
                   <li class="mb-4">
                     <a
-                      class="font-heading font-medium text-base text-gray-600 hover:opacity-75"
+                      class="font-heading font-medium text-base hover:opacity-75"
                       href="#"
                     >
                       Affiliate Program
@@ -123,7 +123,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      class="font-heading font-medium text-base text-gray-600 hover:opacity-75"
+                      class="font-heading font-medium text-base hover:opacity-75"
                       href="#"
                     >
                       Press Kit
@@ -134,13 +134,13 @@ const Footer = () => {
             </div>
             <div class="w-full md:w-1/2 lg:w-2/12 p-6">
               <div class="h-full">
-                <h3 class="mb-9 font-heading font-semibold text-xs text-black uppercase tracking-px">
+                <h3 class="mb-9 font-heading font-semibold text-xs dark:text-white text-black uppercase tracking-px">
                   Support
                 </h3>
-                <ul>
+                <ul class="dark:text-gray-300 text-gray-600">
                   <li class="mb-4">
                     <a
-                      class="font-heading font-medium text-base text-gray-600 hover:opacity-75"
+                      class="font-heading font-medium text-base hover:opacity-75"
                       href="#"
                     >
                       Account
@@ -148,7 +148,7 @@ const Footer = () => {
                   </li>
                   <li class="mb-4">
                     <a
-                      class="font-heading font-medium text-base text-gray-600 hover:opacity-75"
+                      class="font-heading font-medium text-base hover:opacity-75"
                       href="#"
                     >
                       Help
@@ -156,7 +156,7 @@ const Footer = () => {
                   </li>
                   <li class="mb-4">
                     <a
-                      class="font-heading font-medium text-base text-gray-600 hover:opacity-75"
+                      class="font-heading font-medium text-base hover:opacity-75"
                       href="#"
                     >
                       Contact Us
@@ -164,7 +164,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      class="font-heading font-medium text-base text-gray-600 hover:opacity-75"
+                      class="font-heading font-medium text-base hover:opacity-75"
                       href="#"
                     >
                       Customer Support
@@ -175,13 +175,13 @@ const Footer = () => {
             </div>
             <div class="w-full md:w-1/2 lg:w-3/12 p-6">
               <div class="h-full">
-                <h3 class="mb-9 font-heading font-semibold text-xs text-black uppercase tracking-px">
+                <h3 class="mb-9 font-heading font-semibold text-xs dark:text-white text-black uppercase tracking-px">
                   Legals
                 </h3>
-                <ul>
+                <ul class="dark:text-gray-300 text-gray-600">
                   <li class="mb-4">
                     <a
-                      class="font-heading font-medium text-base text-gray-600 hover:opacity-75"
+                      class="font-heading font-medium text-base hover:opacity-75"
                       href="#"
                     >
                       Terms &amp; Conditions
@@ -189,7 +189,7 @@ const Footer = () => {
                   </li>
                   <li class="mb-4">
                     <a
-                      class="font-heading font-medium text-base text-gray-600 hover:opacity-75"
+                      class="font-heading font-medium text-base hover:opacity-75"
                       href="#"
                     >
                       Privacy Policy
@@ -197,7 +197,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      class="font-heading font-medium text-base text-gray-600 hover:opacity-75"
+                      class="font-heading font-medium text-base hover:opacity-75"
                       href="#"
                     >
                       Licensing

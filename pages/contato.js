@@ -10,11 +10,11 @@ import {
 
 const Contato = () => {
   return (
-    <div className="">
+    <div className="dark:bg-[#000] h-screen">
       <Head></Head>
       <Navbar />
 
-      <section class="bg-gray-100">
+      <section class="dark:bg-[#000] bg-gray-100">
         <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
             <div class="lg:py-12 lg:col-span-2 flex flex-col">
@@ -55,7 +55,7 @@ const Contato = () => {
               </div>
             </div>
 
-            <div class="p-8 bg-white rounded-lg shadow-lg lg:p-12 lg:col-span-3">
+            <div class="p-8 dark:bg-[#121212] bg-white rounded-lg shadow-lg lg:p-12 lg:col-span-3">
               <form
                 action="https://formsubmit.co/0023eb5449ab2048b38648a356ebf3b4"
                 method="POST"
@@ -67,7 +67,7 @@ const Contato = () => {
                     Nome
                   </label>
                   <input
-                    class="w-full p-3 text-sm border border-gray-200 rounded-lg"
+                    class="w-full p-3 text-sm border bg-gray-200 border-gray-200 rounded-lg"
                     placeholder="Nome"
                     type="text"
                     name="name"
@@ -82,7 +82,7 @@ const Contato = () => {
                       Email
                     </label>
                     <input
-                      class="w-full p-3 text-sm border border-gray-200 rounded-lg"
+                      class="w-full p-3 text-sm border bg-gray-200 border-gray-200 rounded-lg"
                       placeholder="Email"
                       type="email"
                       id="email"
@@ -110,7 +110,7 @@ const Contato = () => {
                       Telefone
                     </label>
                     <input
-                      class="w-full p-3 text-sm border border-gray-200 rounded-lg"
+                      class="w-full p-3 text-sm border bg-gray-200 border-gray-200 rounded-lg"
                       placeholder="Telefone"
                       type="tel"
                       name="phone"
@@ -125,7 +125,7 @@ const Contato = () => {
                       Assunto
                     </label>
                     <input
-                      class="w-full p-3 text-sm border border-gray-200 rounded-lg"
+                      class="w-full p-3 text-sm border bg-gray-200 border-gray-200 rounded-lg"
                       placeholder="Assunto"
                       type="text"
                       id="assunto"
@@ -140,7 +140,7 @@ const Contato = () => {
                     Mensagem
                   </label>
                   <textarea
-                    class="w-full p-3 text-sm border border-gray-200 rounded-lg"
+                    class="w-full p-3 text-sm border bg-gray-200 border-gray-200 rounded-lg"
                     placeholder="Mensagem"
                     rows="8"
                     id="message"

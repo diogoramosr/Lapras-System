@@ -3,10 +3,10 @@ import Head from "next/head";
 
 export default function Login() {
   return (
-    <>
+    <div class="dark:bg-black h-screen">
       <Head></Head>
 
-      <div class="max-w-screen-xl px-4 py-6 mx-auto sm:px-6 lg:px-8">
+      <div class="max-w-screen-xl px-4 py-6 mx-auto sm:px-6 lg:px-8 ">
         <div class="max-w-lg mx-auto">
           <div className="flex justify-center items-center">
             <a href="/">
@@ -14,7 +14,7 @@ export default function Login() {
             </a>
           </div>
 
-          <form action="/api/login" method="post" class="p-8 mt-3 mb-0 space-y-4 rounded-lg shadow-2xl">
+          <form action="/api/login" method="post" class="p-8 mt-3 mb-0 space-y-4 rounded-lg shadow-2xl dark:bg-[#121212]">
             <p class="text-lg font-medium">Inicie sessão na sua conta</p>
 
             <div>
@@ -34,7 +34,7 @@ export default function Login() {
                 <span class="absolute inset-y-0 inline-flex items-center right-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="w-5 h-5 text-gray-400"
+                    class="w-5 h-5 text-white"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -67,7 +67,7 @@ export default function Login() {
                 <span class="absolute inset-y-0 inline-flex items-center right-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="w-5 h-5 text-gray-400"
+                    class="w-5 h-5 text-white"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -119,6 +119,6 @@ export default function Login() {
           </form>
         </div>
       </div>
-    </>
+    </div>
   );
 }

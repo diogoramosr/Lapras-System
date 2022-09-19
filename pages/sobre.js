@@ -8,10 +8,10 @@ export default function Sobre() {
     <>
       <Head></Head>
       <Navbar />
-      <section class="bg-gray-50">
+      <section class="dark:bg-[#303030] bg-white">
         <div class="max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex">
           <div class="max-w-2xl mx-auto text-center">
-            <h1 class="text-3xl font-extrabold sm:text-5xl">
+            <h1 class="text-3xl font-extrabold sm:text-5xl dark:text-white text-black">
               O Inicio de tudo.
               <strong class="font-extrabold w-[700px] text-sky-700 sm:block">
                 A criação do Lapras System.
@@ -23,10 +23,10 @@ export default function Sobre() {
 
       <section className="mt-14">
         <div className="container px-6 py-10 mx-auto">
-          <h2 class="text-center text-black font-semibold tracking-wide uppercase">
+          <h2 class="text-center dark:text-white text-black font-semibold tracking-wide uppercase">
             Características
           </h2>
-          <p class="mt-2 text-3xl leading-8 text-center font-extrabold tracking-tight text-black sm:text-4xl">
+          <p class="mt-2 text-3xl leading-8 text-center font-extrabold tracking-tight dark:text-white text-black sm:text-4xl">
             Por que o Lapras System?
           </p>
           <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-2">
@@ -53,10 +53,10 @@ export default function Sobre() {
                     Latest
                   </span>
                 </h3>
-                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-400">
                   Released on January 13th, 2022
                 </time>
-                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-300">
                   Get access to over 20+ pages including a dashboard layout,
                   charts, kanban board, calendar, and pre-order E-commerce &amp;
                   Marketing pages.
@@ -99,10 +99,10 @@ export default function Sobre() {
                 <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
                   Flowbite Figma v1.3.0
                 </h3>
-                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-400">
                   Released on December 7th, 2021
                 </time>
-                <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                <p class="text-base font-normal text-gray-500 dark:text-gray-300">
                   All of the pages and components are first designed in Figma
                   and we keep a parity between the two versions even as we
                   update the project.
@@ -127,10 +127,10 @@ export default function Sobre() {
                 <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
                   Flowbite Library v1.2.2
                 </h3>
-                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-400">
                   Released on December 2nd, 2021
                 </time>
-                <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                <p class="text-base font-normal text-gray-500 dark:text-gray-300">
                   Get started with dozens of web components and interactive
                   elements built on top of Tailwind CSS.
                 </p>
@@ -159,10 +159,10 @@ export default function Sobre() {
                     Latest
                   </span>
                 </h3>
-                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-400">
                   Released on January 13th, 2022
                 </time>
-                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-300">
                   Get access to over 20+ pages including a dashboard layout,
                   charts, kanban board, calendar, and pre-order E-commerce &amp;
                   Marketing pages.
@@ -205,10 +205,10 @@ export default function Sobre() {
                 <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
                   Flowbite Figma v1.3.0
                 </h3>
-                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-400">
                   Released on December 7th, 2021
                 </time>
-                <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                <p class="text-base font-normal text-gray-500 dark:text-gray-300">
                   All of the pages and components are first designed in Figma
                   and we keep a parity between the two versions even as we
                   update the project.
@@ -233,10 +233,10 @@ export default function Sobre() {
                 <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
                   Flowbite Library v1.2.2
                 </h3>
-                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-400">
                   Released on December 2nd, 2021
                 </time>
-                <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                <p class="text-base font-normal text-gray-500 dark:text-gray-300">
                   Get started with dozens of web components and interactive
                   elements built on top of Tailwind CSS.
                 </p>
@@ -248,12 +248,12 @@ export default function Sobre() {
 
       <hr class="border-gray-200 mt-5 dark:border-gray-700 max-w-[1000px] m-auto"></hr>
 
-      <section class="bg-white dark:bg-gray-900 mt-5">
+      <section class="bg-white dark:bg-[#121212] mt-5">
         <div class="container px-6 py-10 mx-auto">
-          <h2 class="text-center text-black font-semibold tracking-wide uppercase">
+          <h2 class="text-center dark:text-white text-black font-semibold tracking-wide uppercase">
             Equipe
           </h2>
-          <p class="mt-2 text-3xl leading-8 text-center font-extrabold tracking-tight text-black sm:text-4xl">
+          <p class="mt-2 text-3xl leading-8 text-center font-extrabold tracking-tight dark:text-white text-black sm:text-4xl">
             Time Executivo
           </p>
           <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
