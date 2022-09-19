@@ -79,8 +79,25 @@ Serial.on('open', function(){
 
 Serial.on('data', function(data){
     console.log(data.toString('utf-8'));
-    dadosArduino = data
+    dadosArduino = data.toString('utf-8');
+    //dadosArduino.push(data.toString('utf-8'))
 });
+
+app.use(function(req, res, next){
+    res.header('Access-Control-Allow-Origin', "*");
+    res.header('Access-Control-Allow-Methods','GET,PUT,POST,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    next();
+})
+
+//Teste a realizar com novas Funções.
+Serial.on('readable', function() {
+    console.log('Data:', Serial.read().toString('utf-8'))
+});
+
+Serial.on('data', function(data) {
+    console.log('2-Data:', data.toString('utf-8'))
+})
 
 //server.listen(porta, () => console.log('escutando na porta :'+ porta));
 
