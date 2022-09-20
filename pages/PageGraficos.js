@@ -1,30 +1,25 @@
-import React from 'react';
+import React from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Grafico from '../components/Graficos';
+import Grafico from "../components/Graficos";
 
 const PageGraficos = () => {
-    return (
-        <>
-            <Head></Head>
-            <Navbar />
-                <div className="max-w-screen-xl px-4 py-6 mx-auto sm:px-6 lg:px-8">
-                    <div className="max-w-lg mx-auto">
-                    <h1 className='w-[50%] m-auto flex justify-center items-center bg-slate-500 rounded-lg'>GRAFICOS EM TEMPO REAL</h1>
-                        <div className="p-8 mt-3 mb-0 space-y-4 flex justify-center items-center rounded-lg shadow-2xl bg-slate-500">
-                            <div className="grid grid-cols-1 pl-24">
-                                <Grafico />
-                                <Grafico />
-                                <Grafico />
-                                <Grafico />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <Footer />
-        </>
-    )
-}
+  return (
+    <>
+      <Head></Head>
+      <div className="w-full mx-auto bg-red-100">
+        <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center">
+          <div className="grid grid-cols-1 gap-2 justify-items-center items-center bg-blue-200">
+            <Grafico />
+            <Grafico />
+            <Grafico />
+            <Grafico />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default PageGraficos
+export default PageGraficos;
