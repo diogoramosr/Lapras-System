@@ -8,13 +8,12 @@ const PageGraficos = () => {
   return (
     <>
       <Head></Head>
-      <div className="w-full mx-auto bg-red-100">
-        <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center">
-          <div className="grid grid-cols-1 gap-2 justify-items-center items-center bg-blue-200">
-            <Grafico />
-            <Grafico />
-            <Grafico />
-            <Grafico />
+      <div className="w-full mx-auto h-full">
+        <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 items-center" >
+          <div className="w-full">
+            <div className="flex justify-between items-center  w-full">
+            <Grafico/>
+            </div>
           </div>
         </div>
       </div>

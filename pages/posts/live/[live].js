@@ -117,8 +117,8 @@ const SlugPage = () => {
                               </div>
                             </div>
 
-                            <div class="w-full bg-green-800">
-                              <div class="">
+                            <div class="w-full h-full">
+                              <div class="w-full h-full" >
                                 <PageGraficos />
                               </div>
                             </div>

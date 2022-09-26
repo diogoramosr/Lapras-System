@@ -13,8 +13,7 @@ const data = [
 ]
 
 const options = {
-    width: 300,
-    height: 120,
+    width: 250,
     redFrom: 90,
     redTo: 110,
     yellowFrom: 60,
@@ -22,15 +21,6 @@ const options = {
     minorTicks: 5,
 };
 
-const options2 = {
-    width: 300,
-    height: 220,
-    redFrom: 90,
-    redTo: 110,
-    yellowFrom: 60,
-    yellowTo: 90,
-    minorTicks: 5,
-};
 
 const loadData = (data) => {
     const values = _.groupBy(data, (value) => {
@@ -88,7 +78,7 @@ function Grafico() {
 
     const optionss = {
         chart: {
-          title: "Daods",
+          title: "Dados",
           subtitle: "Dados sub",
         },
         hAxis: {
@@ -104,14 +94,17 @@ function Grafico() {
             0: { side: "right" },
           },
         },
+        width: 700,
+        height: 170
       };
 
     return (
         <>
-            {/*<Chart chartType="Gauge" data={datas} options={options} />*/}
+            
             {/*<Chart chartType='PieChart' data={chartData} width={"100%"} height={"400px"} />*/}
             {/*<Chart chartType='PieChart' data={chartData} options={options2} />*/}
-            <Chart chartType="Bar" width="70%" height="250px" data={datas} options={optionss}/>
+            <Chart chartType="Bar" data={datas} options={optionss}/>
+            <Chart chartType="Gauge" data={datas} options={options} />
         </>
     )
 }
