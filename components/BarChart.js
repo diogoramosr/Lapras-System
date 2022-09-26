@@ -12,25 +12,25 @@ const data = [
     { Localizacao: "Campinas", temperatura: 30, data: "24/2/2022" },
 ]
 
-const options = {
-    width: 300,
-    height: 120,
-    redFrom: 90,
-    redTo: 110,
-    yellowFrom: 60,
-    yellowTo: 90,
-    minorTicks: 5,
-};
+// const options = {
+//     width: 300,
+//     height: 120,
+//     redFrom: 90,
+//     redTo: 110,
+//     yellowFrom: 60,
+//     yellowTo: 90,
+//     minorTicks: 5,
+// };
 
-const options2 = {
-    width: 300,
-    height: 220,
-    redFrom: 90,
-    redTo: 110,
-    yellowFrom: 60,
-    yellowTo: 90,
-    minorTicks: 5,
-};
+// const options2 = {
+//     width: 300,
+//     height: 220,
+//     redFrom: 90,
+//     redTo: 110,
+//     yellowFrom: 60,
+//     yellowTo: 90,
+//     minorTicks: 5,
+// };
 
 const loadData = (data) => {
     const values = _.groupBy(data, (value) => {
@@ -66,7 +66,7 @@ function getData() {
     ];
 }
 
-function Grafico() {
+function BarChart() {
     const [chartData, setChartData] = useState([])
     const [datas, setDatas] = useState(loadData(data));
 
@@ -108,12 +108,9 @@ function Grafico() {
 
     return (
         <>
-            {/*<Chart chartType="Gauge" data={datas} options={options} />*/}
-            {/*<Chart chartType='PieChart' data={chartData} width={"100%"} height={"400px"} />*/}
-            {/*<Chart chartType='PieChart' data={chartData} options={options2} />*/}
             <Chart chartType="Bar" width="70%" height="250px" data={datas} options={optionss}/>
         </>
     )
 }
 
-export default Grafico
+export default BarChart
