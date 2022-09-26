@@ -8,6 +8,7 @@ export default function Sobre() {
     <>
       <Head></Head>
       <Navbar />
+
       <section class="dark:bg-[#303030] bg-white">
         <div class="max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex">
           <div class="max-w-2xl mx-auto text-center">
