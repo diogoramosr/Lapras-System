@@ -86,11 +86,32 @@ function Grafico() {
 
     }, [])
 
+    const optionss = {
+        chart: {
+          title: "Daods",
+          subtitle: "Dados sub",
+        },
+        hAxis: {
+          title: "Temp",
+          minValue: 0,
+        },
+        vAxis: {
+          title: "City",
+        },
+        bars: "horizontal",
+        axes: {
+          y: {
+            0: { side: "right" },
+          },
+        },
+      };
+
     return (
         <>
-            <Chart chartType="Gauge" data={datas} options={options} />
+            {/*<Chart chartType="Gauge" data={datas} options={options} />*/}
             {/*<Chart chartType='PieChart' data={chartData} width={"100%"} height={"400px"} />*/}
             {/*<Chart chartType='PieChart' data={chartData} options={options2} />*/}
+            <Chart chartType="Bar" width="70%" height="250px" data={datas} options={optionss}/>
         </>
     )
 }
