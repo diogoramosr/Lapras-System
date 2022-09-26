@@ -1,11 +1,14 @@
 const { Board, Thermometer } = require("johnny-five");
 const board = new Board();
+const moment = require ('moment')
 let express = require('express');
 let app = express()
 let server = require('http').Server(app)
 let porta = 3001;
 //let dadosArduino = [];
 let dadosArduino;
+let dataARD = {}
+var datasUPD = []
 
 app.use(function(req, res, next){
     res.header('Access-Control-Allow-Origin', "*");
@@ -28,7 +31,14 @@ board.on("ready", () => {
         console.log("  kelvin       : ", kelvin);
         console.log("--------------------------------------");
         //dadosArduino.push(`Temp= ${celsius},`);
-        dadosArduino = celsius.toString() 
+        dadosArduino = celsius.toString()
+        dataARD = {
+            temp: celsius.toString() ,
+            dataNow: moment().format(`DD-MM-YY - hh-mm-ss`).toString() ,
+            //locations: ,
+        }
+        console.log(dataARD)
+        console.log('')
         setTimeout(() => {
             console.clear()
         }, 6000);
@@ -41,6 +51,9 @@ app.get('/', function(req,res){
 
 app.get('/temperatura', function(req,res){
     res.end(dadosArduino)
+})
+app.get('/temperatura2', function(req,res){
+    res.send(dataARD)
 })
 
 server.listen(porta, () => console.log('escutando na porta: '+ porta));
