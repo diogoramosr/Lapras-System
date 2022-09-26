@@ -8,20 +8,28 @@ export default function Sobre() {
     <>
       <Head></Head>
       <Navbar />
+
       <section class="dark:bg-[#303030] bg-white">
-        <div class="max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex">
-          <div class="max-w-2xl mx-auto text-center">
+        <div class="max-w-screen-xl px-4 py-32 mx-auto lg:h-[80vh] lg:items-center lg:flex lg:flex-col">
+          <div class="max-w-3xl mx-auto h-full flex items-center text-center">
             <h1 class="text-3xl font-extrabold sm:text-5xl dark:text-white text-black">
-              O Inicio de tudo.
+              O Inicio de tudo. <br/>
               <strong class="font-extrabold w-[700px] text-sky-700 sm:block">
                 A criação do Lapras System.
               </strong>
             </h1>
-          </div>
+          </div>          
         </div>
+        <div class="flex items-center justify-center p-2 -mt-16">
+            <svg class="arrows">
+              <path class="a1" d="M0 0 L60 42 L120 0" ></path>
+              <path class="a2" d="M0 30 L60 72 L120 30"></path>
+              <path class="a3" d="M0 60 L60 102 L120 60"></path>
+            </svg>
+          </div>
       </section>
 
-      <section className="mt-14">
+      <section className="mt-14 ">
         <div className="container px-6 py-10 mx-auto">
           <h2 class="text-center dark:text-white text-black font-semibold tracking-wide uppercase">
             Características
@@ -484,7 +492,7 @@ export default function Sobre() {
 
       <hr class="border-gray-200 mt-5 dark:border-gray-700 max-w-[1000px] m-auto"></hr>
 
-      <section className="w-full pt-10 pb-10">
+      <section className="w-full pt-10 pb-10 bg-zinc-200 dark:bg-[#121212]">
         <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
           Our Executive Team
         </h1>
