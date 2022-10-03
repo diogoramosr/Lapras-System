@@ -15,6 +15,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@heroicons/react": "^1.0.6",
     "@tawk.to/tawk-messenger-react": "^2.0.1",
+    "animejs": "^3.2.1",
     "dayjs": "^1.11.5",
     "dotnet": "^1.1.4",
     "js-cookie": "^3.0.1",
@@ -29,6 +30,7 @@
     "react-google-charts": "^4.0.0",
     "react-icons": "^4.4.0",
     "socket.io-client": "^4.5.2",
+    "three": "^0.145.0",
     "uuid": "^8.3.2"
   },
   "devDependencies": {

@@ -11,7 +11,7 @@ const PageGraficos = () => {
       <div className="w-full mx-auto h-full">
         <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 items-center" >
           <div className="w-full">
-            <div className="flex justify-between items-center  w-full">
+            <div className=" flex justify-between items-center flex-wrap w-full">
             <Grafico/>
             </div>
           </div>

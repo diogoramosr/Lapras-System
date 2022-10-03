@@ -50,9 +50,6 @@ const renderThemeChanger = () => {
   return (
     <div class="dark:bg-black h-screen">
       <Head></Head>
-
-
-
       <div class="max-w-screen-xl px-4 py-6 mx-auto sm:px-6 lg:px-8 ">
         <div class="max-w-lg mx-auto">
           <div className="flex justify-between items-center">

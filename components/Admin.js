@@ -4,6 +4,7 @@ import Sidebar from "./Sidebar";
 import NavbarDash from "./NavbarDash";
 import Image from "next/image";
 import Arduino from "../public/images/arduino.png";
+import Sphere from "./sphere/Sphere";
 
 export default function Admin() {
   // const Menus = [
@@ -76,30 +77,7 @@ export default function Admin() {
                         </div>
                       </div>
                     </div>
-                    <div class="w-full max-w-full px-3 lg:w-5/12 lg:flex-none relative">
-                      <div class="border-black/12.5 shadow-md relative flex h-full min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white dark:bg-gray-500 bg-clip-border p-4">
-                        <div class="relative h-full overflow-hidden bg-cover rounded-xl">
-                          <span class="absolute top-0 left-0 w-full h-full  dark:bg-gray-500"></span>
-                          <div class="relative z-10 flex flex-col flex-auto h-full p-4">
-                            <h5 class="pt-2 mb-6 font-bold text-white">
-                              Work with the rockets
-                            </h5>
-                            <p class="text-white">
-                              Wealth creation is an evolutionarily recent
-                              positive-sum game. It is all about who take the
-                              opportunity first.
-                            </p>
-                            <a
-                              class="mt-auto mb-0 font-semibold leading-normal text-white group text-sm"
-                              href="javascript:;"
-                            >
-                              Read More
-                              <i class="fas fa-arrow-right ease-bounce text-sm group-hover:translate-x-1.25 ml-1 leading-normal transition-all duration-200"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <Sphere />
                   </div>
                 </div>
               </div>

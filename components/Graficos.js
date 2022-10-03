@@ -13,7 +13,7 @@ const data = [
 ]
 
 const options = {
-    width: 250,
+    width: 270,
     redFrom: 90,
     redTo: 110,
     yellowFrom: 60,
@@ -94,7 +94,7 @@ function Grafico() {
             0: { side: "right" },
           },
         },
-        width: 700,
+        width: 430,
         height: 170
       };
 

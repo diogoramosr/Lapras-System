@@ -14,14 +14,14 @@ const SlugPage = () => {
     <>
       <div class="m-0 font-sans antialiased font-normal text-base leading-default bg-zinc-50 dark:bg-gray-600 h-screen">
         <Sidebar />
-        <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] bg-red-800 dark:bg-gray-600">
+        <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] dark:bg-gray-600">
           <NavbarDash title="Ao Vivo" />
           <div class="pt-1 2xl:container h-full bg-zinc-50 dark:bg-gray-600 fadeIn">
-            <div class="pt-1 2xl:container h-full bg-zinc-500 dark:bg-red-600">
+            <div class="pt-1 2xl:container h-full  dark:bg-gray-600">
               <div class="flex justify-center items-center">
-                <div class="w-full px-6 py-6 mx-auto bg-yellow-100">
-                  <div class="flex flex-wrap mt-6 items-start -mx-3 bg-red-600 justify-between sm:h-full md:h-[30rem] lg:h-[30rem] p-2  ">
-                    <div class="w-full h-full md:w-3/5 px-3 mb-6 md:mb-0 bg-yellow-600 md:flex-none">
+                <div class="w-full px-6 py-6 mx-auto">
+                  <div class="flex flex-wrap mt-6 items-start -mx-3 justify-between sm:h-full md:h-[30rem] lg:h-[30rem] p-2  ">
+                    <div class="w-full h-full md:w-3/5 px-3 mb-6 md:mb-0 md:flex-none">
                       <div class="relative h-full flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
                         <div class="flex-auto p-4">
                           <div class="flex flex-wrap -mx-3">
@@ -61,7 +61,7 @@ const SlugPage = () => {
                       </div>
                     </div>
 
-                    <div class="flex flex-col gap-2  w-full h-full max-w-full px-3 md:w-2/5 lg:flex-none relative bg-green-500">
+                    <div class="flex flex-col gap-2  w-full h-full max-w-full px-3 md:w-2/5 lg:flex-none relative">
                       <div class="border-black/12.5 shadow-md relative flex min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white dark:bg-gray-500 bg-clip-border p-4">
                         <div class="relative h-full overflow-hidden bg-cover rounded-xl">
                           <div class="relative z-10 flex flex-col flex-auto h-full">
@@ -105,9 +105,9 @@ const SlugPage = () => {
               </div>
 
               <div className="flex justify-center items-center">
-                <div class="w-full px-6 py-2 mx-auto bg-green-100">
-                  <div class="flex flex-wrap mt-6 -mx-3 bg-red-400">
-                    <div class="w-full px-3 mb-6 md:mb-0 bg-yellow-600 md:flex-none">
+                <div class="w-full px-6 py-2 mx-auto">
+                  <div class="flex flex-wrap mt-6 -mx-3 ">
+                    <div class="w-full px-3 mb-6 md:mb-0 md:flex-none">
                       <div class="relative flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
                         <div class="flex-auto p-4">
                           <div class="flex flex-wrap -mx-3">
@@ -118,7 +118,7 @@ const SlugPage = () => {
                             </div>
 
                             <div class="w-full h-full">
-                              <div class="w-full h-full" >
+                              <div class="w-full">
                                 <PageGraficos />
                               </div>
                             </div>

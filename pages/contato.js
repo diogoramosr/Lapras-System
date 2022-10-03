@@ -152,10 +152,9 @@ const Contato = () => {
                 <div class="mt-4">
                   <button
                     type="submit"
-                    class="inline-flex items-center justify-center w-full px-5 py-3 text-white bg-black rounded-lg sm:w-auto hover:w-[125px]"
+                    class="inline-flex items-center justify-center w-full px-5 py-3 text-white bg-black rounded-lg sm:w-auto hover:scale-105 transition duration-300 ease-in-out"
                   >
                     <span class="font-medium"> Enviar </span>
-
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="w-5 h-5 ml-3"
