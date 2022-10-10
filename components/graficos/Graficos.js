@@ -104,7 +104,7 @@ function Grafico() {
             {/*<Chart chartType='PieChart' data={chartData} width={"100%"} height={"400px"} />*/}
             {/*<Chart chartType='PieChart' data={chartData} options={options2} />*/}
             <Chart chartType="Bar" data={datas} options={optionss}/>
-            <Chart chartType="Gauge" data={datas} options={options} />
+            <Chart chartType='PieChart' data={chartData} options={options}/>
         </>
     )
 }

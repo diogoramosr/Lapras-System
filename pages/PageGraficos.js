@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Grafico from "../components/Graficos";
+import Grafico from "../components/graficos/Graficos";
 
 const PageGraficos = () => {
   return (
