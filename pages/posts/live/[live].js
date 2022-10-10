@@ -16,11 +16,11 @@ const SlugPage = () => {
         <Sidebar />
         <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] dark:bg-gray-600">
           <NavbarDash title="Ao Vivo" />
-          <div class="pt-1 2xl:container h-full bg-zinc-50 dark:bg-gray-600 fadeIn">
-            <div class="pt-1 2xl:container h-full  dark:bg-gray-600">
+          <div class="2xl:container h-full bg-zinc-50 dark:bg-gray-600 fadeIn">
+            <div class="2xl:container h-full  dark:bg-gray-600">
               <div class="flex justify-center items-center">
                 <div class="w-full px-6 py-6 mx-auto">
-                  <div class="flex flex-wrap mt-6 items-start -mx-3 justify-between sm:h-full md:h-[30rem] lg:h-[30rem] p-2  ">
+                  <div class="flex flex-wrap mt-3 items-start -mx-3 justify-between sm:h-full md:h-[30rem] lg:h-[30rem] p-2  ">
                     <div class="w-full h-full md:w-3/5 px-3 mb-6 md:mb-0 md:flex-none">
                       <div class="relative h-full flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
                         <div class="flex-auto p-4">

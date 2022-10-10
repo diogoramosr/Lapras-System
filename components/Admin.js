@@ -7,24 +7,6 @@ import Arduino from "../public/images/arduino.png";
 import Sphere from "./sphere/Sphere";
 
 export default function Admin() {
-  // const Menus = [
-  //   {
-  //     title: "Dashboard",
-  //     submenu: true,
-  //     submenuItems: [{ title: "Home", icon: <RiHome2Fill /> }],
-  //   },
-  //   {
-  //     title: "Ao vivo",
-  //     icon: <RiLiveFill />,
-  //     submenu: true,
-  //     submenuItems: [
-  //       { title: "COTUCA", icon: <BsFillCameraVideoFill /> },
-  //       { title: "Amazonia", icon: <BsFillCameraVideoFill /> },
-  //     ],
-  //   },
-  //   { title: "Histórico", icon: <RiHistoryLine /> },
-  //   { title: "Calendário", icon: <RiCalendarFill />, ActiveLink: href="/calendar" },
-  // ];
   return (
     <>
       <Head></Head>
@@ -32,11 +14,11 @@ export default function Admin() {
         <Sidebar />
         <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] bg-zinc-50 dark:bg-gray-600">
           <NavbarDash title="Estatísticas Gerais" />
-          <div class="pt-1 2xl:container h-full bg-zinc-50 dark:bg-gray-600 fadeIn">
-            <div class="pt-1 2xl:container h-full bg-zinc-50 dark:bg-gray-600">
+          <div class="2xl:container h-screen bg-yellow-500 dark:bg-gray-600 fadeIn">
+            <div class="2xl:container h-full  dark:bg-gray-600">
               <div class="flex justify-center items-center">
                 <div class="w-full px-6 py-6 mx-auto">
-                  <div class="flex flex-wrap mt-6 -mx-3">
+                  <div class="flex flex-wrap mt-3 -mx-3">
                     <div class="w-full px-3 mb-6 lg:mb-0 lg:w-7/12 lg:flex-none">
                       <div class="relative flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
                         <div class="flex-auto p-4">
@@ -77,7 +59,6 @@ export default function Admin() {
                         </div>
                       </div>
                     </div>
-                    <Sphere />
                   </div>
                 </div>
               </div>

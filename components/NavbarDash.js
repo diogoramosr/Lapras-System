@@ -4,9 +4,10 @@ import { BsFillBellFill } from "react-icons/bs";
 import Button from "./Button";
 
 export default function NavbarDash(props) {
+  const [profile, setProfile] = useState(false);
+  const [show, setShow] = useState(false);
   const { systemTheme, theme, setTheme } = useTheme();
 
-  const [profile, setProfile] = useState(false);
   const renderThemeChanger = () => {
     const currentTheme = theme === "system" ? systemTheme : theme;
     if (currentTheme === "dark") {
@@ -46,132 +47,157 @@ export default function NavbarDash(props) {
   };
   return (
     <>
-      <div class="top-5 h-16 lg:py-2.5">
+      <div class="top-5 lg:py-2.5">
         <div class="px-6 flex items-center justify-between space-x-4 2xl:container">
-          <h5 hidden class="text-2xl font-medium lg:block fadeIn">
-            {props.title}
-          </h5>
-          
-          <div class="sticky top-5 h-16 lg:py-2.5">
-            
-            <div class="px-6 flex items-center justify-between space-x-4 2xl:container">
-              <button class="w-12 h-16 -mr-2 border-r lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6 my-auto"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </button>
-              <h5 hidden class="text-2xl font-medium lg:hidden sm:block fadeIn">
-                {props.title}
-              </h5>
-              <div class="flex space-x-4">
-                <button
-                  aria-label="notification"
-                  class="w-10 h-10 flex items-center justify-center hover:scale-105 transition duration-200 ease-in-out"
-                >
-                  <BsFillBellFill class="w-4 h-4" />
-                </button>
-                {renderThemeChanger()}
-                <div
-                  className="flex items-center relative cursor-pointer"
-                  onClick={() => setProfile(!profile)}
-                >
-                  {profile && (
-                    <ul className="p-2 w-40 border-r bg-white absolute rounded right-1 shadow-md top-0 mt-14 ">
-                      <li className="text-sm leading-3 tracking-normal py-2">
-                        <div className="flex items-center">
-                          <span className="ml-1 mb-3 font-semibold">CEO</span>
-                        </div>
-                        <span className="ml-1 text-sm text-gray-400">
-                          Admin
-                        </span>
-                      </li>
-                      <hr className="mt-2 mb-2"></hr>
-                      <li className="cursor-pointer text-black text-sm leading-3 tracking-normal py-1 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
-                        <div className="flex items-center">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="icon icon-tabler icon-tabler-user"
-                            width={20}
-                            height={20}
-                            viewBox="0 0 24 24"
-                            strokeWidth="1.5"
-                            stroke="currentColor"
-                            fill="none"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          >
-                            <path stroke="none" d="M0 0h24v24H0z" />
-                            <circle cx={12} cy={7} r={4} />
-                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                          </svg>
-                          <span className="ml-2">Perfil</span>
-                        </div>
-                      </li>
-
-                      <li className="cursor-pointer text-black text-sm leading-3 tracking-normal mt-1 py-2 ml-1 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="feather feather-help-circle"
-                        >
-                          <circle cx="12" cy="12" r="10"></circle>
-                          <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-                          <line x1="12" y1="17" x2="12.01" y2="17"></line>
-                        </svg>
-                        <span className="ml-2">Ajuda</span>
-                      </li>
-                      <hr className="mt-2 mb-2"></hr>
-                      <li className="cursor-pointer text-black text-sm leading-3 tracking-normal mt-2 py-2 pl-1 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-box-arrow-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"
-                          />{" "}
-                          <path
-                            fill-rule="evenodd"
-                            d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"
+          <div className="w-full">
+            <nav className="h-16 flex items-center lg:items-stretch justify-end lg:justify-between relative z-10">
+              <div className="hidden lg:flex w-full pr-6">
+                <div className="w-1/2 h-full hidden lg:flex items-center pl-6 pr-24">
+                  <div className="relative w-full ">
+                    <h1 className="text-2xl font-medium fadeIn">{props.title}</h1>
+                  </div>
+                </div>
+                <div className="w-1/2 hidden lg:flex">
+                  <div className="w-full flex items-center pl-8 justify-end">
+                    <div
+                      className="flex items-center relative cursor-pointer"
+                      onClick={() => setProfile(!profile)}
+                    >
+                      <div className="rounded-full">
+                        {profile ? (
+                          <ul className="p-2 w-full border-r bg-white absolute rounded left-0 shadow mt-12 sm:mt-16 ">
+                            <li className="flex w-full justify-between text-gray-600 hover:text-indigo-700 cursor-pointer items-center">
+                              <div className="flex items-center">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  className="icon icon-tabler icon-tabler-user"
+                                  width={18}
+                                  height={18}
+                                  viewBox="0 0 24 24"
+                                  strokeWidth="1.5"
+                                  stroke="currentColor"
+                                  fill="none"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                >
+                                  <path stroke="none" d="M0 0h24v24H0z" />
+                                  <circle cx={12} cy={7} r={4} />
+                                  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                </svg>
+                                <span className="text-sm ml-2">My Profile</span>
+                              </div>
+                            </li>
+                            <li className="flex w-full justify-between text-gray-600 hover:text-indigo-700 cursor-pointer items-center mt-2">
+                              <div className="flex items-center">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  className="icon icon-tabler icon-tabler-logout"
+                                  width={20}
+                                  height={20}
+                                  viewBox="0 0 24 24"
+                                  strokeWidth="1.5"
+                                  stroke="currentColor"
+                                  fill="none"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                >
+                                  <path stroke="none" d="M0 0h24v24H0z" />
+                                  <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                                  <path d="M7 12h14l-3 -3m0 6l3 -3" />
+                                </svg>
+                                <span className="text-sm ml-2">Sign out</span>
+                              </div>
+                            </li>
+                          </ul>
+                        ) : (
+                          ""
+                        )}
+                        <div className="relative">
+                          <img
+                            className="rounded-full h-10 w-10 object-cover"
+                            src="https://tuk-cdn.s3.amazonaws.com/assets/components/sidebar_layout/sl_1.png"
+                            alt="avatar"
                           />
+                          <div className="w-2 h-2 rounded-full bg-green-400 border border-white absolute inset-0 mb-0 mr-0 m-auto" />
+                        </div>
+                      </div>
+                      <p className="text-gray-800 text-sm mx-3">Jane Doe</p>
+                      <div className="cursor-pointer text-gray-600">
+                        <svg
+                          aria-haspopup="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="icon icon-tabler icon-tabler-chevron-down"
+                          width={20}
+                          height={20}
+                          viewBox="0 0 24 24"
+                          strokeWidth="1.5"
+                          stroke="currentColor"
+                          fill="none"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <polyline points="6 9 12 15 18 9" />
                         </svg>
-                        <span className="ml-2">Sair</span>
-                      </li>
-                    </ul>
-                  )}
-
-                  <div className="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-white transition duration-150 ease-in-out">
-                    <img
-                      className="rounded-full h-10 w-10 object-cover hover:scale-105 duration-200"
-                      src="https://tuk-cdn.s3.amazonaws.com/assets/components/horizontal_navigation/hn_2.png"
-                      alt="logo"
-                    />
+                      </div>
+                    </div>
+                    <div className="h-full w-20 flex items-center justify-center">
+                      <div className="relative cursor-pointer text-gray-600">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="icon icon-tabler icon-tabler-bell"
+                          width={28}
+                          height={28}
+                          viewBox="0 0 24 24"
+                          strokeWidth="1.5"
+                          stroke="currentColor"
+                          fill="none"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" />
+                          <path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+                          <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+                        </svg>
+                        <div className="w-2 h-2 rounded-full bg-red-400 border border-white absolute inset-0 mt-1 mr-1 m-auto" />
+                      </div>
+                    </div>
+                    <div className="h-full w-20 flex items-center justify-center cursor-pointer text-gray-600">
+                      <div className="relative cursor-pointer text-gray-600">
+                        {renderThemeChanger()}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+              <div
+                className="text-gray-600 mr-8 visible lg:hidden relative"
+                onClick={() => setShow(!show)}
+              >
+                {show ? (
+                  " "
+                ) : (
+                  <svg
+                    aria-label="Main Menu"
+                    aria-haspopup="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="icon icon-tabler icon-tabler-menu cursor-pointer"
+                    width={30}
+                    height={30}
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <line x1={4} y1={8} x2={20} y2={8} />
+                    <line x1={4} y1={16} x2={20} y2={16} />
+                  </svg>
+                )}
+              </div>
+            </nav>
           </div>
         </div>
       </div>
