@@ -53,6 +53,10 @@ function getData() {
         ["Label", "Value"],
         ["Campinas", getRandomNumber()],
         ["Hortolândia", getRandomNumber()],
+        ["Campinas", getRandomNumber()],
+        ["Hortolândia", getRandomNumber()],
+        ["Campinas", getRandomNumber()],
+        ["Hortolândia", getRandomNumber()],
     ];
 }
 
@@ -88,14 +92,14 @@ function Grafico() {
         vAxis: {
           title: "City",
         },
-        bars: "horizontal",
+        bars: "vertical",
         axes: {
           y: {
             0: { side: "right" },
           },
         },
-        width: 430,
-        height: 170
+        width: 990,
+        height: 300
       };
 
     return (

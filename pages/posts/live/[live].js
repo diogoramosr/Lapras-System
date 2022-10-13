@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import Sidebar from "../../../components/Sidebar";
 import NavbarDash from "../../../components/NavbarDash";
 import Image from "next/image";
-import PageGraficos from "../../PageGraficos";
+import PageGraficos from "../../../components/graficos/PageGraficos";
 import SalaDeAula from "../../../public/images/salaDeAula.jpg";
 
 // PAGINA DINÂMICA -------
@@ -19,7 +19,7 @@ const SlugPage = () => {
           <div class="2xl:container h-full bg-zinc-50 dark:bg-gray-600 fadeIn">
             <div class="2xl:container h-full  dark:bg-gray-600">
               <div class="flex justify-center items-center">
-                <div class="w-full px-6 py-6 mx-auto">
+                <div class="w-full px-6 py-2 mx-auto">
                   <div class="flex flex-wrap mt-3 items-start -mx-3 justify-between sm:h-full md:h-[30rem] lg:h-[30rem] p-2">
                     <div class="w-full h-full md:w-3/5 px-3 mb-6 md:mb-0 md:flex-none">
                       <div class="relative h-full flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
@@ -80,8 +80,8 @@ const SlugPage = () => {
               </div>
 
               <div class="flex justify-center items-center">
-                <div class="w-full px-6 py-6 mx-auto">
-                  <div class="flex flex-wrap mt-3 items-start -mx-3 justify-between sm:h-full md:h-[30rem] lg:h-[30rem] p-2  ">
+                <div class="w-full px-6 py-2 mx-auto">
+                  <div class="flex flex-wrap mt-2 items-start -mx-3 justify-between sm:h-full md:h-[30rem] lg:h-[30rem] p-2  ">
                     <div class="w-full h-full md:w-2/5 p-3 mb-6 gap-4 md:mb-0 md:flex-none flex flex-col items-center justify-between">
                       <div class="relative h-[45%] flex flex-col min-w-0 w-full break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
                         <div class="flex flex-wrap h-full w-full">
@@ -309,24 +309,21 @@ const SlugPage = () => {
                   </div>
                 </div>
               </div>
-
               <div className="flex justify-center items-center">
                 <div class="w-full px-6 py-2 mx-auto">
-                  <div class="flex flex-wrap mt-6 -mx-3 ">
+                  <div class="flex flex-wrap mt-2 -mx-3 ">
                     <div class="w-full px-3 mb-6 md:mb-0 md:flex-none">
                       <div class="relative flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
                         <div class="flex-auto p-4">
-                          <div class="flex flex-wrap -mx-3">
-                            <div class="max-w-full px-3 lg:w-full lg:flex-none">
+                          <div class="flex flex-wrap w-full h-full">
+                            <div class="max-w-full px-3 mb-3 lg:w-full lg:flex-none">
                               <div class="flex flex-wrap w-full justify-between items-center px-2 h-full">
                                 <p class="pt-2 mb-1 font-semibold">Gráficos</p>
                               </div>
                             </div>
 
-                            <div class="w-full h-full">
-                              <div class="w-full">
+                            <div class="w-full h-[20rem]">
                                 <PageGraficos />
-                              </div>
                             </div>
                           </div>
                         </div>
