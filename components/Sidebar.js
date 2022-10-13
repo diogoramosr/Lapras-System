@@ -9,7 +9,8 @@ import {
   RiHome2Fill,
   RiLiveFill,
   RiCalendarFill,
-  RiCloudFill
+  RiCloudFill,
+  RiPieChart2Fill
 } from "react-icons/ri";
 import {
   BsChevronDown,
@@ -29,6 +30,11 @@ export default function Sidebar() {
       label: "Ao vivo",
       icon: <RiLiveFill className="w-5 h-5" />,
       path: "/posts/live/aovivo",
+    },
+    {
+      label: "Gráficos",
+      icon: <RiPieChart2Fill className="w-5 h-5" />,
+      path: "/posts/chart/graficos",
     },
     {
       label: "Calendário",
