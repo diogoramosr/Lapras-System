@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -33,32 +30,26 @@ button {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
 }
-
 @-moz-keyframes fadeIn {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
 }
-
 @-o-keyframes fadeIn {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
 }
-
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -68,24 +59,18 @@ button {
         opacity: 1;
     }
 }
-
 .fadeIn {
     -webkit-animation: fadeIn 1s ease-in-out;
     -moz-animation: fadeIn 1s ease-in-out;
     -o-animation: fadeIn 1s ease-in-out;
     animation: fadeIn 1s ease-in-out;
 }
-
-
 .arrows {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 7.5rem;
-
-
 }
-
 .arrows path {
     stroke: #2994D1;
     fill: transparent;
@@ -94,72 +79,51 @@ button {
     animation: arrow 2s infinite;
     -webkit-animation: arrow 2s infinite;
 }
-
 @keyframes arrow {
     0% {
         opacity: 0
     }
-
     40% {
         opacity: 1
     }
-
     80% {
         opacity: 0
     }
-
     100% {
         opacity: 0
     }
 }
-
 @-webkit-keyframes arrow
-
-/*Safari and Chrome*/
     {
     0% {
         opacity: 0
     }
-
     40% {
         opacity: 1
     }
-
     80% {
         opacity: 0
     }
-
     100% {
         opacity: 0
     }
 }
-
 .arrows path.a1 {
     animation-delay: -1s;
     -webkit-animation-delay: -1s;
-    /* Safari 和 Chrome */
 }
-
 .arrows path.a2 {
     animation-delay: -0.5s;
     -webkit-animation-delay: -0.5s;
-    /* Safari 和 Chrome */
 }
-
 .arrows path.a3 {
     animation-delay: 0s;
     -webkit-animation-delay: 0s;
-    /* Safari 和 Chrome */
 }
-
-
-
-
 .animation-wrapper {
     width: 50%;
     padding-bottom: 50%;
 }
-
 .sphere-animation {
     position: absolute;
     top: 50%;
@@ -168,14 +132,12 @@ button {
     height: 580px;
     margin: -290px 0 0 -290px;
 }
-
 .sphere path {
     fill: url(#sphereGradient);
     stroke-width: 1px;
     stroke: rgba(167, 39, 39, 0.35);
     backface-visibility: hidden;
 }
-
 @media (min-width: 500px) {
     .sphere path {
         stroke-width: .4px;

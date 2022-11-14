@@ -2,24 +2,16 @@ import React, { useState } from "react";
 import ActiveLink from "./ActiveLink.tsx";
 import Image from "next/image";
 import Logo from "../public/images/logo.png";
-
 import {
   RiDashboardFill,
   RiHistoryLine,
-  RiHome2Fill,
   RiLiveFill,
-  RiCalendarFill,
   RiCloudFill,
-  RiPieChart2Fill
+  RiPieChart2Fill,
 } from "react-icons/ri";
-import {
-  BsChevronDown,
-  BsFillCameraVideoFill,
-  BsFillBellFill,
-} from "react-icons/bs";
+
 
 export default function Sidebar() {
-  const [show, setShow] = useState(false);
   const Menus = [
     {
       label: "Dashboard",
@@ -35,11 +27,6 @@ export default function Sidebar() {
       label: "Gráficos",
       icon: <RiPieChart2Fill className="w-5 h-5" />,
       path: "/posts/chart/graficos",
-    },
-    {
-      label: "Calendário",
-      icon: <RiCalendarFill className="w-5 h-5" />,
-      path: "/calendar",
     },
     {
       label: "Previsão",

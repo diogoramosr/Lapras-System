@@ -9,8 +9,8 @@ const PageGraficos = () => {
   return (
     <>
       <Head></Head>
-      <div className="w-full h-full flex justify-around items-center flex-wrap">
-        <div className="w-full h-full">
+      <div className="w-full h-[10px] flex justify-around items-center flex-wrap">
+        <div className="w-full h-[10px]">
           <Grafico />
         </div>
       </div>

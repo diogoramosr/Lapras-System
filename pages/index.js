@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 
-export default function Home() {
+export default function Index() {
   return (
     <div className="dark:bg-[#000] bg-white h-screen">
       <Head>
@@ -41,5 +41,5 @@ export default function Home() {
         </div>
       </section>
     </div>
-  )
+  );
 }

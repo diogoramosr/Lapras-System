@@ -1,26 +1,25 @@
 import React from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedin,
-  faInstagram,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
 
 const Contato = () => {
   return (
     <div className="dark:bg-[#000] h-screen">
-      <Head></Head>
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="robots" content="index, follow" />
+        <meta name="description" content="Site do sistema Lapras System" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Lapras System" />
+        <title>Lapras System - Contato</title>
+      </Head>
       <Navbar />
-
       <section class="dark:bg-[#000] bg-gray-100">
         <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
             <div class="lg:py-12 lg:col-span-2 flex flex-col">
               <h1 className="font-bold text-5xl mb-4">Contate-nos</h1>
               <p class="max-w-xl text-lg pl-1">Envie-nos um mensagem.</p>
-
               <div class="mt-8">
                 <address class="mt-2 not-italic inline-flex space-x-2">
                   <svg
@@ -38,7 +37,6 @@ const Contato = () => {
                   <span>Campinas - SP</span>
                 </address>
               </div>
-
               <div class="mt-1">
                 <address class="mt-2 not-italic inline-flex space-x-2">
                   <svg
@@ -54,7 +52,6 @@ const Contato = () => {
                 </address>
               </div>
             </div>
-
             <div class="p-8 dark:bg-[#121212] bg-white rounded-lg shadow-lg lg:p-12 lg:col-span-3">
               <form
                 action="https://formsubmit.co/0023eb5449ab2048b38648a356ebf3b4"
@@ -75,7 +72,6 @@ const Contato = () => {
                     required
                   />
                 </div>
-
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div>
                     <label class="sr-only" for="email">
@@ -89,22 +85,17 @@ const Contato = () => {
                       name="email"
                       required
                     />
-
-                    {/*ENVIA UMA RESPOSTA PARA O EMAIL || CRIA UMA PAGINA DE REPOSTA QUANDO ENVIAR UM EMAIL*/}
                     <input
                       type="hidden"
                       name="_autoresponse"
                       value="Recebemos seu Email, Logo entraremos em contato!"
-                    >
-
-                    </input>
+                    ></input>
                     <input
                       type="hidden"
                       name="_next"
                       value="http://localhost:3000/"
                     ></input>
                   </div>
-
                   <div>
                     <label class="sr-only" for="phone">
                       Telefone
@@ -118,7 +109,6 @@ const Contato = () => {
                     />
                   </div>
                 </div>
-
                 <div class="grid grid-cols-1 gap-4 text-center sm:grid-cols-1">
                   <div>
                     <label class="sr-only" for="assunto">
@@ -134,7 +124,6 @@ const Contato = () => {
                     />
                   </div>
                 </div>
-
                 <div>
                   <label class="sr-only" for="message">
                     Mensagem
@@ -148,7 +137,6 @@ const Contato = () => {
                     required
                   ></textarea>
                 </div>
-
                 <div class="mt-4">
                   <button
                     type="submit"

@@ -6,36 +6,41 @@ import ChatTawk from "../components/ChatTawk";
 export default function Sobre() {
   return (
     <>
-      <Head></Head>
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="robots" content="index, follow" />
+        <meta name="description" content="Site do sistema Lapras System" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Lapras System" />
+        <title>Lapras System - Sobre</title>
+      </Head>
       <Navbar />
-
       <section class="dark:bg-[#303030] bg-white">
         <div class="max-w-screen-xl px-4 py-32 mx-auto lg:h-[80vh] lg:items-center lg:flex lg:flex-col">
           <div class="max-w-3xl mx-auto h-full flex items-center text-center">
             <h1 class="text-3xl font-extrabold sm:text-5xl dark:text-white text-black">
-              O Inicio de tudo. <br/>
+              O Inicio de tudo. <br />
               <strong class="font-extrabold w-[700px] text-sky-700 sm:block">
                 A criação do Lapras System.
               </strong>
             </h1>
-          </div>          
+          </div>
         </div>
         <div class="flex items-center justify-center p-2 -mt-16">
-            <svg class="arrows">
-              <path class="a1" d="M0 0 L60 42 L120 0" ></path>
-              <path class="a2" d="M0 30 L60 72 L120 30"></path>
-              <path class="a3" d="M0 60 L60 102 L120 60"></path>
-            </svg>
-          </div>
+          <svg class="arrows">
+            <path class="a1" d="M0 0 L60 42 L120 0"></path>
+            <path class="a2" d="M0 30 L60 72 L120 30"></path>
+            <path class="a3" d="M0 60 L60 102 L120 60"></path>
+          </svg>
+        </div>
       </section>
-
       <section className="mt-14 ">
         <div className="container px-6 py-10 mx-auto">
           <h2 class="text-center dark:text-white text-black font-semibold tracking-wide uppercase">
-            Características
+            Linha do tempo
           </h2>
           <p class="mt-2 text-3xl leading-8 text-center font-extrabold tracking-tight dark:text-white text-black sm:text-4xl">
-            Por que o Lapras System?
+            Acompanhe a história do Lapras System
           </p>
           <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-2">
             <ol class="relative border-l border-gray-200 dark:border-gray-700">
@@ -253,9 +258,7 @@ export default function Sobre() {
           </div>
         </div>
       </section>
-
       <hr class="border-gray-200 mt-5 dark:border-gray-700 max-w-[1000px] m-auto"></hr>
-
       <section class="bg-white dark:bg-[#121212] mt-5">
         <div class="container px-6 py-10 mx-auto">
           <h2 class="text-center dark:text-white text-black font-semibold tracking-wide uppercase">
@@ -271,15 +274,12 @@ export default function Sobre() {
                 src="/images/logo.png"
                 alt=""
               />
-
-              <h1 class="mt-4 text-2xl font-semibold text-black capitalize dark:text-white group-hover:text-white">
+              <p class="mt-4 text-2xl font-semibold text-black capitalize dark:text-white group-hover:text-white">
                 Cristian Caetano
-              </h1>
-
+              </p>
               <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
                 CEO | Back-end Developer
               </p>
-
               <div class="flex mt-3 -mx-2">
                 <a
                   href="#"
@@ -302,7 +302,6 @@ export default function Sobre() {
                     />
                   </svg>
                 </a>
-
                 <a
                   href="#"
                   class="mx-2 text-gray- dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
@@ -321,7 +320,6 @@ export default function Sobre() {
                     />
                   </svg>
                 </a>
-
                 <a
                   href="#"
                   class="mx-2 text-black dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
@@ -338,22 +336,18 @@ export default function Sobre() {
                 </a>
               </div>
             </div>
-
             <div class="flex flex-col items-center p-8 transition-colors duration-200 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
               <img
                 class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                 src="/images/logo.png"
                 alt=""
               />
-
-              <h1 class="mt-4 text-2xl font-semibold text-black capitalize dark:text-white group-hover:text-white">
+              <p class="mt-4 text-2xl font-semibold text-black capitalize dark:text-white group-hover:text-white">
                 Diogo Rodrigues
-              </h1>
-
+              </p>
               <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300">
                 CEO | Web Developer
               </p>
-
               <div class="flex mt-3 -mx-2">
                 <a
                   href="#"
@@ -376,7 +370,6 @@ export default function Sobre() {
                     />
                   </svg>
                 </a>
-
                 <a
                   href="#"
                   class="mx-2 text-black dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
@@ -395,7 +388,6 @@ export default function Sobre() {
                     />
                   </svg>
                 </a>
-
                 <a
                   href="#"
                   class="mx-2 text-black dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
@@ -412,22 +404,18 @@ export default function Sobre() {
                 </a>
               </div>
             </div>
-
             <div class="flex flex-col items-center p-8 transition-colors duration-200 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
               <img
                 class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                 src="/images/logo.png"
                 alt=""
               />
-
-              <h1 class="mt-4 text-2xl font-semibold text-black capitalize dark:text-white group-hover:text-white">
+              <p class="mt-4 text-2xl font-semibold text-black capitalize dark:text-white group-hover:text-white">
                 Gabriel Perozim
-              </h1>
-
+              </p>
               <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
                 CEO | Back-End Developer
               </p>
-
               <div class="flex mt-3 -mx-2">
                 <a
                   href="#"
@@ -450,13 +438,12 @@ export default function Sobre() {
                     />
                   </svg>
                 </a>
-
                 <a
                   href="#"
                   class="mx-2 text-black dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
                   aria-label="Facebook"
                 >
-                    <svg
+                  <svg
                     class="w-6 h-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
@@ -469,7 +456,6 @@ export default function Sobre() {
                     />
                   </svg>
                 </a>
-
                 <a
                   href="#"
                   class="mx-2 text-black dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
@@ -489,13 +475,11 @@ export default function Sobre() {
           </div>
         </div>
       </section>
-
       <hr class="border-gray-200 mt-5 dark:border-gray-700 max-w-[1000px] m-auto"></hr>
-
       <section className="w-full pt-10 pb-10 bg-zinc-200 dark:bg-[#121212]">
-        <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
-          Our Executive Team
-        </h1>
+        <h2 class="text-3xl font-semibold text-center text-gray-800  lg:text-4xl dark:text-white">
+          A ideia centrada em um só objetivo
+        </h2>
         <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt
           ex placeat modi magni quia error alias, adipisci rem similique, at

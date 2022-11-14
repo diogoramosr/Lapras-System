@@ -3,17 +3,14 @@ import React, { useState, useEffect, useRef } from "react";
 import { useTheme } from "next-themes";
 import Button from "./Button";
 
-export default function Home() {
+export default function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme();
   const [state, setState] = useState(false);
-
   const renderThemeChanger = () => {
     const currentTheme = theme === "system" ? systemTheme : theme;
     if (currentTheme === "dark") {
       return (
-        <Button
-          onClick={() => setTheme("light")}
-        >
+        <Button onClick={() => setTheme("light")}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -44,10 +41,9 @@ export default function Home() {
     }
   };
 
-  
   return (
     <>
-    <Head></Head>
+      <Head></Head>
       <nav className="bg-black w-full top-0 z-20">
         <div className="items-center px-4 max-w-screen-xl mx-auto h-full lg:flex lg:px-8">
           <div className="flex items-center justify-between py-3 lg:py-4 lg:block">
@@ -114,18 +110,12 @@ export default function Home() {
                   </a>
                 </li>
                 <li className="mt-8 lg:mt-0 lg:mb-0">
-                  <a
-                    href="/sobre"
-                    className=" hover:text-sky-700"
-                  >
+                  <a href="/sobre" className=" hover:text-sky-700">
                     Sobre
                   </a>
                 </li>
                 <li className="mt-8 lg:mt-0 lg:mb-0">
-                  <a
-                    href="/contato"
-                    className=" hover:text-sky-700"
-                  >
+                  <a href="/contato" className=" hover:text-sky-700">
                     Contato
                   </a>
                 </li>
@@ -137,9 +127,7 @@ export default function Home() {
                     Login
                   </a>
                 </li>
-                <li className="mt-8 lg:mt-0 lg:mb-0">
-                {renderThemeChanger()}
-                </li>
+                <li className="mt-8 lg:mt-0 lg:mb-0">{renderThemeChanger()}</li>
               </ul>
             </div>
           </div>

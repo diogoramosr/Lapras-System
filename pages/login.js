@@ -3,20 +3,13 @@ import Head from "next/head";
 import { useTheme } from "next-themes";
 import Button from "../components/Button";
 
-
-
 export default function Login() {
-
   const { systemTheme, theme, setTheme } = useTheme();
-
-
-const renderThemeChanger = () => {
+  const renderThemeChanger = () => {
     const currentTheme = theme === "system" ? systemTheme : theme;
     if (currentTheme === "dark") {
       return (
-        <Button
-          onClick={() => setTheme("light")}
-        >
+        <Button onClick={() => setTheme("light")}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -54,21 +47,20 @@ const renderThemeChanger = () => {
         <div class="max-w-lg mx-auto">
           <div className="flex justify-between items-center">
             <a className="ml-[8rem]" href="/">
-            <img src="images/logo.png" className="" width={240}/>
+              <img src="images/logo.png" className="" width={240} />
             </a>
-            <div className="cursor-pointer">
-            {renderThemeChanger()}
-            </div>
+            <div className="cursor-pointer">{renderThemeChanger()}</div>
           </div>
-
-          <form action="/api/login" method="post" class="p-8 mt-3 mb-0 space-y-4 rounded-lg shadow-2xl dark:bg-[#121212]">
+          <form
+            action="/api/login"
+            method="post"
+            class="p-8 mt-3 mb-0 space-y-4 rounded-lg shadow-2xl dark:bg-[#121212]"
+          >
             <p class="text-lg font-medium">Inicie sessão na sua conta</p>
-
             <div>
               <label for="email" class="text-sm font-medium">
                 Email
               </label>
-
               <div class="relative mt-1">
                 <input
                   type="email"
@@ -77,7 +69,6 @@ const renderThemeChanger = () => {
                   placeholder="Email"
                   required
                 />
-
                 <span class="absolute inset-y-0 inline-flex items-center right-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -96,12 +87,10 @@ const renderThemeChanger = () => {
                 </span>
               </div>
             </div>
-
             <div>
               <label for="password" class="text-sm font-medium">
                 Senha
               </label>
-
               <div class="relative mt-1">
                 <input
                   type="password"
@@ -110,7 +99,6 @@ const renderThemeChanger = () => {
                   placeholder="Senha"
                   required
                 />
-
                 <span class="absolute inset-y-0 inline-flex items-center right-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -152,13 +140,18 @@ const renderThemeChanger = () => {
               </div>
             </div>
             <div className="flex justify-end">
-              <button
-                type="submit"
-                class="block w-32 px-5 py-3 text-sm font-medium  text-white bg-sky-700 rounded-lg"
-                value='Login'
+              <a
+                href="#"
+                className="py-3 px-4 text-center bg-sky-700 hover:bg-gradient-to-r from-sky-700 to-blue-500 rounded-md shadow block lg:inline"
               >
-                Login
-              </button>
+                <button
+                  type="submit"
+                  className="text-white font-semibold w-20"
+                  value="Login"
+                >
+                  Login
+                </button>
+              </a>
             </div>
             <div class="mt-6 ">
               <div class="my-2"></div>

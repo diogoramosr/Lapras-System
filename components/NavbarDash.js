@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import { useTheme } from "next-themes";
-import { BsFillBellFill } from "react-icons/bs";
 import Button from "./Button";
 
 export default function NavbarDash(props) {
   const [profile, setProfile] = useState(false);
   const [show, setShow] = useState(false);
   const { systemTheme, theme, setTheme } = useTheme();
-
   const renderThemeChanger = () => {
     const currentTheme = theme === "system" ? systemTheme : theme;
     if (currentTheme === "dark") {
@@ -54,7 +52,9 @@ export default function NavbarDash(props) {
               <div className="hidden lg:flex w-full pr-6">
                 <div className="w-1/2 h-full hidden lg:flex items-center pl-6 pr-24">
                   <div className="relative w-full ">
-                    <h1 className="text-2xl font-medium fadeIn">{props.title}</h1>
+                    <h1 className="text-2xl font-medium fadeIn">
+                      {props.title}
+                    </h1>
                   </div>
                 </div>
                 <div className="w-1/2 hidden lg:flex">

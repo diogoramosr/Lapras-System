@@ -26,7 +26,7 @@ const Footer = () => {
                 <div class="flex mt-6 space-x-6 dark:text-white text-black">
                   <a
                     class="hover:opacity-75"
-                    href=""
+                    href="/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -48,7 +48,7 @@ const Footer = () => {
 
                   <a
                     class="hover:opacity-75"
-                    href=""
+                    href="https://www.instagram.com/laprasnext_/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -69,7 +69,7 @@ const Footer = () => {
                   </a>
                   <a
                     class="hover:opacity-75"
-                    href=""
+                    href="/"
                     target="_blank"
                     rel="noreferrer"
                   >
