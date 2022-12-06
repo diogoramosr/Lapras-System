@@ -6,10 +6,6 @@ import _ from "lodash";
 const data = [
   { Localizacao: "Campinas", temperatura: 20, data: "21/2/2022" },
   { Localizacao: "Hortolandia", temperatura: 30, data: "22/2/2022" },
-  { Localizacao: "Campinas", temperatura: 20, data: "23/2/2022" },
-  { Localizacao: "Hortolandia", temperatura: 22, data: "22/2/2022" },
-  { Localizacao: "Hortolandia", temperatura: 32, data: "23/2/2022" },
-  { Localizacao: "Campinas", temperatura: 30, data: "24/2/2022" },
 ];
 
 const loadData = (data) => {
@@ -42,7 +38,7 @@ function getData() {
   ];
 }
 
-function BarChart() {
+function CandlestickChart() {
   const [chartData, setChartData] = useState([]);
   const [datas, setDatas] = useState(loadData(data));
 
@@ -72,19 +68,21 @@ function BarChart() {
     vAxis: {
       title: "City",
     },
-    bars: "horizontal",
+    bars: "vertical",
     axes: {
       y: {
         0: { side: "right" },
       },
     },
+    width: 200,
+    height: 200,
   };
 
   return (
-    <div className="w-full h-full flex items-center justify-center">
-      <Chart chartType="Bar" data={datas} options={options} />
+    <div className="w-full h-full flex flex-col items-center">
+      <Chart chartType="CandlestickChart" data={datas} options={options} />
     </div>
   );
 }
 
-export default BarChart;
+export default CandlestickChart;

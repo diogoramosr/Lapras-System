@@ -6,21 +6,7 @@ import _ from 'lodash'
 const data = [
     { Localizacao: "Campinas", temperatura: 20, data: "21/2/2022" },
     { Localizacao: "Hortolandia", temperatura: 30, data: "22/2/2022" },
-    { Localizacao: "Campinas", temperatura: 20, data: "23/2/2022" },
-    { Localizacao: "Hortolandia", temperatura: 22, data: "22/2/2022" },
-    { Localizacao: "Hortolandia", temperatura: 32, data: "23/2/2022" },
-    { Localizacao: "Campinas", temperatura: 30, data: "24/2/2022" },
 ]
-
-const options = {
-    width: 270,
-    redFrom: 90,
-    redTo: 110,
-    yellowFrom: 60,
-    yellowTo: 90,
-    minorTicks: 5,
-};
-
 
 const loadData = (data) => {
     const values = _.groupBy(data, (value) => {
@@ -53,14 +39,10 @@ function getData() {
         ["Label", "Value"],
         ["Campinas", getRandomNumber()],
         ["Hortolândia", getRandomNumber()],
-        ["Campinas", getRandomNumber()],
-        ["Hortolândia", getRandomNumber()],
-        ["Campinas", getRandomNumber()],
-        ["Hortolândia", getRandomNumber()],
     ];
 }
 
-function Grafico() {
+function GeoChart() {
     const [chartData, setChartData] = useState([])
     const [datas, setDatas] = useState(loadData(data));
 
@@ -80,9 +62,9 @@ function Grafico() {
 
     }, [])
 
-    const optionss = {
+    const options = {
         chart: {
-          title: "Dados",
+          title: "Daods",
           subtitle: "Dados sub",
         },
         hAxis: {
@@ -92,24 +74,19 @@ function Grafico() {
         vAxis: {
           title: "City",
         },
-        bars: "vertical",
+        bars: "horizontal",
         axes: {
           y: {
             0: { side: "right" },
           },
         },
-        width: 990,
-        height: 300
       };
 
     return (
-        <>
-            
-            {/*<Chart chartType='PieChart' data={chartData} width={"100%"} height={"400px"} />*/}
-            {/*<Chart chartType='PieChart' data={chartData} options={options2} />*/}
-            <Chart chartType="Bar" data={datas} options={optionss}/>
-        </>
+        <div className='w-full h-full'>
+            <Chart chartType="GeoChart" data={datas} options={options}/>
+        </div>
     )
 }
 
-export default Grafico
+export default GeoChart

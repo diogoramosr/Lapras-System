@@ -4,6 +4,8 @@ import {
   RiDropLine,
   RiWindyFill,
   RiSunLine,
+  RiSunCloudyLine,
+  RiTempColdLine,
 } from "react-icons/ri";
 import {
   iconUrlFromCode,
@@ -34,7 +36,7 @@ function TemperaturaDetalhes({
       <div className="flex flex-row items-center justify-between py-3">
         <img src={iconUrlFromCode(icon)} alt="" className="w-20" />
         <p className="text-5xl">{`${temp.toFixed()}°`}</p>
-        <div className="flex flex-col space-y-2">
+        <div className="flex flex-col items-start justify-center space-y-2">
           <div className="flex font-light text-sm items-center justify-center">
             <RiTempHotLine size={18} className="mr-1" />
             Temperatura:
@@ -58,33 +60,33 @@ function TemperaturaDetalhes({
       <div className="flex flex-row items-center justify-center space-x-2 text-sm py-3">
         <RiSunLine />
         <p className="font-light">
-          Rise:
+          Nascer do sol:
           <span className="font-medium ml-1">
             {formatToLocalTime(sunrise, timezone, "hh:mm a")}
           </span>
         </p>
         <p className="font-light">|</p>
 
-        <RiSunLine />
+        <RiSunCloudyLine />
         <p className="font-light">
-          Set:{" "}
+          Pôr do sol:{" "}
           <span className="font-medium ml-1">
             {formatToLocalTime(sunset, timezone, "hh:mm a")}
           </span>
         </p>
         <p className="font-light">|</p>
 
-        <RiSunLine />
+        <RiTempHotLine />
         <p className="font-light">
-          High:{" "}
-          <span className="font-medium ml-1">{`${temp_max.toFixed()}°`}</span>
+          Temperatura máxima:{" "}
+          <span className="font-medium ml-1">{`${temp_max.toFixed()}°C`}</span>
         </p>
         <p className="font-light">|</p>
 
-        <RiSunLine />
+        <RiTempColdLine />
         <p className="font-light">
-          Low:{" "}
-          <span className="font-medium ml-1">{`${temp_min.toFixed()}°`}</span>
+          Temperatura mínima:{" "}
+          <span className="font-medium ml-1">{`${temp_min.toFixed()}°C`}</span>
         </p>
         <p className="font-light">|</p>
       </div>

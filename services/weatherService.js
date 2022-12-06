@@ -81,11 +81,12 @@ const getFormattedWeatherData = async (searchParams) => {
   return { ...formattedCurrentWeather, ...formattedForecastWeather };
 };
 
+// formartar para o brasileiro
 const formatToLocalTime = (
   secs,
   zone,
-  format = "cccc, dd LLL yyyy' | Local time: 'hh:mm a"
-) => DateTime.fromSeconds(secs).setZone(zone).toFormat(format);
+  format = "cccc, dd LLLL yyyy | HH:mm a"
+  ) => DateTime.fromSeconds(secs).setZone(zone).toFormat(format, { locale: "pt-BR" }); 
 
 const iconUrlFromCode = (code) =>
   `http://openweathermap.org/img/wn/${code}@2x.png`;

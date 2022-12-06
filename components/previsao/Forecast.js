@@ -1,4 +1,5 @@
 import React from "react";
+import { iconUrlFromCode } from "../../services/weatherService";
 
 function Forecast({ title, items }) {
   return (
@@ -10,6 +11,7 @@ function Forecast({ title, items }) {
       <div className="flex flex-row items-center justify-between">
         {items?.map((item, index) => (
           <div
+            key={index}
             className="flex flex-col items-center justify-center"
           >
             <p className="font-light text-sm">{item.title}</p>

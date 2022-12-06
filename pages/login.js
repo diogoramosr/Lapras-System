@@ -42,7 +42,14 @@ export default function Login() {
 
   return (
     <div class="dark:bg-black h-screen">
-      <Head></Head>
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="robots" content="index, follow" />
+        <meta name="description" content="Site do sistema Lapras System" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Lapras System" />
+        <title>Lapras System - Login</title>
+      </Head>
       <div class="max-w-screen-xl px-4 py-6 mx-auto sm:px-6 lg:px-8 ">
         <div class="max-w-lg mx-auto">
           <div className="flex justify-between items-center">

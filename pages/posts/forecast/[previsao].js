@@ -11,7 +11,7 @@ import Forecast from "../../../components/previsao/Forecast";
 import getFormattedWeatherData from "../../../services/weatherService";
 
 export default function Previsão({ data }) {
-  const [query, setQuery] = useState({ q:  "Campinas"   }); 
+  const [query, setQuery] = useState({ q: "Campinas" });
   const [units, setUnits] = useState("metric");
   const [weather, setWeather] = useState(null);
 
@@ -19,7 +19,6 @@ export default function Previsão({ data }) {
     const fetchWeather = async () => {
       const message = query.q ? query.q : "current location.";
       await getFormattedWeatherData({ ...query, units }).then((data) => {
-
         setWeather(data);
       });
     };
@@ -45,9 +44,7 @@ export default function Previsão({ data }) {
             <div class="2xl:container h-full  dark:bg-gray-600">
               <div class="flex justify-center items-center">
                 <div className="p-1 w-full">
-                  <div
-                    className="mx-auto w-full h-full mt-4 py-5 px-32 bg-gradient-to-br "
-                  >
+                  <div className="mx-auto w-full h-full mt-4 py-5 px-32 bg-gradient-to-br ">
                     <TopButtons setQuery={setQuery} />
                     <Inputs
                       setQuery={setQuery}
@@ -60,10 +57,13 @@ export default function Previsão({ data }) {
                         <TimeAndLocation weather={weather} />
                         <TemperaturaDetalhes weather={weather} />
                         <Forecast
-                          title="hourly forecast"
+                          title="Previsão horária                          "
                           items={weather.hourly}
                         />
-                        <Forecast title="daily forecast" items={weather.daily} />
+                        <Forecast
+                          title="Previsão diária"
+                          items={weather.daily}
+                        />
                       </div>
                     )}
                   </div>

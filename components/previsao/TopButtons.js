@@ -1,6 +1,6 @@
 import React from "react";
 
-function TopButtons({setQuery}) {
+function TopButtons({ setQuery }) {
   const cities = [
     {
       id: 1,
@@ -16,11 +16,15 @@ function TopButtons({setQuery}) {
     },
     {
       id: 4,
-      title: "Porto Alegre",
+      title: "Brasília",
     },
     {
       id: 5,
-      title: "Curitiba",
+      title: "Amazônia",
+    },
+    {
+      id: 6,
+      title: "Recife",
     },
   ];
   return (

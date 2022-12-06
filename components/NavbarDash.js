@@ -3,6 +3,9 @@ import { useTheme } from "next-themes";
 import Button from "./Button";
 
 export default function NavbarDash(props) {
+  
+
+
   const [profile, setProfile] = useState(false);
   const [show, setShow] = useState(false);
   const { systemTheme, theme, setTheme } = useTheme();
@@ -112,16 +115,8 @@ export default function NavbarDash(props) {
                         ) : (
                           ""
                         )}
-                        <div className="relative">
-                          <img
-                            className="rounded-full h-10 w-10 object-cover"
-                            src="https://tuk-cdn.s3.amazonaws.com/assets/components/sidebar_layout/sl_1.png"
-                            alt="avatar"
-                          />
-                          <div className="w-2 h-2 rounded-full bg-green-400 border border-white absolute inset-0 mb-0 mr-0 m-auto" />
-                        </div>
                       </div>
-                      <p className="text-gray-800 text-sm mx-3">Jane Doe</p>
+                      <p className="text-gray-800 text-sm mx-3">Olá, Jane Doe</p>
                       <div className="cursor-pointer text-gray-600">
                         <svg
                           aria-haspopup="true"

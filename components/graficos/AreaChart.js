@@ -42,7 +42,7 @@ function getData() {
   ];
 }
 
-function BarChart() {
+function AreaChart() {
   const [chartData, setChartData] = useState([]);
   const [datas, setDatas] = useState(loadData(data));
 
@@ -82,9 +82,9 @@ function BarChart() {
 
   return (
     <div className="w-full h-full flex items-center justify-center">
-      <Chart chartType="Bar" data={datas} options={options} />
+      <Chart chartType="AreaChart" data={datas} options={options} />
     </div>
   );
 }
 
-export default BarChart;
+export default AreaChart;
