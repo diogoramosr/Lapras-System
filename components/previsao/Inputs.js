@@ -37,17 +37,19 @@ function Inputs({ setQuery, units, setUnits }) {
   */
   return (
     <div className="flex flex-row justify-center my-6">
-      <div className="flex flex-row w-3/4 items-center justify-center space-x-4">
+      
+      
+      <div className="flex sm:w-full md:w-full lg:w-3/4 items-center justify-center space-x-4 bg-red-500">
         <input
           value={city}
           onChange={(e) => setCity(e.currentTarget.value)}
           type="text"
           placeholder="Pesquisar..."
-          className="text-xl font-light p-2 w-full shadow-xl focus:outline-none placeholder:lowercase"
+          className="text-xl font-light p-2 sm:w-full w-full shadow-xl focus:outline-none placeholder:lowercase"  
         />
         <RiSearch2Line
           size={25}
-          className=" cursor-pointer transition ease-out hover:scale-125"
+          className=" cursor-pointer transition ease-out hover:scale-125 "
           onClick={handleSearchClick}
         />
         <RiMapPinLine
@@ -57,7 +59,7 @@ function Inputs({ setQuery, units, setUnits }) {
         />
       </div>
 
-      <div className="flex flex-row w-1/4 items-center justify-center">
+      <div className="flex flex-row md:w-full lg:w-1/4 items-center justify-center">
         <button
           name="metric"
           className="text-xl font-light transition ease-out hover:scale-125"

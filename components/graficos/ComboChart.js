@@ -85,8 +85,8 @@ function ComboChart() {
       };
 
     return (
-        <div className='w-full h-full flex items-center '>
-            <Chart chartType="ComboChart" data={datas} options={options}/>
+        <div className='w-full h-full flex items-center justify-center'>
+            <Chart chartType="ComboChart" data={datas} options={options} className="w-full"/>
         </div>
     )
 }

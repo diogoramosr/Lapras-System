@@ -13,7 +13,7 @@ const Graficos = () => {
   const { asPath } = useRouter();
   return (
     <>
-      <div class="m-0 font-sans antialiased font-normal text-base leading-default bg-zinc-50 dark:bg-gray-600 h-screen">
+      <div class="m-0 font-sans antialiased font-normal text-base leading-default bg-zinc-50 dark:bg-gray-600 h-screen overflow-x-hidden">
         <Sidebar />
         <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] dark:bg-gray-600">
           <NavbarDash title="Gráficos" />
@@ -25,13 +25,13 @@ const Graficos = () => {
                     <div class="w-full h-full md:w-full flex-wrap p-3 mb-6 gap-4 md:mb-0 md:flex-none flex items-center justify-between">
                       <div className="h-full w-full flex flex-wrap gap-4 items-center justify-between">
                        
-                        <div class="relative h-2/4 w-full md:w-2/4  flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
+                        <div class="relative lg:h-3/5 h-full w-full lg:w-2/4 flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
                           <div class="flex flex-wrap h-full w-full">
                             <div class="h-full w-full px-3 lg:w-full lg:flex-none">
                               <div className="w-full h-full p-2 m-auto rounded-lg dark:bg-gray-900 dark:text-gray-100">
-                                <div className="flex justify-around items-center h-full">
+                                <div className="flex justify-around items-center h-full w-full">
                                   <div className="flex flex-col items-center p-1 w-full h-full">
-                                    <BarChart />
+                                    <BarChart/>
                                   </div>
                                 </div>
                               </div>
@@ -39,7 +39,7 @@ const Graficos = () => {
                           </div>
                         </div>
 
-                        <div class="relative h-2/4 w-full md:w-2/5  flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
+                        <div class="relative h-3/5 w-full lg:w-2/5 flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
                           <div class="flex flex-wrap h-full w-full">
                             <div class="h-full w-full px-3 lg:w-full lg:flex-none">
                               <div className="w-full h-full p-2 m-auto rounded-lg dark:bg-gray-900 dark:text-gray-100">

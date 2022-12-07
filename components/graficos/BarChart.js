@@ -62,8 +62,8 @@ function BarChart() {
 
   const options = {
     chart: {
-      title: "Daods",
-      subtitle: "Dados sub",
+      title: "Dados",
+      subtitle: "Dados de temperatura",
     },
     hAxis: {
       title: "Temp",
@@ -72,7 +72,7 @@ function BarChart() {
     vAxis: {
       title: "City",
     },
-    bars: "horizontal",
+    bars: "vertical",
     axes: {
       y: {
         0: { side: "right" },
@@ -81,8 +81,8 @@ function BarChart() {
   };
 
   return (
-    <div className="w-full h-full flex items-center justify-center">
-      <Chart chartType="Bar" data={datas} options={options} />
+    <div className="w-full h-full flex items-center justify-center" >
+      <Chart chartType="Bar" data={datas} options={options} className="lg:w-full md:w-full sm:w-full w-[19rem] h-full p-2"/>
     </div>
   );
 }

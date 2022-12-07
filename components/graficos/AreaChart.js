@@ -82,7 +82,7 @@ function AreaChart() {
 
   return (
     <div className="w-full h-full flex items-center justify-center">
-      <Chart chartType="AreaChart" data={datas} options={options} />
+      <Chart chartType="AreaChart" data={datas} options={options} className="lg:w-full md:w-full sm:w-full w-[19rem] h-full p-2"/>
     </div>
   );
 }

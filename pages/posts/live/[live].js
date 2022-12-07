@@ -7,7 +7,7 @@ import CardData from "../../../components/ComponentFromWeatherData/CardData";
 
 const Aovivo = () => {
   const [data, setData] = useState(initialData);
-  const randomRegions = ["São Paulo", "Rio de Janeiro", "Salvador", ];
+  const randomRegions = ["São Paulo", "Rio de Janeiro", "Salvador"];
   const randomRegion = () => {
     let t = randomRegions.length;
     let av = Math.floor(Math.random() * t);
@@ -40,23 +40,21 @@ const Aovivo = () => {
                       <div class="relative h-full flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
                         <div class="flex-auto p-4 ">
                           <div class="flex flex-wrap -mx-3">
-                            
                             <div class="max-w-full px-3 lg:w-full lg:flex-none">
                               <div class="flex flex-wrap w-full justify-between items-center px-2 h-full">
-                                <p class="pt-2 mb-1 font-semibold w-3/6">
+                                <p class="pt-2 mb-1 font-semibold w-full">
                                   Câmera
                                 </p>
                               </div>
                             </div>
 
                             <div class="max-w-full px-3 mt-7 ml-auto text-center w-full lg:flex-none">
-                              <div class="h-full bg-gradient-to-tl from-purple-700 to-blue-500 rounded-xl">
+                              <div class="h-full bg-gradient-to-tl rounded-xl">
                                 <div class="relative flex items-center justify-center h-full">
-                                  s
+                                  
                                 </div>
                               </div>
                             </div>
-
                           </div>
                         </div>
                       </div>
@@ -189,8 +187,6 @@ const Aovivo = () => {
                     </div>
                   </div>
                 </div>
-
-                
               </div>
             </div>
           </div>

@@ -85,7 +85,7 @@ function PieChart() {
 
     return (
         <div className='w-full h-full flex items-center justify-center'>
-            <Chart chartType="PieChart" data={datas} options={options}/>
+            <Chart chartType="PieChart" data={datas} options={options} className="lg:w-full md:w-full sm:w-full w-[18rem] h-full"/>
         </div>
     )
 }
