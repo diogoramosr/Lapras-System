@@ -16,7 +16,6 @@ export default function Previsão({ data }) {
 
   useEffect(() => {
     const fetchWeather = async () => {
-      const message = query.q ? query.q : "current location.";
       await getFormattedWeatherData({ ...query, units }).then((data) => {
         setWeather(data);
       });
@@ -24,14 +23,6 @@ export default function Previsão({ data }) {
 
     fetchWeather();
   }, [query, units]);
-
-  const formatBackground = () => {
-    if (!weather) return "from-cyan-700 to-blue-700";
-    const threshold = units === "metric" ? 20 : 60;
-    if (weather.temp <= threshold) return "from-cyan-700 to-blue-700";
-
-    return "from-yellow-700 to-orange-700";
-  };
 
   return (
     <>
@@ -64,15 +55,14 @@ export default function Previsão({ data }) {
         <meta name="msapplication-TileColor" content="#da532c " />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-
       <NavbarDash title="Previsão" />
       <div class="m-0 font-sans antialiased font-normal text-base leading-default dark:bg-gray-600 h-full bg-zinc-100 fadeIn">
-      <div class="ml-auto w-full dark:bg-gray-600 h-full max-w-[1300px] mx-auto p-2">
+        <div class="ml-auto w-full dark:bg-gray-600 h-full max-w-[1300px] mx-auto p-2">
           <div class="2xl:container h-full dark:bg-gray-600 fadeIn">
             <div class="2xl:container h-full dark:bg-gray-600">
               <div class="flex justify-center items-center">
                 <div className="p-1 w-full">
-                  <div className="mx-auto w-full h-full mt-4 py-5 px-32 bg-gradient-to-br">
+                  <div className="mx-auto w-full h-full mt-4 py-5 px-32 bg-gradient-to-br flex flex-col items-center justify-center">
                     <TopButtons setQuery={setQuery} />
                     <Inputs
                       setQuery={setQuery}
@@ -81,7 +71,7 @@ export default function Previsão({ data }) {
                     />
 
                     {weather && (
-                      <div>
+                      <div className="w-full">
                         <TimeAndLocation weather={weather} />
                         <TemperaturaDetalhes weather={weather} />
                         <Forecast

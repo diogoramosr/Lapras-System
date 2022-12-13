@@ -28,12 +28,12 @@ function TemperaturaDetalhes({
   },
 }) {
   return (
-    <div>
+    <div className="flex flex-col justify-around w-full">
       <div className="flex items-center justify-center py-6 text-cl text-cyan-300">
         <p>{details}</p>
       </div>
 
-      <div className="flex flex-row items-center justify-between py-3">
+      <div className="flex flex-row flex-wrap items-center justify-around py-3">
         <img src={iconUrlFromCode(icon)} alt="" className="w-20" />
         <p className="text-5xl">{`${temp.toFixed()}°`}</p>
         <div className="flex flex-col items-start justify-center space-y-2">
@@ -57,38 +57,45 @@ function TemperaturaDetalhes({
         </div>
       </div>
 
-      <div className="flex flex-row items-center justify-center space-x-2 text-sm py-3">
-        <RiSunLine />
-        <p className="font-light">
-          Nascer do sol:
-          <span className="font-medium ml-1">
-            {formatToLocalTime(sunrise, timezone, "hh:mm a")}
-          </span>
-        </p>
-        <p className="font-light">|</p>
+      <div className="grid lg:grid-cols-4 w-full items-center lg:gap-0 gap-3 justify-items-center space-x-2 text-sm py-3">
+        <div className="flex flex-col items-center gap-2">
+          <RiSunLine />
+          <p className="font-light">
+            Nascer do sol:
+            <span className="font-medium ml-1">
+              {formatToLocalTime(sunrise, timezone, "hh:mm a")}
+            </span>
+          </p>
+        </div>
 
-        <RiSunCloudyLine />
-        <p className="font-light">
-          Pôr do sol:{" "}
-          <span className="font-medium ml-1">
-            {formatToLocalTime(sunset, timezone, "hh:mm a")}
-          </span>
-        </p>
-        <p className="font-light">|</p>
+        <div className="flex flex-col items-center gap-2">
+          {" "}
+          <RiSunCloudyLine />
+          <p className="font-light">
+            Pôr do sol:
+            <span className="font-medium ml-1">
+              {formatToLocalTime(sunset, timezone, "hh:mm a")}
+            </span>
+          </p>
+        </div>
 
-        <RiTempHotLine />
-        <p className="font-light">
-          Temperatura máxima:{" "}
-          <span className="font-medium ml-1">{`${temp_max.toFixed()}°C`}</span>
-        </p>
-        <p className="font-light">|</p>
+        <div className="flex flex-col items-center gap-2">
+          {" "}
+          <RiTempHotLine />
+          <p className="font-light">
+            Temperatura máxima:{" "}
+            <span className="font-medium ml-1">{`${temp_max.toFixed()}°C`}</span>
+          </p>
+        </div>
 
-        <RiTempColdLine />
-        <p className="font-light">
-          Temperatura mínima:{" "}
-          <span className="font-medium ml-1">{`${temp_min.toFixed()}°C`}</span>
-        </p>
-        <p className="font-light">|</p>
+        <div className="flex flex-col items-center gap-2">
+          {" "}
+          <RiTempColdLine />
+          <p className="font-light">
+            Temperatura mínima:{" "}
+            <span className="font-medium ml-1">{`${temp_min.toFixed()}°C`}</span>
+          </p>
+        </div>
       </div>
     </div>
   );
