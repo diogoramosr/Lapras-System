@@ -11,6 +11,27 @@ export default function Index() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Lapras System" />
         <title>Lapras System - Home</title>
+        <link
+          rel="apple-touch-icon"
+          tamanhos="180x180"
+          href="/favicon/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          tamanhos="32x32 "
+          href="/favicon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          tamanhos="16x16"
+          href="/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c " />
+        <meta name="theme-color" content="#ffffff" />
       </Head>
       <Navbar />
       <section className="mt-20 mx-auto max-w-screen-xl pb-4 px-4 sm:px-8">

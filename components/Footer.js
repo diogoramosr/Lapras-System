@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = () => {
+export default function Footer() {
   return (
     <>
       <section class="relative py-24 overflow-hidden dark:bg-[#303030] bg-white">
@@ -22,7 +22,6 @@ const Footer = () => {
                     &copy; Copyright 2022. All Rights Reserved Lapras System.
                   </p>
                 </div>
-
                 <div class="flex mt-6 space-x-6 dark:text-white text-black">
                   <a
                     class="hover:opacity-75"
@@ -31,7 +30,6 @@ const Footer = () => {
                     rel="noreferrer"
                   >
                     <span class="sr-only"> Facebook </span>
-
                     <svg
                       class="w-6 h-6"
                       fill="currentColor"
@@ -45,7 +43,6 @@ const Footer = () => {
                       />
                     </svg>
                   </a>
-
                   <a
                     class="hover:opacity-75"
                     href="https://www.instagram.com/laprasnext_/"
@@ -53,7 +50,6 @@ const Footer = () => {
                     rel="noreferrer"
                   >
                     <span class="sr-only"> Instagram </span>
-
                     <svg
                       class="w-6 h-6"
                       fill="currentColor"
@@ -74,7 +70,6 @@ const Footer = () => {
                     rel="noreferrer"
                   >
                     <span class="sr-only"> GitHub </span>
-
                     <svg
                       class="w-6 h-6"
                       fill="currentColor"
@@ -93,16 +88,16 @@ const Footer = () => {
             </div>
             <div class="w-full md:w-1/2 lg:w-2/12 p-6">
               <div class="h-full">
-                <h3 class="mb-9 font-heading font-semibold text-xs dark:text-white text-black uppercase tracking-px">
-                  Company
+                <h3 class="mb-9 font-heading font-semibold text-xs dark:text-white text-black upper se tracking-px">
+                  EMPRESA
                 </h3>
                 <ul class="dark:text-gray-300 text-gray-600">
                   <li class="mb-4">
                     <a
                       class="font-heading font-medium text-base hover:opacity-75"
-                      href="#"
+                      href="/projeto"
                     >
-                      Features
+                      Características
                     </a>
                   </li>
                   <li class="mb-4">
@@ -110,7 +105,7 @@ const Footer = () => {
                       class="font-heading font-medium text-base hover:opacity-75"
                       href="#"
                     >
-                      Pricing
+                      Preços
                     </a>
                   </li>
                   <li class="mb-4">
@@ -118,15 +113,7 @@ const Footer = () => {
                       class="font-heading font-medium text-base hover:opacity-75"
                       href="#"
                     >
-                      Affiliate Program
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="font-heading font-medium text-base hover:opacity-75"
-                      href="#"
-                    >
-                      Press Kit
+                      Programa de Afiliados{" "}
                     </a>
                   </li>
                 </ul>
@@ -135,7 +122,7 @@ const Footer = () => {
             <div class="w-full md:w-1/2 lg:w-2/12 p-6">
               <div class="h-full">
                 <h3 class="mb-9 font-heading font-semibold text-xs dark:text-white text-black uppercase tracking-px">
-                  Support
+                  Suporte
                 </h3>
                 <ul class="dark:text-gray-300 text-gray-600">
                   <li class="mb-4">
@@ -143,31 +130,23 @@ const Footer = () => {
                       class="font-heading font-medium text-base hover:opacity-75"
                       href="#"
                     >
-                      Account
+                      Conta
                     </a>
                   </li>
                   <li class="mb-4">
                     <a
                       class="font-heading font-medium text-base hover:opacity-75"
-                      href="#"
+                      href="/contato"
                     >
-                      Help
+                      Ajuda
                     </a>
                   </li>
                   <li class="mb-4">
                     <a
                       class="font-heading font-medium text-base hover:opacity-75"
-                      href="#"
+                      href="/contato"
                     >
-                      Contact Us
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="font-heading font-medium text-base hover:opacity-75"
-                      href="#"
-                    >
-                      Customer Support
+                      Contato
                     </a>
                   </li>
                 </ul>
@@ -176,7 +155,7 @@ const Footer = () => {
             <div class="w-full md:w-1/2 lg:w-3/12 p-6">
               <div class="h-full">
                 <h3 class="mb-9 font-heading font-semibold text-xs dark:text-white text-black uppercase tracking-px">
-                  Legals
+                  LEGAIS
                 </h3>
                 <ul class="dark:text-gray-300 text-gray-600">
                   <li class="mb-4">
@@ -184,7 +163,7 @@ const Footer = () => {
                       class="font-heading font-medium text-base hover:opacity-75"
                       href="#"
                     >
-                      Terms &amp; Conditions
+                      Termos &amp; Condições
                     </a>
                   </li>
                   <li class="mb-4">
@@ -192,7 +171,7 @@ const Footer = () => {
                       class="font-heading font-medium text-base hover:opacity-75"
                       href="#"
                     >
-                      Privacy Policy
+                      Política de Privacidade
                     </a>
                   </li>
                   <li>
@@ -200,7 +179,7 @@ const Footer = () => {
                       class="font-heading font-medium text-base hover:opacity-75"
                       href="#"
                     >
-                      Licensing
+                      Licenciamento
                     </a>
                   </li>
                 </ul>
@@ -211,5 +190,4 @@ const Footer = () => {
       </section>
     </>
   );
-};
-export default Footer;
+}

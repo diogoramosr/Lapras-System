@@ -40,11 +40,11 @@ export default function Previsão({ data }) {
         <Sidebar />
         <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] dark:bg-gray-600">
           <NavbarDash title="Previsão" />
-          <div class="2xl:container h-full bg-zinc-500 dark:bg-gray-600 fadeIn">
+          <div class="2xl:container h-full bg-zinc-50 dark:bg-gray-600 fadeIn">
             <div class="2xl:container h-full dark:bg-gray-600">
               <div class="flex justify-center items-center">
                 <div className="p-1 w-full">
-                  <div className="mx-auto w-full h-full mt-4 py-5 px-32 bg-gradient-to-br bg-blue-400">
+                  <div className="mx-auto w-full h-full mt-4 py-5 px-32 bg-gradient-to-br">
                     <TopButtons setQuery={setQuery}/>
                     <Inputs
                       setQuery={setQuery}

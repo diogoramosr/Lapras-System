@@ -16,8 +16,13 @@ function Inputs({ setQuery, units, setUnits }) {
   const handleLocationClick = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position) => {
-        const { latitude, longitude } = position.coords;
-        setQuery({ lat: latitude, lon: longitude });
+        let lat = position.coords.latitude;
+        let lon = position.coords.longitude;
+
+        setQuery({
+          lat,
+          lon,
+        });
       });
     }
   };
@@ -37,15 +42,13 @@ function Inputs({ setQuery, units, setUnits }) {
   */
   return (
     <div className="flex flex-row justify-center my-6">
-      
-      
-      <div className="flex sm:w-full md:w-full lg:w-3/4 items-center justify-center space-x-4 bg-red-500">
+      <div className="flex sm:w-full md:w-full lg:w-3/4 items-center justify-center space-x-4">
         <input
           value={city}
           onChange={(e) => setCity(e.currentTarget.value)}
           type="text"
           placeholder="Pesquisar..."
-          className="text-xl font-light p-2 sm:w-full w-full shadow-xl focus:outline-none placeholder:lowercase"  
+          className="text-xl font-light p-2 sm:w-full w-full shadow-xl focus:outline-none placeholder:lowercase"
         />
         <RiSearch2Line
           size={25}

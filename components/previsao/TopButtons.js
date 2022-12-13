@@ -28,7 +28,7 @@ function TopButtons({ setQuery }) {
     },
   ];
   return (
-    <div className=" bg-red-200 items-center justify-between flex ">
+    <div className="items-center justify-between flex ">
       {cities.map((city) => (
         <button
           key={city.id}

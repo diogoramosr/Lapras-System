@@ -101,7 +101,7 @@ const Graficos = () => {
                               <div className="w-full h-full p-2 m-auto rounded-lg dark:bg-gray-900 dark:text-gray-100">
                                 <div className="flex justify-around items-center h-full">
                                   <div className="flex flex-col justify-center items-center p-1 w-full h-full">
-
+                                      <Candlestick />
                                   </div>
                                 </div>
                               </div>

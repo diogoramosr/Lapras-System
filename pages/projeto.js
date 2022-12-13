@@ -11,7 +11,28 @@ export default function Projeto() {
         <meta name="robots" content="index, follow" />
         <meta name="description" content="Site do sistema Lapras System" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="author" content="Lapras System" />
+        <meta content="Lapras System" />
+        <link
+          rel="apple-touch-icon"
+          tamanhos="180x180"
+          href="/favicon/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          tamanhos="32x32 "
+          href="/favicon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          tamanhos="16x16"
+          href="/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c " />
+        <meta name="theme-color" content="#ffffff" />
         <title>Lapras System - Projeto</title>
       </Head>
       <div className="bg-black text-white">
@@ -21,7 +42,7 @@ export default function Projeto() {
         <section class="relative pt-36 lg:pb-14 overflow-hidden bg-black w-full">
           <img
             class="absolute top-0 left-1/2 transform -translate-x-1/2"
-            src="/images/fundo_projeto.jpg"
+            src="/images/sphere.jpg"
             alt=""
             width="100%"
           />
@@ -139,7 +160,7 @@ export default function Projeto() {
                       </svg>
                     </div>
                     <p class="ml-16 text-lg leading-6 font-medium dark:text-zinc-100 text-zinc-900">
-                      Competitive exchange rates
+                      Ampla rede de dados
                     </p>
                   </dt>
                   <dd class="mt-2 ml-16 text-base text-gray-500">
@@ -168,7 +189,7 @@ export default function Projeto() {
                       </svg>
                     </div>
                     <p class="ml-16 text-lg leading-6 font-medium dark:text-zinc-100 text-zinc-900">
-                      No hidden fees
+                     Controle de Previsões
                     </p>
                   </dt>
                   <dd class="mt-2 ml-16 text-base text-gray-500">
@@ -197,7 +218,7 @@ export default function Projeto() {
                       </svg>
                     </div>
                     <p class="ml-16 text-lg leading-6 font-medium dark:text-zinc-100 text-zinc-900">
-                      Transfers are instant
+                      Rápido envio de informações
                     </p>
                   </dt>
                   <dd class="mt-2 ml-16 text-base text-gray-500">
@@ -226,7 +247,7 @@ export default function Projeto() {
                       </svg>
                     </div>
                     <p class="ml-16 text-lg leading-6 font-medium dark:text-zinc-100 text-zinc-900">
-                      Mobile notifications
+                      Notificações a tempo
                     </p>
                   </dt>
                   <dd class="mt-2 ml-16 text-base text-gray-500">
@@ -308,64 +329,70 @@ export default function Projeto() {
               <div class="w-full lg:w-1/2 px-4 py-2">
                 <details class="mb-7">
                   <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4 text-black">
-                    How Long is this site live?
+                    A ferramenta é realmente necessária para o uso de
+                    verificações do foco de queimada?
                   </summary>
                   <span>
-                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                    minim velit nostrud pariatur culpa magna in aute.
+                    Existem muitos falsos alarmes em relação a queimadas, em que
+                    um satélite pode acabar detectando uma temperatura errada
+                    por própria falha do sensor ou alguma interferência, além de
+                    fenômenos climáticos, que podem dificultar o reconhecimento
+                    dos focos, por isso a ferramenta se torna tão importante.
                   </span>
                 </details>
                 <details class="mb-7">
                   <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4 text-black">
-                    Can I install/upload anything I want on there?
+                    A ferramenta oferece algum risco ao meio ambiente?{" "}
                   </summary>
                   <span>
-                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                    minim velit nostrud pariatur culpa magna in aute.
+                    O aparelho não irá causar nenhum dado ao meio ambiente ou no
+                    local que se encontrará, ele apenas poderá ser posicionado
+                    em um local para melhor manutenção e obtenção de sinal.
                   </span>
                 </details>
                 <details class="mb-7">
                   <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4 text-black">
-                    How can I migrate to another site?
+                    Os dados obtidos pelo sistema serão divulgados publicamente?{" "}
                   </summary>
                   <span>
-                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                    minim velit nostrud pariatur culpa magna in aute.
+                    Os dados obtidos pelo aparelho não estarão disponíveis
+                    publicamente, quem poderá ter acesso às estatísticas será
+                    instituição de ensino comprovando o motivo da requisição,
+                    empresas que o sistema poderá auxiliar, ONGs e governo.
                   </span>
                 </details>
               </div>
               <div class="w-full lg:w-1/2 px-4 py-2">
                 <details class="mb-7">
                   <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4 text-black">
-                    Can I change the domain you give me?
+                    O sistema fornece relatório gerenciais em relação aos focos
+                    de incêndio e queimadas?
                   </summary>
                   <span class="px-4 py-2">
-                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                    minim velit nostrud pariatur culpa magna in aute.
+                    Sim, a fim de captação de imagens, a central pode optar por
+                    ter seu relatório com informações através de ondas de calor
+                    por parte do sensor infravermelho.
                   </span>
                 </details>
                 <details class="mb-7">
                   <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4 text-black">
-                    How many sites I can create at once?
+                    O Sistema facilita o acesso ao histórico de casos de
+                    incêndios e de mudanças dos itens de Configuração
+                    registrados para fins de pesquisa e controle?
                   </summary>
                   <span class="px-4 py-2">
-                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                    minim velit nostrud pariatur culpa magna in aute.
+                    Sim, todas as mudanças e casos de incêndio são mantidos em
+                    histórico.
                   </span>
                 </details>
                 <details class="mb-7">
                   <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4 text-black">
-                    How can I communicate with you?
+                    A ferramenta fornece captação de imagens e relatório de
+                    focos em tempo real?{" "}
                   </summary>
                   <span class="px-4 py-2">
-                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                    minim velit nostrud pariatur culpa magna in aute.
+                    Sim, o sistema atua em tempo real mandando relatório para a
+                    central de controle do mesmo.
                   </span>
                 </details>
               </div>

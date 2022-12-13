@@ -13,6 +13,27 @@ export default function Sobre() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Lapras System" />
         <title>Lapras System - Sobre</title>
+        <link
+          rel="apple-touch-icon"
+          tamanhos="180x180"
+          href="/favicon/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          tamanhos="32x32 "
+          href="/favicon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          tamanhos="16x16"
+          href="/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c " />
+        <meta name="theme-color" content="#ffffff" />
       </Head>
       <Navbar />
       <section class="dark:bg-[#303030] bg-white">
@@ -342,10 +363,10 @@ export default function Sobre() {
                 src="/images/logo.png"
                 alt=""
               />
-              <p class="mt-4 text-2xl font-semibold text-black capitalize dark:text-white group-hover:text-white">
+              <p class=" mt-4 text-2xl font-semibold text-black capitalize dark:text-white group-hover:text-white">
                 Diogo Rodrigues
               </p>
-              <p class="mt-2 text-black capitalize dark:text-gray-300 group-hover:text-gray-300">
+              <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
                 CEO | Web Developer
               </p>
               <div class="flex mt-3 -mx-2">
@@ -477,7 +498,7 @@ export default function Sobre() {
       </section>
       <hr class="border-gray-200 mt-5 dark:border-gray-700 max-w-[1000px] m-auto"></hr>
       <section className="w-full pt-10 pb-10 bg-zinc-200 dark:bg-[#121212]">
-        <h2 class="text-3xl font-semibold text-center text-gray-800  lg:text-4xl dark:text-white">
+        <h2 class="text-3xl font-semibold text-center lg:text-4xl dark:text-white">
           A ideia centrada em um só objetivo
         </h2>
         <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
@@ -511,8 +532,8 @@ export default function Sobre() {
               class="pl-1 pt-1 h-auto  text-white font-mono text-xs bg-black"
               id="console"
             >
-              <p class="pb-1">Last login: Wed Sep 25 09:11:04 on ttys002</p>
-              <p class="pb-1">Laraben:Devprojects laraben$</p>
+              <p class="pb-1">First login: Wed Marc 28 16:11:04 on ttys002</p>
+              <p class="pb-1">Laraben: Laprasprojects laraben$</p>
             </div>
           </div>
         </div>
