@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
-import Sidebar from "../../../components/Sidebar";
-import NavbarDash from "../../../components/NavbarDash";
+import Sidebar from "../../components/Sidebar";
+import NavbarDash from "../../components/NavbarDash";
 
 const HistoricPage = () => {
   const { asPath } = useRouter();

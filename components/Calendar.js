@@ -1,5 +1,3 @@
-import { Menu, Transition } from "@headlessui/react";
-import { DotsVerticalIcon } from "@heroicons/react/outline";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
 import {
   add,
@@ -8,11 +6,9 @@ import {
   format,
   getDay,
   isEqual,
-  isSameDay,
   isSameMonth,
   isToday,
   parse,
-  parseISO,
   startOfToday,
 } from "date-fns";
 import { Fragment, useState } from "react";
@@ -43,9 +39,9 @@ export default function Example() {
   }
 
   return (
-    <div className="pt-16">
-      <div className="max-w-md px-4 mx-auto sm:px-7 md:max-w-4xl md:px-6">
-        <div className="md:grid md:grid-cols-2 md:divide-x md:divide-gray-200">
+    <div className="h-full p-3 ">
+      <div className="max-w-sm px-4 mx-auto sm:px-7 md:max-w-4xl md:px-6">
+        <div className="md:grid md:grid-cols-1 md:divide-x md:divide-gray-200">
           <div className="md:pr-14">
             <div className="flex items-center">
               <h2 className="flex-auto font-semibold text-gray-900">
@@ -125,8 +121,6 @@ export default function Example() {
     </div>
   );
 }
-
-
 
 let colStartClasses = [
   "",

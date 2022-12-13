@@ -82,37 +82,18 @@ export default function Sobre() {
                   </svg>
                 </span>
                 <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                  Flowbite Application UI v2.0.0{" "}
-                  <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
-                    Latest
-                  </span>
+                  Reunião com todos do grupo para discutir algumas ideias
+                  elaboradas no dia.
                 </h3>
                 <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-400">
-                  Released on January 13th, 2022
+                  Lançado em 15/03/2022
                 </time>
                 <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-300">
-                  Get access to over 20+ pages including a dashboard layout,
-                  charts, kanban board, calendar, and pre-order E-commerce &amp;
-                  Marketing pages.
+                  Ideias: Sistema contra queimadas, serviços de freelancer, app
+                  para evitar o desperdício de alimentos, ache meu pet,
+                  analfabetismo, reciclagem de eletrônicos descartados por
+                  lojas.
                 </p>
-                <a
-                  href="#"
-                  class="inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-                >
-                  <svg
-                    class="mr-2 w-4 h-4"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>{" "}
-                  Download ZIP
-                </a>
               </li>
               <li class="mb-10 ml-6">
                 <span class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
@@ -131,15 +112,22 @@ export default function Sobre() {
                   </svg>
                 </span>
                 <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                  Flowbite Figma v1.3.0
+                  Discussão sobre o projeto com os professores orientadores.
                 </h3>
                 <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-400">
-                  Released on December 7th, 2021
+                  Lançado em 29/03/2022
                 </time>
                 <p class="text-base font-normal text-gray-500 dark:text-gray-300">
-                  All of the pages and components are first designed in Figma
-                  and we keep a parity between the two versions even as we
-                  update the project.
+                  Retorno - ideia boa, porém métodos de implantação um tanto
+                  incompletos ou não-rentáveis, seguindo das próximas ideias:
+                  Uso de dados via satélite para localização de incêndios Drones
+                  para checagem do local e registros Envio de informações mais
+                  detalhadas a autoridades para facilitar o combate ao incêndio
+                  - uso do GPS Envio de fotos e registros infravermelho para
+                  telejornais e sites que mostram incêndios em tempo real -
+                  tendo em vista que vimos alguns sites que fazem isso mas não
+                  mostram registros do local, apenas regiões que estão tendo
+                  queimadas no mapa - Exemplo: BDQueimadas
                 </p>
               </li>
               <li class="ml-6">
@@ -159,14 +147,18 @@ export default function Sobre() {
                   </svg>
                 </span>
                 <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                  Flowbite Library v1.2.2
+                  Plano de pesquisa
                 </h3>
                 <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-400">
-                  Released on December 2nd, 2021
+                  Lançado em 15/04/2022
                 </time>
                 <p class="text-base font-normal text-gray-500 dark:text-gray-300">
-                  Get started with dozens of web components and interactive
-                  elements built on top of Tailwind CSS.
+                  Finalizamos o 1º protótipo do nosso plano de pesquisa que
+                  poderá ser implementado em breve com informações extra. Ao
+                  realizar mais pesquisas, encontramos projetos semelhantes ao
+                  nosso, dos quais obtemos mais informações juntamente com
+                  outros novos dados que certamente irão nos ajudar no
+                  desenvolvimento do nosso projeto.
                 </p>
               </li>
             </ol>
@@ -188,37 +180,16 @@ export default function Sobre() {
                   </svg>
                 </span>
                 <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                  Flowbite Application UI v2.0.0{" "}
-                  <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
-                    Latest
-                  </span>
+                  Pesquisa de API para mapa e geolocalização{" "}
                 </h3>
                 <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-400">
-                  Released on January 13th, 2022
+                  Lançado em 29/05/2022
                 </time>
                 <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-300">
-                  Get access to over 20+ pages including a dashboard layout,
-                  charts, kanban board, calendar, and pre-order E-commerce &amp;
-                  Marketing pages.
+                  Procurei novas APIs que pudessem ser usadas no projeto. Dentre
+                  as várias opções acabei por definir a API Mapbox como a melhor
+                  e mais variável para implementação em nosso projeto.
                 </p>
-                <a
-                  href="#"
-                  class="inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-                >
-                  <svg
-                    class="mr-2 w-4 h-4"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>{" "}
-                  Download ZIP
-                </a>
               </li>
               <li class="mb-10 ml-6">
                 <span class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
@@ -237,15 +208,16 @@ export default function Sobre() {
                   </svg>
                 </span>
                 <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                  Flowbite Figma v1.3.0
+                  Biblioteca para facilitar o desenvolvimento do projeto{" "}
                 </h3>
                 <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-400">
-                  Released on December 7th, 2021
+                  Lançado em 30/05/2022
                 </time>
                 <p class="text-base font-normal text-gray-500 dark:text-gray-300">
-                  All of the pages and components are first designed in Figma
-                  and we keep a parity between the two versions even as we
-                  update the project.
+                  Cristian encontrou uma biblioteca que nos possibilita utilizar
+                  JavaScript para programar no Arduino. Com isso podemos
+                  utilizar APIs de JavaScript mais facilmente, inclusive para
+                  conexão com servidores e geolocalização.
                 </p>
               </li>
               <li class="ml-6">
@@ -265,14 +237,17 @@ export default function Sobre() {
                   </svg>
                 </span>
                 <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                  Flowbite Library v1.2.2
+                  Novas Features
+                  <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
+                    Latest
+                  </span>
                 </h3>
                 <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-400">
-                  Released on December 2nd, 2021
+                  Lançado em 19/07/2022
                 </time>
                 <p class="text-base font-normal text-gray-500 dark:text-gray-300">
-                  Get started with dozens of web components and interactive
-                  elements built on top of Tailwind CSS.
+                  Adicionamos o NextJs ao projeto, pois ele ajudará a fazer o
+                  sistema de páginas e dividir o projeto.
                 </p>
               </li>
             </ol>
@@ -502,9 +477,7 @@ export default function Sobre() {
           A ideia centrada em um só objetivo
         </h2>
         <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt
-          ex placeat modi magni quia error alias, adipisci rem similique, at
-          omnis eligendi optio eos harum.
+          O futuro já chegou.
         </p>
         <div class="max-w-[900px] mx-auto p-5 drop-shadow-md">
           <div class="w-full shadow-md subpixel-antialiased rounded h-64 bg-black border-black mx-auto">
@@ -534,6 +507,12 @@ export default function Sobre() {
             >
               <p class="pb-1">First login: Wed Marc 28 16:11:04 on ttys002</p>
               <p class="pb-1">Laraben: Laprasprojects laraben$</p>
+              <p class="pb-1">
+                Last login: $Laraben: A humanidade busca mais novas tecnologias, de que
+                maneiras de sobreviver a sua própria decadência racional.
+                Afinal, o lucro a qualquer custo e o bem-estar individual está
+                acima de tudo, inclusive do meio ambiente +=laraben$
+              </p>
             </div>
           </div>
         </div>

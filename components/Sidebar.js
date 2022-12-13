@@ -2,40 +2,28 @@ import React, { useState } from "react";
 import ActiveLink from "./ActiveLink.tsx";
 import Image from "next/image";
 import Logo from "../public/images/logo.png";
-import {
-  RiDashboardFill,
-  RiHistoryLine,
-  RiLiveFill,
-  RiCloudFill,
-  RiPieChart2Fill,
-} from "react-icons/ri";
 
 
 export default function Sidebar() {
   const Menus = [
     {
       label: "Dashboard",
-      icon: <RiDashboardFill className="w-5 h-5" />,
       path: "/dashboard",
     },
     {
       label: "Ao vivo",
-      icon: <RiLiveFill className="w-5 h-5" />,
       path: "/posts/live/aovivo",
     },
     {
       label: "Gráficos",
-      icon: <RiPieChart2Fill className="w-5 h-5" />,
       path: "/posts/chart/graficos",
     },
     {
       label: "Previsão",
-      icon: <RiCloudFill className="w-5 h-5" />,
       path: "/posts/forecast/previsao",
     },
     {
       label: "Histórico",
-      icon: <RiHistoryLine className="w-5 h-5" />,
       path: "/posts/historic/historico",
     },
   ];
