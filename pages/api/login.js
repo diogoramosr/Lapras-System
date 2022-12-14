@@ -1,7 +1,7 @@
-import connect from "../../utils/mongodb";
+import Connect from "../../utils/mongodb";
 import User from '../../model/schema'
 
-connect()
+Connect()
 
 export default async function handler(req,res){
 

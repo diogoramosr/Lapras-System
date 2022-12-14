@@ -1,18 +1,13 @@
-import { Fragment } from "react";
+import { Fragment, useState, useEffect } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import ActiveLink from "./ActiveLink.tsx";
-import {
-  RiDashboardFill,
-  RiHistoryLine,
-  RiLiveFill,
-  RiCloudFill,
-  RiPieChart2Fill,
-} from "react-icons/ri";
+import Button from "./Button";
+import { useTheme } from "next-themes";
 
 const user = {
-  name: "Tom Cook",
-  email: "tom@example.com",
+  name: "Diogo Rodrigues",
+  email: "diogo@gmail.com",
   imageUrl:
     "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
 };
@@ -20,42 +15,85 @@ const user = {
 const Menus = [
   {
     name: "Dashboard",
-    icon: <RiDashboardFill className="w-5 h-5" />,
     path: "/dashboard",
   },
   {
     name: "Ao vivo",
-    icon: <RiLiveFill className="w-5 h-5" />,
     path: "/rotas/live",
   },
   {
     name: "Gráficos",
-    icon: <RiPieChart2Fill className="w-5 h-5" />,
     path: "/rotas/graficos",
   },
   {
     name: "Previsão",
-    icon: <RiCloudFill className="w-5 h-5" />,
     path: "/rotas/previsao",
   },
   {
     name: "Histórico",
-    icon: <RiHistoryLine className="w-5 h-5" />,
     path: "/rotas/historico",
   },
 ];
 
-const userNavigation = [
-  { name: "Your Profile", href: "#" },
-  { name: "Settings", href: "#" },
-  { name: "Sign out", href: "#" },
-];
+const userNavigation = [{ name: "Sign out", href: "#" }];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function NavbarDash(props) {
+  const [users, setUsers] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:3000/api/hello")
+      .then((res) => res.json())
+      .then((data) => {
+        setUsers(data);
+      });
+  }, []);
+
+  // const nomes = [...new Set(users.map((user) => user.email))];
+
+  const { systemTheme, theme, setTheme } = useTheme();
+  const renderThemeChanger = () => {
+    const currentTheme = theme === "system" ? systemTheme : theme;
+    if (currentTheme === "dark") {
+      return (
+        <Button
+          className="bg-white dark:bg-gray-800"
+          onClick={() => setTheme("light")}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-6 h-6"
+          >
+            <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+          </svg>
+        </Button>
+      );
+    } else {
+      return (
+        <Button
+          className="bg-white dark:bg-gray-800"
+          onClick={() => setTheme("dark")}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+            />
+          </svg>
+        </Button>
+      );
+    }
+  };
+
   return (
     <>
       <div className="min-h-full fadeIn">
@@ -66,11 +104,13 @@ export default function NavbarDash(props) {
                 <div className="flex h-16 items-center justify-between">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
-                      <img
-                        className="h-12 w-[6.5rem]"
-                        src="/images/logo.png"
-                        alt="Your Company"
-                      />
+                      <a href="/">
+                        <img
+                          className="h-12 w-[6.5rem]"
+                          src="/images/logo.png"
+                          alt="Logo Lapras System"
+                        />
+                      </a>
                     </div>
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
@@ -97,13 +137,11 @@ export default function NavbarDash(props) {
                     <div className="ml-4 flex items-center md:ml-6">
                       <button
                         type="button"
-                        className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                        className="rounded-full p-1 text-black-400 hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                       >
-                        <span className="sr-only">View notifications</span>
-                        <BellIcon className="h-6 w-6" aria-hidden="true" />
+                        <span className="sr-only">Tema</span>
+                        {renderThemeChanger()}
                       </button>
-
-                      {/* Profile dropdown */}
                       <Menu as="div" className="relative ml-3">
                         <div>
                           <Menu.Button className="flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
@@ -146,7 +184,6 @@ export default function NavbarDash(props) {
                     </div>
                   </div>
                   <div className="-mr-2 flex md:hidden">
-                    {/* Mobile menu button */}
                     <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span className="sr-only">Open main menu</span>
                       {open ? (
@@ -166,7 +203,6 @@ export default function NavbarDash(props) {
                   {Menus.map((item) => (
                     <Disclosure.Button
                       key={item.name}
-                      as="a"
                       href={item.href}
                       className={classNames(
                         item.current
@@ -190,7 +226,7 @@ export default function NavbarDash(props) {
                       />
                     </div>
                     <div className="ml-3">
-                      <div className="text-base font-medium leading-none text-white">
+                      <div className=" mb-2 text-base font-medium leading-none text-white">
                         {user.name}
                       </div>
                       <div className="text-sm font-medium leading-none text-gray-400">
@@ -199,10 +235,10 @@ export default function NavbarDash(props) {
                     </div>
                     <button
                       type="button"
-                      className="ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                      className="ml-auto flex-shrink-0 rounded-full bg-gray-800 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                     >
                       <span className="sr-only">View notifications</span>
-                      <BellIcon className="h-6 w-6" aria-hidden="true" />
+                      {renderThemeChanger()}
                     </button>
                   </div>
                   <div className="mt-3 space-y-1 px-2">
@@ -222,9 +258,9 @@ export default function NavbarDash(props) {
             </>
           )}
         </Disclosure>
-        <header className="bg-zinc-100">
+        <header className="bg-zinc-100 dark:bg-gray-700">
           <div className="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
-            <h1 className="text-3xl font-bold tracking-tight text-gray-900">
+            <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
               {props.title}
             </h1>
           </div>

@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
-import Sidebar from "./Sidebar";
 import NavbarDash from "./NavbarDash";
 import Calendar from "../components/calendar";
 import CardData from "../components/ComponentFromWeatherData/CardData";
@@ -26,10 +25,10 @@ export default function Admin() {
   useEffect(() => {
     setInterval(() => {
       FetchData();
-    }, 6000);
+    }, 60000);
   }, []);
   return (
-    <>
+    <div>
       <Head>
         <meta charSet="UTF-8" />
         <meta name="robots" content="index, follow" />
@@ -60,19 +59,35 @@ export default function Admin() {
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <NavbarDash title="Estatísticas Gerais" />
-      <div class="m-0 font-sans antialiased font-normal text-base leading-default dark:bg-gray-600 h-full bg-zinc-100 fadeIn">
-        <div class="ml-auto w-full dark:bg-gray-600 h-full max-w-[1300px] mx-auto p-2">
-          <div class="2xl:container h-full dark:bg-gray-600 fadeIn">
-            <div class="2xl:container h-full dark:bg-gray-600">
+      <div class="m-0 font-sans antialiased font-normal text-base leading-default dark:bg-gray-700 h-full bg-zinc-100 fadeIn">
+        <div class="ml-auto w-full dark:bg-gray-700 h-full max-w-[1300px] mx-auto p-2">
+          <div class="2xl:container h-full dark:bg-gray-700 fadeIn">
+            <div class="2xl:container h-full dark:bg-gray-700">
               <div class="flex justify-center items-center">
                 <div class="w-full px-6 py-6 mx-auto">
                   <div class="flex items-center flex-wrap justify-between gap-3 lg:gap-0">
                     <div class="flex flex-wrap w-full items-center justify-between gap-10">
-                      <div className=" flex flex-wrap items-center justify-around lg:w-[45rem] p-4 gap-4">
+                      <div className=" flex flex-wrap items-center justify-around lg:w-[45rem] w-full p-4 gap-4">
                         <div class="relative h-2/4 lg:w-[20rem] w-full flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
                           <div class="flex flex-wrap h-full w-full">
-                            <div class="h-full w-full px-3 lg:w-full lg:flex-none">
-                              <div className="w-full h-full p-2 m-auto rounded-lg dark:bg-gray-900 dark:text-gray-100">
+                            
+                            <div class="h-full w-full px-3 lg:w-full lg:flex-none dark:bg-white rounded-lg dark:text-black">
+                              
+                              <div className="w-full h-full p-2 m-auto rounded-lg dark:bg-white">
+                                <div className="flex justify-around items-center h-full">
+                                  <div className="flex flex-col items-center p-1 w-full h-full">
+                                    <CardData data={data} />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="relative h-2/4 lg:w-[20rem] w-full flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
+                          <div class="flex flex-wrap h-full w-full">
+                            <div class="h-full w-full px-3 lg:w-full lg:flex-none dark:bg-white rounded-lg dark:text-black">
+                              <div className="w-full h-full p-2 m-auto rounded-lg">
                                 <div className="flex justify-around items-center h-full">
                                   <div className="flex flex-col items-center p-1 w-full h-full">
                                     <CardData data={data} />
@@ -84,8 +99,8 @@ export default function Admin() {
                         </div>
                         <div class="relative h-2/4 lg:w-[20rem] w-full flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
                           <div class="flex flex-wrap h-full w-full">
-                            <div class="h-full w-full px-3 lg:w-full lg:flex-none">
-                              <div className="w-full h-full p-2 m-auto rounded-lg dark:bg-gray-900 dark:text-gray-100">
+                            <div class="h-full w-full px-3 lg:w-full lg:flex-none dark:bg-white rounded-lg dark:text-black">
+                              <div className="w-full h-full p-2 m-auto rounded-lg">
                                 <div className="flex justify-around items-center h-full">
                                   <div className="flex flex-col items-center p-1 w-full h-full">
                                     <CardData data={data} />
@@ -97,21 +112,8 @@ export default function Admin() {
                         </div>
                         <div class="relative h-2/4 lg:w-[20rem] w-full flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
                           <div class="flex flex-wrap h-full w-full">
-                            <div class="h-full w-full px-3 lg:w-full lg:flex-none">
-                              <div className="w-full h-full p-2 m-auto rounded-lg dark:bg-gray-900 dark:text-gray-100">
-                                <div className="flex justify-around items-center h-full">
-                                  <div className="flex flex-col items-center p-1 w-full h-full">
-                                    <CardData data={data} />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="relative h-2/4 lg:w-[20rem] w-full flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
-                          <div class="flex flex-wrap h-full w-full">
-                            <div class="h-full w-full px-3 lg:w-full lg:flex-none">
-                              <div className="w-full h-full p-2 m-auto rounded-lg dark:bg-gray-900 dark:text-gray-100">
+                            <div class="h-full w-full px-3 lg:w-full lg:flex-none dark:bg-white rounded-lg dark:text-black">
+                              <div className="w-full h-full p-2 m-auto rounded-lg">
                                 <div className="flex justify-around items-center h-full">
                                   <div className="flex flex-col items-center p-1 w-full h-full">
                                     <CardData data={data} />
@@ -123,16 +125,16 @@ export default function Admin() {
                         </div>
                       </div>
                       <div class="mb-6 lg:mb-0 lg:max-w-sm w-full p-2">
-                        <div class="relative min-w-0 w-full break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
+                        <div class="relative min-w-0 w-full break-words bg-white dark:bg-gray-white  shadow-md rounded-2xl bg-clip-border">
                           <Calendar />
                         </div>
                       </div>
                     </div>
+
                     <div className="flex items-center justify-between flex-wrap w-full mt-4 mb-5">
-                      
                       <div className="lg:w-1/2 md:w-full w-full mt-4 lg:h-[32rem]">
                         <div class="w-full h-full px-3 mb-6 md:mb-0 md:flex-none">
-                          <div class="relative h-full flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
+                          <div class="relative h-full flex flex-col min-w-0 break-words bg-white dark:bg-gray-white dark:text-black shadow-md rounded-2xl bg-clip-border">
                             <div class="flex-auto p-4 ">
                               <div class="flex flex-wrap -mx-3">
                                 <div class="max-w-full px-3 lg:w-full lg:flex-none">
@@ -157,7 +159,7 @@ export default function Admin() {
                       <div className="flex flex-col items-center justify-between lg:w-1/2 md:w-full w-full ">
                         <div className="w-full mt-4">
                           <div class="w-full h-full px-3 mb-6 md:mb-0 md:flex-none">
-                            <div class="relative h-full flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
+                            <div class="relative h-full flex flex-col min-w-0 break-words bg-white dark:bg-gray-white dark:text-black shadow-md rounded-2xl bg-clip-border">
                               <div class="flex-auto p-4 ">
                                 <div class="flex flex-wrap -mx-3">
                                   <GaugeChart />
@@ -168,7 +170,7 @@ export default function Admin() {
                         </div>
                         <div className="w-full mt-4">
                           <div class="w-full h-full px-3 mb-6 md:mb-0 md:flex-none">
-                            <div class="relative h-full flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
+                            <div class="relative h-full flex flex-col min-w-0 break-words bg-white dark:bg-white dark:text-black shadow-md rounded-2xl bg-clip-border">
                               <div class="flex-auto p-4 ">
                                 <div class="flex flex-wrap -mx-3">
                                   <PieChart />
@@ -186,6 +188,6 @@ export default function Admin() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

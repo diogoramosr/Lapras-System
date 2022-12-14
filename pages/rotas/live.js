@@ -58,16 +58,16 @@ const Aovivo = () => {
       </Head>
 
       <NavbarDash title="Ao Vivo" />
-      <div class="m-0 font-sans antialiased font-normal text-base leading-default dark:bg-gray-600 h-full bg-zinc-100 fadeIn">
-        <div class="ml-auto w-full dark:bg-gray-600 h-full max-w-[1300px] mx-auto p-2">
-          <div class="2xl:container h-full dark:bg-gray-600 fadeIn">
-            <div class="2xl:container h-full  dark:bg-gray-600">
+      <div class="m-0 font-sans antialiased font-normal text-base leading-default dark:bg-gray-700 h-full bg-zinc-100 fadeIn">
+        <div class="ml-auto w-full dark:bg-gray-700 h-full max-w-[1300px] mx-auto p-2">
+          <div class="2xl:container h-full dark:bg-gray-700 fadeIn">
+            <div class="2xl:container h-full  dark:bg-gray-700">
               <div class="flex justify-center items-center">
                 <div class="w-full px-6 py-2 mx-auto">
                   <div class="flex flex-wrap mt-3 items-center -mx-3 justify-between h-full p-2 gap-4">
                     <div className="lg:w-[55%] md:w-full w-full mt-4 h-full">
                       <div class="w-full h-full px-3 mb-6 md:mb-0 md:flex-none">
-                        <div class="relative h-full flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
+                        <div class="relative h-full flex flex-col min-w-0 break-words bg-white dark:bg-white dark:text-black shadow-md rounded-2xl bg-clip-border">
                           <div class="flex-auto p-4 ">
                             <div class="flex flex-wrap -mx-3">
                               <div class="max-w-full px-3 lg:w-full lg:flex-none">
@@ -94,7 +94,7 @@ const Aovivo = () => {
                     </div>
 
                     <div class="flex flex-col gap-2 w-full h-full max-w-full px-3 lg:w-2/5 lg:flex-none relative lg:h-[25rem]">
-                      <div class="border-black/12.5 shadow-md relative flex min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white dark:bg-gray-500 bg-clip-border p-2 h-full">
+                      <div class="border-black/12.5 shadow-md relative flex min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white dark:bg-white dark:text-black bg-clip-border p-2 h-full">
                         <div class="flex flex-col">
                           <div class="max-w-full px-3 lg:w-full lg:flex-none">
                             <div class="flex flex-wrap w-full justify-between items-center px-2 h-full">
@@ -127,10 +127,10 @@ const Aovivo = () => {
                   <div class="flex flex-wrap mt-2 items-start -mx-3 justify-between sm:h-full md:h-[30rem] lg:h-[30rem] p-2  ">
                     <div class="w-full h-full md:w-full flex-wrap p-3 mb-6 gap-4 md:mb-0 md:flex-none flex items-center justify-between">
                       <div className="h-full w-full flex flex-wrap gap-4 items-center justify-between">
-                        <div class="relative h-2/4 w-full md:w-2/5  flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
+                        <div class="relative h-2/4 w-full md:w-2/5  flex flex-col min-w-0 break-words bg-white dark:bg-white dark:text-black shadow-md rounded-2xl bg-clip-border">
                           <div class="flex flex-wrap h-full w-full">
                             <div class="h-full w-full px-3 lg:w-full lg:flex-none">
-                              <div className="w-full h-full p-2 m-auto rounded-lg dark:bg-gray-900 dark:text-gray-100">
+                              <div className="w-full h-full p-2 m-auto rounded-lg">
                                 <div className="flex justify-around items-center h-full">
                                   <div className="flex flex-col items-center p-1 w-full h-full">
                                     <CardData data={data} />
@@ -141,10 +141,10 @@ const Aovivo = () => {
                           </div>
                         </div>
 
-                        <div class="relative h-2/4 w-full md:w-1/4 flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
+                        <div class="relative h-2/4 w-full md:w-1/4 flex flex-col min-w-0 break-words bg-white dark:bg-white shadow-md rounded-2xl bg-clip-border">
                           <div class="flex flex-wrap h-full w-full">
                             <div class="h-full w-full px-3 lg:w-full lg:flex-none">
-                              <div className="w-full h-full p-2 m-auto rounded-lg dark:bg-gray-900 dark:text-gray-100">
+                              <div className="w-full h-full p-2 m-auto rounded-lg">
                                 <div className="flex justify-around items-center h-full">
                                   <div className="flex flex-col items-center p-1 w-full h-full">
                                     <CardData data={data} />
@@ -155,10 +155,10 @@ const Aovivo = () => {
                           </div>
                         </div>
 
-                        <div class="relative h-2/4 w-full md:w-1/4  flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
+                        <div class="relative h-2/4 w-full md:w-1/4  flex flex-col min-w-0 break-words bg-white dark:bg-white dark:text-black shadow-md rounded-2xl bg-clip-border">
                           <div class="flex flex-wrap h-full w-full">
                             <div class="h-full w-full px-3 lg:w-full lg:flex-none">
-                              <div className="w-full h-full p-2 m-auto rounded-lg dark:bg-gray-900 dark:text-gray-100">
+                              <div className="w-full h-full p-2 m-auto rounded-lg">
                                 <div className="flex justify-around items-center h-full">
                                   <div className="flex flex-col items-center p-1 w-full h-full">
                                     <CardData data={data} />
@@ -169,10 +169,10 @@ const Aovivo = () => {
                           </div>
                         </div>
 
-                        <div class="relative h-2/4 w-full md:w-2/5 flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
+                        <div class="relative h-2/4 w-full md:w-2/5 flex flex-col min-w-0 break-words bg-white dark:bg-white dark:text-black shadow-md rounded-2xl bg-clip-border">
                           <div class="flex flex-wrap h-full w-full">
                             <div class="h-full w-full px-3 lg:w-full lg:flex-none">
-                              <div className="w-full h-full p-2 m-auto rounded-lg dark:bg-gray-900 dark:text-gray-100">
+                              <div className="w-full h-full p-2 m-auto rounded-lg">
                                 <div className="flex justify-around items-center h-full">
                                   <div className="flex flex-col items-center p-1 w-full h-full">
                                     <CardData data={data} />
@@ -183,10 +183,10 @@ const Aovivo = () => {
                           </div>
                         </div>
 
-                        <div class="relative h-2/4 w-full md:w-1/4 flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
+                        <div class="relative h-2/4 w-full md:w-1/4 flex flex-col min-w-0 break-words bg-white dark:bg-white dark:text-black shadow-md rounded-2xl bg-clip-border">
                           <div class="flex flex-wrap h-full w-full">
                             <div class="h-full w-full px-3 lg:w-full lg:flex-none">
-                              <div className="w-full h-full p-2 m-auto rounded-lg dark:bg-gray-900 dark:text-gray-100">
+                              <div className="w-full h-full p-2 m-auto rounded-lg">
                                 <div className="flex justify-around items-center h-full">
                                   <div className="flex flex-col items-center p-1 w-full h-full">
                                     <CardData data={data} />
@@ -197,10 +197,10 @@ const Aovivo = () => {
                           </div>
                         </div>
 
-                        <div class="relative h-2/4 w-full md:w-1/4 flex flex-col min-w-0 break-words bg-white dark:bg-gray-500 shadow-md rounded-2xl bg-clip-border">
+                        <div class="relative h-2/4 w-full md:w-1/4 flex flex-col min-w-0 break-words bg-white dark:bg-white dark:text-black shadow-md rounded-2xl bg-clip-border">
                           <div class="flex flex-wrap h-full w-full">
                             <div class="h-full w-full px-3 lg:w-full lg:flex-none">
-                              <div className="w-full h-full p-2 m-auto rounded-lg dark:bg-gray-900 dark:text-gray-100">
+                              <div className="w-full h-full p-2 m-auto rounded-lg">
                                 <div className="flex justify-around items-center h-full">
                                   <div className="flex flex-col items-center p-1 w-full h-full">
                                     <CardData data={data} />

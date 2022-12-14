@@ -56,10 +56,10 @@ export default function Previsão({ data }) {
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <NavbarDash title="Previsão" />
-      <div class="m-0 font-sans antialiased font-normal text-base leading-default dark:bg-gray-600 h-full bg-zinc-100 fadeIn">
-        <div class="ml-auto w-full dark:bg-gray-600 h-full max-w-[1300px] mx-auto p-2">
-          <div class="2xl:container h-full dark:bg-gray-600 fadeIn">
-            <div class="2xl:container h-full dark:bg-gray-600">
+      <div class="m-0 font-sans antialiased font-normal text-base leading-default dark:bg-gray-700 h-full bg-zinc-100 fadeIn overflow-hidden">
+        <div class="ml-auto w-full dark:bg-gray-700 h-full max-w-[1300px] mx-auto p-2">
+          <div class="2xl:container h-full dark:bg-gray-700 fadeIn">
+            <div class="2xl:container h-full dark:bg-gray-700">
               <div class="flex justify-center items-center">
                 <div className="p-1 w-full">
                   <div className="mx-auto w-full h-full mt-4 py-5 px-32 bg-gradient-to-br flex flex-col items-center justify-center">

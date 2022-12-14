@@ -35,7 +35,7 @@ function Inputs({ setQuery, units, setUnits }) {
           onChange={(e) => setCity(e.currentTarget.value)}
           type="text"
           placeholder="Pesquisar..."
-          className="text-xl font-light p-2 sm:w-full w-full shadow-xl focus:outline-none first-letter:uppercase"
+          className="text-xl font-light p-2 sm:w-full w-full shadow-xl focus:outline-none first-letter:uppercase dark:bg-white dark:text-black"
         />
         <RiSearch2Line
           size={30}
